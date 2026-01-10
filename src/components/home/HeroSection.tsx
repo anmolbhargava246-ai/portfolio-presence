@@ -26,14 +26,14 @@ export function HeroSection() {
 
           {/* Main heading */}
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-foreground leading-tight opacity-0 animate-fade-up stagger-1">
-            Crafting Digital
-            <span className="block text-gradient">Experiences</span>
+            UX Researcher at the
+            <span className="block text-gradient">Intersection of Psychology & Product</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto leading-relaxed opacity-0 animate-fade-up stagger-2">
-            I'm a designer & developer who builds thoughtful products with
-            attention to detail, clean code, and user-centered design.
+            I blend behavioral science with user research to uncover deep insights 
+            that shape products people genuinely love to use.
           </p>
 
           {/* CTA Buttons */}
@@ -52,9 +52,9 @@ export function HeroSection() {
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 md:gap-12 pt-12 opacity-0 animate-fade-up stagger-4">
             {[
-              { value: "5+", label: "Years Experience" },
-              { value: "50+", label: "Projects Completed" },
-              { value: "30+", label: "Happy Clients" },
+              { value: "5+", label: "Years in UX Research" },
+              { value: "40+", label: "Research Studies" },
+              { value: "25+", label: "Products Shaped" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="font-display text-3xl md:text-4xl font-semibold text-foreground">
