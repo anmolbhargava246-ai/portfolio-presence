@@ -13,40 +13,40 @@ import { Button } from "@/components/ui/button";
 
 const expertise = [
   {
-    icon: Palette,
-    title: "UI/UX Design",
+    icon: Search,
+    title: "User Research",
     description:
-      "Crafting intuitive interfaces that delight users and drive engagement through research-backed design decisions.",
+      "Conducting in-depth interviews, usability testing, and ethnographic studies to understand your users' needs and behaviors.",
   },
   {
     icon: Code2,
-    title: "Web Development",
+    title: "Behavioral Analysis",
     description:
-      "Building fast, responsive, and accessible web applications using modern technologies and best practices.",
+      "Applying psychological frameworks to decode user decision-making and identify friction points in the experience.",
   },
   {
-    icon: Smartphone,
-    title: "Mobile Development",
+    icon: Palette,
+    title: "Research Strategy",
     description:
-      "Creating cross-platform mobile experiences that feel native and perform beautifully.",
+      "Designing research plans that answer the right questions at the right time in your product development cycle.",
   },
   {
     icon: Zap,
-    title: "Performance Optimization",
+    title: "Insight Synthesis",
     description:
-      "Improving load times and core web vitals for better user experience and conversion rates.",
+      "Transforming raw data into clear, actionable recommendations that drive product decisions.",
   },
   {
-    icon: Search,
-    title: "SEO & Analytics",
+    icon: Smartphone,
+    title: "Journey Mapping",
     description:
-      "Implementing technical SEO and analytics to maximize your online visibility and insights.",
+      "Visualizing the complete user experience to identify opportunities for improvement and innovation.",
   },
   {
     icon: MessageSquare,
-    title: "Strategic Consulting",
+    title: "Stakeholder Workshops",
     description:
-      "Providing guidance on technology choices, architecture, and digital product strategy.",
+      "Facilitating collaborative sessions that align teams around user needs and research findings.",
   },
 ];
 
@@ -64,9 +64,9 @@ const Services = () => {
               How I Can Help
             </h1>
             <p className="text-lg text-muted-foreground mt-6 leading-relaxed">
-              I partner with businesses to transform ideas into exceptional digital experiences. 
-              Whether you need a complete product build or strategic guidance, 
-              I'm here to help you succeed.
+              I help product teams make confident decisions by uncovering what truly drives user behavior. 
+              Through rigorous research grounded in behavioral science, 
+              I turn ambiguity into actionable insights.
             </p>
             <Button variant="accent" size="lg" className="mt-8" asChild>
               <Link to="/contact">

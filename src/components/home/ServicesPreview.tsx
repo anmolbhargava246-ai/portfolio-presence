@@ -1,25 +1,25 @@
 import { Link } from "react-router-dom";
-import { Code2, Palette, Zap, ArrowRight } from "lucide-react";
+import { Brain, Users, Lightbulb, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const services = [
   {
-    icon: Palette,
-    title: "UI/UX Design",
+    icon: Brain,
+    title: "Behavioral Research",
     description:
-      "Creating intuitive interfaces and seamless user experiences that delight and convert.",
+      "Applying psychology principles to understand why users behave the way they do.",
   },
   {
-    icon: Code2,
-    title: "Web Development",
+    icon: Users,
+    title: "User Research",
     description:
-      "Building fast, responsive, and accessible web applications with modern technologies.",
+      "Conducting interviews, usability tests, and studies to uncover actionable insights.",
   },
   {
-    icon: Zap,
-    title: "Performance Optimization",
+    icon: Lightbulb,
+    title: "Strategic Insights",
     description:
-      "Improving load times and core web vitals for better user experience and SEO.",
+      "Translating research findings into product decisions that drive real impact.",
   },
 ];
 
@@ -33,10 +33,10 @@ export function ServicesPreview() {
             What I Do
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mt-4">
-            Services & Expertise
+            How I Help
           </h2>
           <p className="text-muted-foreground mt-4 text-lg">
-            Bringing ideas to life through thoughtful design and clean code.
+            Bridging the gap between human behavior and product decisions.
           </p>
         </div>
 
