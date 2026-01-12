@@ -4,31 +4,10 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 
 const skills = [
-  { category: "Design", items: ["UI/UX Design", "Design Systems", "Figma", "Prototyping", "User Research"] },
-  { category: "Frontend", items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion"] },
-  { category: "Backend", items: ["Node.js", "PostgreSQL", "GraphQL", "REST APIs", "AWS"] },
-  { category: "Tools", items: ["Git", "VS Code", "Notion", "Linear", "Vercel"] },
-];
-
-const experience = [
-  {
-    title: "Senior Frontend Engineer",
-    company: "Tech Startup",
-    period: "2022 - Present",
-    description: "Leading frontend architecture and mentoring junior developers on a B2B SaaS platform.",
-  },
-  {
-    title: "Full Stack Developer",
-    company: "Digital Agency",
-    period: "2019 - 2022",
-    description: "Built custom web applications and e-commerce solutions for clients across various industries.",
-  },
-  {
-    title: "UI/UX Designer",
-    company: "Freelance",
-    period: "2017 - 2019",
-    description: "Designed user interfaces and experiences for startups and small businesses.",
-  },
+  { category: "Research Methods", items: ["In-depth Interviews", "Usability Testing", "Contextual Inquiry", "Diary Studies", "Surveys"] },
+  { category: "Behavioral Science", items: ["Cognitive Biases", "Mental Models", "Decision Heuristics", "Behavioral Economics", "Trust & Friction"] },
+  { category: "Analysis", items: ["Thematic Analysis", "Affinity Mapping", "Journey Mapping", "Insight Synthesis", "Stakeholder Workshops"] },
+  { category: "Tools", items: ["Figma", "Dovetail", "Miro", "Notion", "UserTesting"] },
 ];
 
 const About = () => {
@@ -43,42 +22,41 @@ const About = () => {
                 About Me
               </span>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground">
-                Hi, I'm Alex
+                Hi, I'm Anmol 👋
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a designer and developer passionate about creating thoughtful
-                digital experiences. With over 5 years of experience, I specialize
-                in building products that are both beautiful and functional.
+                I'm a UX researcher with four years of experience. Basically, I look at 
+                the "people" side of product development. 👥
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new coffee shops,
-                reading about design history, or contributing to open source
-                projects.
+                My way of working is embedded in strategy, not just execution. I step in early, 
+                challenge assumptions, and turn human behaviour into clear product direction. 🧭
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                I have a master's degree in psychology, which makes me, honestly, a bit of a 
+                user behaviour enthusiast. I look at biases, mental models, trust, friction… 
+                so kind of everywhere the real insight lives. 💡
               </p>
               <div className="flex items-center gap-4 text-muted-foreground">
                 <span className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-accent" />
-                  San Francisco, CA
+                  <GraduationCap className="h-4 w-4 text-accent" />
+                  Master's in Psychology
                 </span>
               </div>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Button variant="accent" size="lg" asChild>
                   <Link to="/contact">
-                    Get in Touch
+                    Let's Talk
                     <ArrowRight className="h-5 w-5" />
                   </Link>
-                </Button>
-                <Button variant="outline" size="lg">
-                  <Download className="h-5 w-5" />
-                  Download CV
                 </Button>
               </div>
             </div>
             <div className="relative">
               <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-medium">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=750&fit=crop"
-                  alt="Profile"
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=750&fit=crop"
+                  alt="Anmol - UX Researcher"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -123,39 +101,25 @@ const About = () => {
         </div>
       </section>
 
-      {/* Experience */}
+      {/* CTA Section */}
       <section className="py-16 md:py-24 bg-card">
         <div className="container mx-auto">
-          <div className="max-w-2xl mb-12">
+          <div className="max-w-2xl mx-auto text-center space-y-6">
             <span className="text-accent font-medium text-sm uppercase tracking-wider">
-              Background
+              Let's Connect
             </span>
-            <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mt-4">
-              Experience
+            <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground">
+              Want clarity over noise?
             </h2>
-          </div>
-
-          <div className="max-w-3xl space-y-8">
-            {experience.map((item, index) => (
-              <div
-                key={index}
-                className="flex gap-6 p-6 bg-background rounded-xl shadow-soft"
-              >
-                <div className="hidden sm:block w-12 h-12 rounded-xl bg-accent/10 flex-shrink-0 flex items-center justify-center">
-                  <Briefcase className="h-6 w-6 text-accent" />
-                </div>
-                <div className="space-y-2">
-                  <div className="flex flex-wrap items-baseline gap-2">
-                    <h3 className="font-display text-lg font-medium text-foreground">
-                      {item.title}
-                    </h3>
-                    <span className="text-muted-foreground">at {item.company}</span>
-                  </div>
-                  <p className="text-sm text-accent">{item.period}</p>
-                  <p className="text-muted-foreground">{item.description}</p>
-                </div>
-              </div>
-            ))}
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              If you want insight that actually moves things forward, let's talk. 👇🏼
+            </p>
+            <Button variant="accent" size="lg" asChild>
+              <Link to="/contact">
+                Get in Touch
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -168,26 +132,26 @@ const About = () => {
               Philosophy
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mt-4">
-              What I Believe In
+              How I Approach Research
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
               {
-                title: "Simplicity",
+                title: "Strategy First",
                 description:
-                  "The best solutions are often the simplest. I strive to remove complexity, not add it.",
+                  "Research should inform direction, not just validate decisions. I embed early and challenge assumptions.",
               },
               {
-                title: "Craft",
+                title: "Behavioral Lens",
                 description:
-                  "Details matter. Every pixel, every interaction, every line of code deserves attention.",
+                  "Understanding why people do what they do—through biases, mental models, and the moments where friction lives.",
               },
               {
-                title: "Impact",
+                title: "Clarity Over Noise",
                 description:
-                  "Technology should serve people. I build products that make a meaningful difference.",
+                  "Insights only matter if they move things. I translate complex findings into clear, actionable direction.",
               },
             ].map((value) => (
               <div key={value.title} className="text-center space-y-4">
