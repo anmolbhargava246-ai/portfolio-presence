@@ -4,7 +4,7 @@ import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 
-const categories = ["All", "Web App", "Mobile", "Design", "Open Source"];
+const categories = ["All", "Fintech/Banking", "Travel", "FMCG", "Enterprise", "Tech/AI"];
 
 const projects = [
   {
