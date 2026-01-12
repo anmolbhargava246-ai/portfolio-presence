@@ -80,7 +80,7 @@ const Contact = () => {
 
               <div className="space-y-4">
                 <a
-                  href="mailto:hello@example.com"
+                  href="mailto:anmol.bhargava246@gmail.com"
                   className="flex items-center gap-4 p-4 bg-card rounded-xl shadow-soft hover:shadow-medium transition-all group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
@@ -89,7 +89,7 @@ const Contact = () => {
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
                     <p className="font-medium text-foreground">
-                      hello@example.com
+                      anmol.bhargava246@gmail.com
                     </p>
                   </div>
                 </a>
