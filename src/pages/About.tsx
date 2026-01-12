@@ -37,10 +37,14 @@ const About = () => {
                 user behaviour enthusiast. I look at biases, mental models, trust, friction… 
                 so kind of everywhere the real insight lives. 💡
               </p>
-              <div className="flex items-center gap-4 text-muted-foreground">
+              <div className="flex flex-col gap-2 text-muted-foreground">
                 <span className="flex items-center gap-2">
                   <GraduationCap className="h-4 w-4 text-accent" />
-                  Master's in Psychology
+                  Master's in Psychology, TISS Mumbai
+                </span>
+                <span className="flex items-center gap-2">
+                  <GraduationCap className="h-4 w-4 text-accent" />
+                  Bachelor's in Psychology, Mumbai University
                 </span>
               </div>
               <div className="flex flex-wrap gap-4 pt-4">
