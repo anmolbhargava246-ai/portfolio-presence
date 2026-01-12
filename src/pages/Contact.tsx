@@ -101,7 +101,7 @@ const Contact = () => {
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>
                     <p className="font-medium text-foreground">
-                      San Francisco, CA
+                      Bangalore, India
                     </p>
                   </div>
                 </div>
@@ -209,7 +209,7 @@ const Contact = () => {
                     required
                     rows={6}
                     className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-foreground placeholder:text-muted-foreground resize-none"
-                    placeholder="Tell me about your project..."
+                    placeholder="Type in your message..."
                   />
                 </div>
 
