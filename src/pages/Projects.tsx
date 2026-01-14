@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 
@@ -9,69 +9,63 @@ const categories = ["All", "Fintech/Banking", "Travel", "FMCG", "Enterprise", "T
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Personal Loans FinTech",
     description:
-      "A modern shopping experience with real-time inventory management, seamless checkout, and advanced analytics dashboard.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    category: "Web App",
-    tags: ["React", "Node.js", "Stripe", "PostgreSQL"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A foundational and evaluative study exploring trust, decision making, and UX friction in a large Indian FinTech product.",
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
+    category: "Fintech/Banking",
+    tags: ["Foundational Research", "Usability Testing", "JTBD", "Journey Mapping"],
+    href: "/projects/personal-loans",
   },
   {
     id: 2,
-    title: "Analytics Dashboard",
+    title: "Travel Booking Experience",
     description:
-      "Comprehensive data visualization tool for tracking business metrics, user behavior, and generating actionable insights.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    category: "Web App",
-    tags: ["TypeScript", "D3.js", "PostgreSQL", "Redis"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Redesigning the end-to-end booking flow for a major travel platform, reducing drop-offs and improving user confidence.",
+    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop",
+    category: "Travel",
+    tags: ["User Research", "Usability Testing", "A/B Testing", "Prototyping"],
+    href: "/projects",
   },
   {
     id: 3,
-    title: "Mobile Banking App",
+    title: "FMCG Digital Transformation",
     description:
-      "Secure and intuitive banking application featuring biometric authentication, instant transfers, and spending insights.",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
-    category: "Mobile",
-    tags: ["React Native", "Firebase", "Plaid", "Node.js"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Understanding consumer behaviour and digital adoption patterns for a leading FMCG brand's D2C initiative.",
+    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&h=600&fit=crop",
+    category: "FMCG",
+    tags: ["Consumer Research", "Ethnography", "Concept Testing", "Personas"],
+    href: "/projects",
   },
   {
     id: 4,
-    title: "Design System",
+    title: "Enterprise SaaS Onboarding",
     description:
-      "A comprehensive component library with accessibility-first approach, documentation, and Figma integration.",
-    image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=600&fit=crop",
-    category: "Design",
-    tags: ["Figma", "Storybook", "React", "Tailwind"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Streamlining complex enterprise software onboarding to reduce time-to-value and improve user activation rates.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    category: "Enterprise",
+    tags: ["B2B Research", "User Interviews", "Workflow Analysis", "Heuristic Evaluation"],
+    href: "/projects",
   },
   {
     id: 5,
-    title: "Task Management Tool",
+    title: "AI Assistant Trust Study",
     description:
-      "Collaborative project management solution with real-time updates, timeline views, and team workflows.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-    category: "Web App",
-    tags: ["Next.js", "Prisma", "WebSocket", "Tailwind"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Exploring user mental models and trust factors in AI-powered productivity tools for knowledge workers.",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+    category: "Tech/AI",
+    tags: ["Generative Research", "Mental Models", "Trust & Safety", "Ethics"],
+    href: "/projects",
   },
   {
     id: 6,
-    title: "Open Source CLI",
+    title: "Credit Card Rewards Program",
     description:
-      "Developer tool for automating repetitive tasks, project scaffolding, and code generation.",
-    image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=800&h=600&fit=crop",
-    category: "Open Source",
-    tags: ["Node.js", "TypeScript", "CLI", "npm"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Evaluating reward program comprehension and optimising the redemption experience for increased engagement.",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+    category: "Fintech/Banking",
+    tags: ["Evaluative Research", "Card Sorting", "Tree Testing", "Survey Design"],
+    href: "/projects",
   },
 ];
 
@@ -123,10 +117,10 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {filteredProjects.map((project) => (
-              <article
+              <Link
+                to={project.href}
                 key={project.id}
                 className="group bg-card rounded-xl overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300"
               >
@@ -137,25 +131,10 @@ const Projects = () => {
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-foreground/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                    {project.liveUrl && (
-                      <a
-                        href={project.liveUrl}
-                        className="p-3 bg-background rounded-full hover:bg-accent hover:text-accent-foreground transition-colors"
-                        aria-label="View live site"
-                      >
-                        <ExternalLink className="h-5 w-5" />
-                      </a>
-                    )}
-                    {project.githubUrl && (
-                      <a
-                        href={project.githubUrl}
-                        className="p-3 bg-background rounded-full hover:bg-accent hover:text-accent-foreground transition-colors"
-                        aria-label="View source code"
-                      >
-                        <Github className="h-5 w-5" />
-                      </a>
-                    )}
+                  <div className="absolute inset-0 bg-foreground/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="px-4 py-2 bg-background rounded-full text-sm font-medium flex items-center gap-2">
+                      View Case Study <ArrowUpRight className="h-4 w-4" />
+                    </span>
                   </div>
                 </div>
 
@@ -183,7 +162,7 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>
