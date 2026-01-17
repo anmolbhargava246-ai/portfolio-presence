@@ -19,13 +19,13 @@ const projects = [
   },
   {
     id: 2,
-    title: "Travel Booking Experience",
+    title: "Creative Education, Saudi Arabia",
     description:
-      "Redesigning the end-to-end booking flow for a major travel platform, reducing drop-offs and improving user confidence.",
-    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop",
-    category: "Travel",
-    tags: ["User Research", "Usability Testing", "A/B Testing", "Prototyping"],
-    href: "/projects",
+      "A large scale mixed methods study to redesign curriculum across creative domains and position a new age education institution for long term relevance.",
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop",
+    category: "Enterprise",
+    tags: ["Mixed Methods", "Strategy Research", "Curriculum Design", "Expert Interviews"],
+    href: "/projects/creative-education",
   },
   {
     id: 3,
