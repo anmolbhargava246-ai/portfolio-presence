@@ -29,6 +29,16 @@ const projects = [
   },
   {
     id: 3,
+    title: "Urban Planning & Lifestyle Research, Jeddah",
+    description:
+      "A mixed-methods study to understand lifestyle preferences, daily behaviours, and amenity needs of residents in Jeddah to shape a large scale urban development.",
+    image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop",
+    category: "Enterprise",
+    tags: ["Mixed Methods", "Concept Testing", "Focus Groups", "Quantitative Survey"],
+    href: "/projects/urban-planning",
+  },
+  {
+    id: 4,
     title: "FMCG Digital Transformation",
     description:
       "Understanding consumer behaviour and digital adoption patterns for a leading FMCG brand's D2C initiative.",
@@ -38,7 +48,7 @@ const projects = [
     href: "/projects",
   },
   {
-    id: 4,
+    id: 5,
     title: "Enterprise SaaS Onboarding",
     description:
       "Streamlining complex enterprise software onboarding to reduce time-to-value and improve user activation rates.",
@@ -48,7 +58,7 @@ const projects = [
     href: "/projects",
   },
   {
-    id: 5,
+    id: 6,
     title: "AI Assistant Trust Study",
     description:
       "Exploring user mental models and trust factors in AI-powered productivity tools for knowledge workers.",
@@ -58,7 +68,7 @@ const projects = [
     href: "/projects",
   },
   {
-    id: 6,
+    id: 7,
     title: "Credit Card Rewards Program",
     description:
       "Evaluating reward program comprehension and optimising the redemption experience for increased engagement.",
