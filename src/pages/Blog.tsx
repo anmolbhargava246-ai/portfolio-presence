@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Clock, Calendar } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 
-const categories = ["All", "Design", "Development", "Productivity", "Career"];
+const categories = ["All", "Human–AI Systems", "Product Strategy", "Research Thinking", "Enterprise & Platforms", "Work & Careers"];
 
 const posts = [
   {
