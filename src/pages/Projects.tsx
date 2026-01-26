@@ -39,6 +39,16 @@ const projects = [
   },
   {
     id: 4,
+    title: "Airline Booking Platform UX",
+    description:
+      "A behavioural usability study of an airline booking platform, focused on the moments where clarity, confidence, and loyalty break down.",
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&h=600&fit=crop",
+    category: "Travel",
+    tags: ["Conversion UX", "Behavioural Insight", "Usability Testing", "Journey Mapping"],
+    href: "/projects/airline-booking",
+  },
+  {
+    id: 5,
     title: "FMCG Digital Transformation",
     description:
       "Understanding consumer behaviour and digital adoption patterns for a leading FMCG brand's D2C initiative.",
@@ -48,7 +58,7 @@ const projects = [
     href: "/projects",
   },
   {
-    id: 5,
+    id: 6,
     title: "Enterprise SaaS Onboarding",
     description:
       "Streamlining complex enterprise software onboarding to reduce time-to-value and improve user activation rates.",
@@ -58,7 +68,7 @@ const projects = [
     href: "/projects",
   },
   {
-    id: 6,
+    id: 7,
     title: "AI Assistant Trust Study",
     description:
       "Exploring user mental models and trust factors in AI-powered productivity tools for knowledge workers.",
@@ -68,7 +78,7 @@ const projects = [
     href: "/projects",
   },
   {
-    id: 7,
+    id: 8,
     title: "Credit Card Rewards Program",
     description:
       "Evaluating reward program comprehension and optimising the redemption experience for increased engagement.",
