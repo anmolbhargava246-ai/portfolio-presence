@@ -7,6 +7,9 @@ import {
   Smartphone,
   MessageSquare,
   ArrowRight,
+  Compass,
+  Puzzle,
+  Sparkles,
 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -126,45 +129,58 @@ const Services = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              {
-                step: "01",
-                title: "Discovery",
-                description:
-                  "Understanding your goals, requirements, and constraints through in-depth conversations.",
-              },
-              {
-                step: "02",
-                title: "Strategy",
-                description:
-                  "Developing a clear roadmap with milestones, deliverables, and timelines.",
-              },
-              {
-                step: "03",
-                title: "Execution",
-                description:
-                  "Building with regular check-ins, iterative feedback, and transparent communication.",
-              },
-              {
-                step: "04",
-                title: "Launch",
-                description:
-                  "Deploying to production with proper testing, documentation, and support.",
-              },
-            ].map((item) => (
-              <div key={item.step} className="text-center">
-                <div className="text-5xl font-display font-bold text-accent/20 mb-4">
-                  {item.step}
+          {/* Process Steps with Connecting Line */}
+          <div className="relative">
+            {/* Horizontal connecting line - hidden on mobile */}
+            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-transparent via-muted-foreground/30 to-transparent" />
+            
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
+              {[
+                {
+                  icon: Search,
+                  title: "Discovery",
+                  description:
+                    "Understanding your goals, requirements, and constraints through in-depth conversations.",
+                },
+                {
+                  icon: Compass,
+                  title: "Strategy",
+                  description:
+                    "Developing a clear roadmap with milestones, deliverables, and timelines.",
+                },
+                {
+                  icon: Puzzle,
+                  title: "Execution",
+                  description:
+                    "Building with regular check-ins, iterative feedback, and transparent communication.",
+                },
+                {
+                  icon: Sparkles,
+                  title: "Launch",
+                  description:
+                    "Deploying to production with proper testing, documentation, and support.",
+                },
+              ].map((item, index) => (
+                <div key={item.title} className="text-center relative">
+                  {/* Icon */}
+                  <div className="relative z-10 w-16 h-16 mx-auto mb-6 rounded-full bg-background border border-muted-foreground/20 flex items-center justify-center">
+                    <item.icon className="h-6 w-6 text-muted-foreground" strokeWidth={1.5} />
+                  </div>
+                  
+                  {/* Step number - subtle */}
+                  <div className="text-xs font-medium text-muted-foreground/50 uppercase tracking-widest mb-2">
+                    0{index + 1}
+                  </div>
+                  
+                  <h3 className="font-display text-lg font-medium text-foreground mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed max-w-xs mx-auto">
+                    {item.description}
+                  </p>
                 </div>
-                <h3 className="font-display text-lg font-medium text-foreground mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {item.description}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
