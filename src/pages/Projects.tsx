@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 
-const categories = ["All", "Fintech/Banking", "Travel", "FMCG", "Enterprise", "Tech/AI"];
+const categories = ["All", "Fintech/Banking", "Travel", "Education", "Consumer Study", "Enterprise", "Tech/AI"];
 
 const projects = [
   {
@@ -23,7 +23,7 @@ const projects = [
     description:
       "A large scale mixed methods study to redesign curriculum across creative domains and position a new age education institution for long term relevance.",
     image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop",
-    category: "Enterprise",
+    category: "Education",
     tags: ["Mixed Methods", "Strategy Research", "Curriculum Design", "Expert Interviews"],
     href: "/projects/creative-education",
   },
@@ -33,7 +33,7 @@ const projects = [
     description:
       "A mixed-methods study to understand lifestyle preferences, daily behaviours, and amenity needs of residents in Jeddah to shape a large scale urban development.",
     image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop",
-    category: "Enterprise",
+    category: "Consumer Study",
     tags: ["Mixed Methods", "Concept Testing", "Focus Groups", "Quantitative Survey"],
     href: "/projects/urban-planning",
   },
