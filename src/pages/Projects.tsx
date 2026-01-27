@@ -49,13 +49,13 @@ const projects = [
   },
   {
     id: 5,
-    title: "FMCG Digital Transformation",
+    title: "Brand Perception & Decision-Making Study",
     description:
-      "Understanding consumer behaviour and digital adoption patterns for a leading FMCG brand's D2C initiative.",
-    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&h=600&fit=crop",
-    category: "FMCG",
-    tags: ["Consumer Research", "Ethnography", "Concept Testing", "Personas"],
-    href: "/projects",
+      "A behavioural brand study exploring how consumers choose between competing pizza brands, and what shapes trust, loyalty, and cultural relevance in the UAE.",
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&h=600&fit=crop",
+    category: "Consumer Study",
+    tags: ["Brand Equity", "Mixed Methods", "Focus Groups", "Quantitative"],
+    href: "/projects/brand-perception",
   },
   {
     id: 6,
