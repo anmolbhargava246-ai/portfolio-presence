@@ -69,6 +69,16 @@ const projects = [
   },
   {
     id: 7,
+    title: "Digital Wallet Pre-Launch Usability",
+    description:
+      "A pre-launch usability programme focused on identifying where trust, comprehension, and task momentum break down in real transaction flows.",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
+    category: "Fintech/Banking",
+    tags: ["Fintech UX", "Pre-Launch Risk", "Behavioural UX", "Usability Testing"],
+    href: "/projects/digital-wallet",
+  },
+  {
+    id: 8,
     title: "Enterprise SaaS Onboarding",
     description:
       "Streamlining complex enterprise software onboarding to reduce time-to-value and improve user activation rates.",
@@ -78,7 +88,7 @@ const projects = [
     href: "/projects",
   },
   {
-    id: 8,
+    id: 9,
     title: "AI Assistant Trust Study",
     description:
       "Exploring user mental models and trust factors in AI-powered productivity tools for knowledge workers.",
@@ -88,7 +98,7 @@ const projects = [
     href: "/projects",
   },
   {
-    id: 9,
+    id: 10,
     title: "Credit Card Rewards Program",
     description:
       "Evaluating reward program comprehension and optimising the redemption experience for increased engagement.",
