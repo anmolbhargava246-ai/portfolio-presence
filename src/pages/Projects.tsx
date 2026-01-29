@@ -77,36 +77,6 @@ const projects = [
     tags: ["Fintech UX", "Pre-Launch Risk", "Behavioural UX", "Usability Testing"],
     href: "/projects/digital-wallet",
   },
-  {
-    id: 8,
-    title: "Enterprise SaaS Onboarding",
-    description:
-      "Streamlining complex enterprise software onboarding to reduce time-to-value and improve user activation rates.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    category: "Enterprise",
-    tags: ["B2B Research", "User Interviews", "Workflow Analysis", "Heuristic Evaluation"],
-    href: "/projects",
-  },
-  {
-    id: 9,
-    title: "AI Assistant Trust Study",
-    description:
-      "Exploring user mental models and trust factors in AI-powered productivity tools for knowledge workers.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
-    category: "Tech/AI",
-    tags: ["Generative Research", "Mental Models", "Trust & Safety", "Ethics"],
-    href: "/projects",
-  },
-  {
-    id: 10,
-    title: "Credit Card Rewards Program",
-    description:
-      "Evaluating reward program comprehension and optimising the redemption experience for increased engagement.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-    category: "Fintech/Banking",
-    tags: ["Evaluative Research", "Card Sorting", "Tree Testing", "Survey Design"],
-    href: "/projects",
-  },
 ];
 
 const Projects = () => {
