@@ -59,6 +59,16 @@ const projects = [
   },
   {
     id: 6,
+    title: "Sensory Preference & Brand Trust Study",
+    description:
+      "A sensory and behavioural study exploring how consumers evaluate laban beyond taste, and what creates trust, habit, and 'authenticity' in everyday dairy choices.",
+    image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=800&h=600&fit=crop",
+    category: "Consumer Study",
+    tags: ["Sensory Research", "Brand Equity", "Blind Taste Testing", "Qualitative"],
+    href: "/projects/sensory-preference",
+  },
+  {
+    id: 7,
     title: "Enterprise SaaS Onboarding",
     description:
       "Streamlining complex enterprise software onboarding to reduce time-to-value and improve user activation rates.",
@@ -68,7 +78,7 @@ const projects = [
     href: "/projects",
   },
   {
-    id: 7,
+    id: 8,
     title: "AI Assistant Trust Study",
     description:
       "Exploring user mental models and trust factors in AI-powered productivity tools for knowledge workers.",
@@ -78,7 +88,7 @@ const projects = [
     href: "/projects",
   },
   {
-    id: 8,
+    id: 9,
     title: "Credit Card Rewards Program",
     description:
       "Evaluating reward program comprehension and optimising the redemption experience for increased engagement.",
