@@ -12,6 +12,7 @@ import CaseStudyAirlineBooking from "./pages/CaseStudyAirlineBooking";
 import CaseStudyBrandPerception from "./pages/CaseStudyBrandPerception";
 import CaseStudySensoryPreference from "./pages/CaseStudySensoryPreference";
 import CaseStudyDigitalWallet from "./pages/CaseStudyDigitalWallet";
+import CaseStudyAIAssistant from "./pages/CaseStudyAIAssistant";
 import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/projects/brand-perception" element={<CaseStudyBrandPerception />} />
           <Route path="/projects/sensory-preference" element={<CaseStudySensoryPreference />} />
           <Route path="/projects/digital-wallet" element={<CaseStudyDigitalWallet />} />
+          <Route path="/projects/ai-assistant" element={<CaseStudyAIAssistant />} />
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
