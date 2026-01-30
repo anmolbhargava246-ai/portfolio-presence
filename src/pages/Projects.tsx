@@ -77,6 +77,16 @@ const projects = [
     tags: ["Fintech UX", "Pre-Launch Risk", "Behavioural UX", "Usability Testing"],
     href: "/projects/digital-wallet",
   },
+  {
+    id: 8,
+    title: "AI Assistant Trust Study",
+    description:
+      "An independent behavioural study exploring mental models, trust calibration, and reliance patterns in AI-powered productivity tools.",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+    category: "Tech/AI",
+    tags: ["Generative Research", "Mental Models", "Trust & Safety", "Independent"],
+    href: "/projects/ai-assistant",
+  },
 ];
 
 const Projects = () => {
