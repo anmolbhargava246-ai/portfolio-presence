@@ -54,7 +54,7 @@ export function HeroSection() {
             {[
               { value: "4+", label: "Years as a Researcher" },
               { value: "10+", label: "Domains Explored" },
-              { value: "Global", label: "& Indian Users Researched" },
+              { value: "5+", label: "Countries Researched" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="font-display text-3xl md:text-4xl font-semibold text-foreground">
