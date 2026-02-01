@@ -22,7 +22,7 @@ const projects = [
     title: "Creative Education, Saudi Arabia",
     description:
       "A large scale mixed methods study to redesign curriculum across creative domains and position a new age education institution for long term relevance.",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=600&fit=crop",
     category: "Education",
     tags: ["Mixed Methods", "Strategy Research", "Curriculum Design", "Expert Interviews"],
     href: "/projects/creative-education",
