@@ -53,7 +53,7 @@ export function HeroSection() {
           <div className="flex flex-wrap justify-center gap-8 md:gap-12 pt-12 opacity-0 animate-fade-up stagger-4">
             {[
               { value: "4+", label: "Years as a Researcher" },
-              { value: "Multi", label: "Domain Experience" },
+              { value: "10+", label: "Domains Explored" },
               { value: "Global", label: "& Indian Users Researched" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
