@@ -5,30 +5,30 @@ import { Button } from "@/components/ui/button";
 const featuredProjects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Personal Loans FinTech",
     description:
-      "A modern shopping experience with real-time inventory and seamless checkout.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    tags: ["React", "Node.js", "Stripe"],
-    href: "/projects/ecommerce",
+      "A foundational and evaluative study exploring trust, decision making, and UX friction in a large Indian FinTech product.",
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
+    tags: ["Foundational Research", "Usability Testing", "JTBD"],
+    href: "/projects/personal-loans",
   },
   {
     id: 2,
-    title: "Analytics Dashboard",
+    title: "Creative Education, Saudi Arabia",
     description:
-      "Data visualization tool for tracking business metrics and insights.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    tags: ["TypeScript", "D3.js", "PostgreSQL"],
-    href: "/projects/analytics",
+      "A large scale mixed methods study to redesign curriculum across creative domains and position a new age education institution.",
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=600&fit=crop",
+    tags: ["Mixed Methods", "Strategy Research", "Curriculum Design"],
+    href: "/projects/creative-education",
   },
   {
     id: 3,
-    title: "Mobile Banking App",
+    title: "AI Assistant Trust Study",
     description:
-      "Secure and intuitive banking application with biometric authentication.",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
-    tags: ["React Native", "Firebase", "Plaid"],
-    href: "/projects/banking",
+      "An independent behavioural study exploring mental models, trust calibration, and reliance patterns in AI-powered productivity tools.",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+    tags: ["Generative Research", "Mental Models", "Trust & Safety"],
+    href: "/projects/ai-assistant",
   },
 ];
 
