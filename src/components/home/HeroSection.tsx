@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
@@ -20,41 +20,41 @@ export function HeroSection() {
         <div className="max-w-3xl mx-auto text-center space-y-8">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full text-sm text-muted-foreground opacity-0 animate-fade-up">
-            <Sparkles className="h-4 w-4 text-accent" />
-            <span>Available for new projects</span>
+            <Calendar className="h-4 w-4 text-accent" />
+            <span>Open to freelance & full-time roles</span>
           </div>
 
           {/* Main heading */}
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-foreground leading-tight opacity-0 animate-fade-up stagger-1">
-            UX Researcher at the
-            <span className="block text-gradient">Intersection of Psychology & Product</span>
+            I help product teams understand
+            <span className="block text-gradient">why users trust, hesitate, and decide</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto leading-relaxed opacity-0 animate-fade-up stagger-2">
-            I blend behavioral science with user research to uncover deep insights 
-            that shape products people genuinely love to use.
+            UX Researcher specialising in behavioural science, trust dynamics, and decision-making. 
+            I turn ambiguous user behaviour into clear product direction.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 opacity-0 animate-fade-up stagger-3">
             <Button variant="hero" size="lg" asChild>
-              <Link to="/projects">
-                View Projects
+              <Link to="/contact">
+                Book a Research Call
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
             <Button variant="hero-outline" size="lg" asChild>
-              <Link to="/contact">Get in Touch</Link>
+              <Link to="/projects">View Case Studies</Link>
             </Button>
           </div>
 
-          {/* Stats */}
+          {/* Credibility signals */}
           <div className="flex flex-wrap justify-center gap-8 md:gap-12 pt-12 opacity-0 animate-fade-up stagger-4">
             {[
-              { value: "4+", label: "Years as a Researcher" },
-              { value: "10+", label: "Domains Explored" },
-              { value: "5+", label: "Countries Researched" },
+              { value: "100+", label: "User Interviews Conducted" },
+              { value: "20+", label: "Usability Studies Led" },
+              { value: "Direct", label: "Roadmap Influence" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="font-display text-3xl md:text-4xl font-semibold text-foreground">

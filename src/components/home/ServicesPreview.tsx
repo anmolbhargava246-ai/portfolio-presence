@@ -1,25 +1,25 @@
 import { Link } from "react-router-dom";
-import { Brain, Users, Lightbulb, ArrowRight } from "lucide-react";
+import { Shield, Brain, Gauge, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const services = [
   {
+    icon: Shield,
+    title: "Trust & Safety Research for AI Products",
+    description:
+      "Understand how users calibrate trust, detect manipulation risks, and build appropriate reliance on AI-powered features.",
+  },
+  {
     icon: Brain,
-    title: "Behavioral Research",
+    title: "Foundational Consumer Decision Research",
     description:
-      "Applying psychology principles to understand why users behave the way they do.",
+      "Uncover the cognitive drivers, biases, and mental models that shape how your users evaluate, choose, and commit.",
   },
   {
-    icon: Users,
-    title: "User Research",
+    icon: Gauge,
+    title: "Usability Testing & UX Optimisation Sprints",
     description:
-      "Conducting interviews, usability tests, and studies to uncover actionable insights.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Strategic Insights",
-    description:
-      "Translating research findings into product decisions that drive real impact.",
+      "Rapid evaluative research to identify friction, validate flows, and deliver prioritised recommendations for your product team.",
   },
 ];
 
@@ -30,13 +30,13 @@ export function ServicesPreview() {
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
           <span className="text-accent font-medium text-sm uppercase tracking-wider">
-            What I Do
+            How I Work
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mt-4">
-            How I Help
+            Research That Moves Product Forward
           </h2>
           <p className="text-muted-foreground mt-4 text-lg">
-            Bridging the gap between human behavior and product decisions.
+            Strategic research for product teams who need clarity, not just data.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export function ServicesPreview() {
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" asChild>
             <Link to="/services">
-              View all services
+              See full service details
               <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
