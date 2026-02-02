@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 
 const skills = [
   { category: "Research Methods", items: ["In-depth Interviews", "Usability Testing", "Contextual Inquiry", "Diary Studies", "Surveys"] },
-  { category: "Behavioral Science", items: ["Cognitive Biases", "Mental Models", "Decision Heuristics", "Behavioral Economics", "Trust & Friction"] },
+  { category: "Behavioural Science", items: ["Cognitive Biases", "Mental Models", "Decision Heuristics", "Behavioural Economics", "Trust & Friction"] },
   { category: "Analysis", items: ["Thematic Analysis", "Affinity Mapping", "Journey Mapping", "Insight Synthesis", "Stakeholder Workshops"] },
-  { category: "Tools", items: ["Figma", "Dovetail", "Miro", "Notion", "UserTesting"] },
+  { category: "Tools", items: ["Dovetail", "Miro", "Notion", "UserTesting", "Figma"] },
 ];
 
 const About = () => {
@@ -133,7 +133,7 @@ const About = () => {
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-12">
             <span className="text-accent font-medium text-sm uppercase tracking-wider">
-              Philosophy
+              Approach
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mt-4">
               How I Approach Research
@@ -148,9 +148,9 @@ const About = () => {
                   "Research should inform direction, not just validate decisions. I embed early and challenge assumptions.",
               },
               {
-                title: "Behavioral Lens",
+                title: "Behavioural Lens",
                 description:
-                  "Understanding why people do what they do—through biases, mental models, and the moments where friction lives.",
+                  "Understanding why people do what they do, through biases, mental models, and the moments where friction lives.",
               },
               {
                 title: "Clarity Over Noise",
