@@ -7,27 +7,27 @@ const featuredProjects = [
     id: 1,
     title: "Personal Loans FinTech",
     description:
-      "A foundational and evaluative study exploring trust, decision making, and UX friction in a large Indian FinTech product.",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
-    tags: ["Foundational Research", "Usability Testing", "JTBD"],
+      "Identified trust barriers and friction points in loan applications, leading to onboarding redesign and reprioritisation of the product roadmap.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    tags: ["Trust Research", "Usability Testing", "Decision Mapping"],
     href: "/projects/personal-loans",
   },
   {
     id: 2,
     title: "Creative Education, Saudi Arabia",
     description:
-      "A large scale mixed methods study to redesign curriculum across creative domains and position a new age education institution.",
-    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=600&fit=crop",
-    tags: ["Mixed Methods", "Strategy Research", "Curriculum Design"],
+      "Uncovered unmet learner needs across creative domains, directly shaping curriculum strategy and institutional positioning for market entry.",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+    tags: ["Mixed Methods", "Strategy Research", "Stakeholder Alignment"],
     href: "/projects/creative-education",
   },
   {
     id: 3,
     title: "AI Assistant Trust Study",
     description:
-      "An independent behavioural study exploring mental models, trust calibration, and reliance patterns in AI-powered productivity tools.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
-    tags: ["Generative Research", "Mental Models", "Trust & Safety"],
+      "Mapped mental models and trust calibration patterns, informing design principles for appropriate reliance on AI-powered tools.",
+    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop",
+    tags: ["Behavioural Research", "Mental Models", "Trust & Safety"],
     href: "/projects/ai-assistant",
   },
 ];
@@ -40,15 +40,15 @@ export function FeaturedProjects() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16">
           <div className="space-y-4">
             <span className="text-accent font-medium text-sm uppercase tracking-wider">
-              Selected Work
+              Research That Drove Decisions
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-              Featured Projects
+              Featured Case Studies
             </h2>
           </div>
           <Button variant="ghost" asChild className="self-start md:self-auto">
             <Link to="/projects">
-              View all projects
+              View all case studies
               <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
