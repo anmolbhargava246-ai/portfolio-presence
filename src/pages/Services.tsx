@@ -23,7 +23,7 @@ const expertise = [
   },
   {
     icon: Code2,
-    title: "Behavioral Analysis",
+    title: "Behavioural Analysis",
     description:
       "Applying psychological frameworks to decode user decision-making and identify friction points in the experience.",
   },
