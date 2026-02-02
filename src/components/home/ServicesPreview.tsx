@@ -1,22 +1,22 @@
 import { Link } from "react-router-dom";
-import { Shield, Brain, Gauge, ArrowRight } from "lucide-react";
+import { ShieldCheck, BrainCircuit, SlidersHorizontal, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const services = [
   {
-    icon: Shield,
+    icon: ShieldCheck,
     title: "Trust & Safety Research for AI Products",
     description:
       "Understand how users calibrate trust, detect manipulation risks, and build appropriate reliance on AI-powered features.",
   },
   {
-    icon: Brain,
+    icon: BrainCircuit,
     title: "Foundational Consumer Decision Research",
     description:
       "Uncover the cognitive drivers, biases, and mental models that shape how your users evaluate, choose, and commit.",
   },
   {
-    icon: Gauge,
+    icon: SlidersHorizontal,
     title: "Usability Testing & UX Optimisation Sprints",
     description:
       "Rapid evaluative research to identify friction, validate flows, and deliver prioritised recommendations for your product team.",
