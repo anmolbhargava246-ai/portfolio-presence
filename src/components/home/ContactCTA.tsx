@@ -8,8 +8,8 @@ export function ContactCTA() {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-            Need research that
-            <span className="block text-gradient">actually informs decisions?</span>
+            Need research that{" "}
+            <span className="text-gradient">actually informs decisions?</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto">
             I work with product teams, design leaders, and brand strategists 
