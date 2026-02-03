@@ -77,11 +77,11 @@ const CaseStudyPersonalLoans = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              I was the primary researcher on this project, responsible for shaping the research strategy, conducting foundational interviews, running usability evaluations, and translating insights into product and marketing direction.
+              I was the primary researcher responsible for leading all interviews, usability sessions, and analysis. I owned the execution end-to-end—from participant recruitment through synthesis.
             </p>
 
             <p>
-              I worked closely with product and marketing teams to ensure insights informed both UX changes and adoption strategy.
+              For research strategy and final reporting, I worked as part of a small team, contributing actively to how we framed insights and aligned recommendations with product and marketing stakeholders.
             </p>
           </div>
         </div>
