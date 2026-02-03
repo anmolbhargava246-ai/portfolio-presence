@@ -47,16 +47,16 @@ const CaseStudyCreativeEducation = () => {
             
             <div className="space-y-6 text-lg text-foreground leading-relaxed">
               <p>
-                The client wanted to position itself as a pioneer in creative education in Saudi Arabia.
+                The client aimed to become a leading institution for creative education in Saudi Arabia—but lacked clarity on what skills truly mattered to learners, employers, and the evolving job market.
               </p>
               
               <p>
-                While there was ambition to align with global standards, there was limited clarity on what skills actually mattered to students, professionals, and the future job market, especially within the local cultural context.
+                The stakes were high: misaligned curriculum would mean poor employability outcomes, weak institutional credibility, and failure to capture a rapidly growing market shaped by Vision 2030 priorities.
               </p>
               
               <p className="text-muted-foreground italic">
-                The risk wasn't curriculum quality alone.<br />
-                It was relevance, credibility, and long term positioning.
+                This wasn't a content problem.<br />
+                It was a relevance and legitimacy problem.
               </p>
             </div>
           </div>
@@ -71,15 +71,15 @@ const CaseStudyCreativeEducation = () => {
             
             <div className="space-y-6 text-lg text-foreground leading-relaxed">
               <p>
-                I worked as a lead researcher as part of a three member team.
+                I led the research strategy and execution across a three-member team—owning discussion guide design, global expert interviews, and synthesis. I ensured cultural validity by coordinating closely with Arabic moderators for local interviews.
               </p>
               
               <p>
-                I was responsible for designing discussion guides and surveys, moderating global expert interviews, coordinating with Arabic moderators, and ensuring insights translated into a clear, actionable curriculum blueprint.
+                Beyond execution, I played a key role in translating insights into a curriculum blueprint that leadership could act on, and in managing stakeholder alignment across complex client hierarchies.
               </p>
               
-              <p>
-                I also played a key role in stakeholder management across complex client hierarchies.
+              <p className="text-muted-foreground italic">
+                I helped leadership align on what creative education needed to become in Saudi Arabia.
               </p>
             </div>
           </div>
@@ -97,10 +97,10 @@ const CaseStudyCreativeEducation = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-3">Methods</h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>Desk research and trend analysis</li>
-                    <li>In depth interviews</li>
-                    <li>Expert interviews</li>
-                    <li>Quantitative surveys</li>
+                    <li>Desk research and global benchmarking</li>
+                    <li>In-depth interviews (students & professionals)</li>
+                    <li>Expert interviews (global subject matter experts)</li>
+                    <li>Quantitative surveys (500+ responses)</li>
                     <li>Thematic analysis and prioritisation</li>
                   </ul>
                 </div>
@@ -108,10 +108,10 @@ const CaseStudyCreativeEducation = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-3">Scale</h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>Global subject matter experts</li>
-                    <li>Students and professionals</li>
-                    <li>500 plus survey responses</li>
-                    <li>Six creative domains</li>
+                    <li>Six creative domains covered</li>
+                    <li>Global and Saudi-based participants</li>
+                    <li>Early career to mid-career professionals</li>
+                    <li className="text-foreground font-medium">Balanced global benchmarks with local cultural and labour market realities</li>
                   </ul>
                 </div>
               </div>
@@ -126,18 +126,27 @@ const CaseStudyCreativeEducation = () => {
               Approach
             </h2>
             
-            <div className="space-y-6 text-lg text-foreground leading-relaxed">
-              <p>
-                The study was designed to balance global best practices with Saudi specific cultural and educational realities.
-              </p>
-              
-              <p>
-                I approached this as a systems problem, looking at education not just as curriculum, but as an ecosystem connecting skills, employability, identity, and long term career growth.
-              </p>
-              
-              <p>
-                Qualitative insights were used to uncover depth and nuance, while quantitative validation helped prioritise what truly mattered at scale.
-              </p>
+            <div className="space-y-4 text-muted-foreground">
+              <div className="flex gap-4">
+                <span className="text-foreground font-medium whitespace-nowrap">Phase 1</span>
+                <span>Desk research and global benchmark analysis across creative education institutions</span>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-foreground font-medium whitespace-nowrap">Phase 2</span>
+                <span>Expert interviews to define future skill directions and industry expectations</span>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-foreground font-medium whitespace-nowrap">Phase 3</span>
+                <span>Student and professional interviews to capture local aspirations and barriers</span>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-foreground font-medium whitespace-nowrap">Phase 4</span>
+                <span>Quantitative survey validation (500+ responses) to prioritise at scale</span>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-foreground font-medium whitespace-nowrap">Phase 5</span>
+                <span>Synthesis and prioritisation into a module-level curriculum roadmap</span>
+              </div>
             </div>
           </div>
         </section>
@@ -154,15 +163,18 @@ const CaseStudyCreativeEducation = () => {
                 <h3 className="font-semibold text-foreground mb-2">
                   There was a clear mismatch between traditional education and job market expectations.
                 </h3>
-                <p className="text-muted-foreground">
-                  Students wanted employable, practical skills, while institutions were still optimised for theory heavy learning.
+                <p className="text-muted-foreground mb-2">
+                  Students wanted employable, practical skills, while institutions were still optimised for theory-heavy learning.
+                </p>
+                <p className="text-accent text-sm">
+                  → Curriculum shifted toward applied, portfolio-based learning and industry-embedded projects.
                 </p>
               </div>
               
               {/* Pull Quote */}
               <blockquote className="border-l-4 border-primary pl-6 py-4 my-12">
                 <p className="text-2xl font-medium text-foreground italic leading-relaxed">
-                  "Global credibility mattered, but local relevance was non negotiable."
+                  "Global credibility mattered, but local relevance was non-negotiable."
                 </p>
               </blockquote>
               
@@ -170,26 +182,35 @@ const CaseStudyCreativeEducation = () => {
                 <h3 className="font-semibold text-foreground mb-2">
                   Different cohorts needed different value propositions.
                 </h3>
-                <p className="text-muted-foreground">
-                  Early career learners prioritised skill building, mid career professionals sought leadership and adaptability, and experts emphasised lifelong learning.
+                <p className="text-muted-foreground mb-2">
+                  Early career learners prioritised skill building, mid-career professionals sought leadership and adaptability.
+                </p>
+                <p className="text-accent text-sm">
+                  → Separate learning pathways were designed for early-career vs mid-career professionals.
                 </p>
               </div>
               
               <div>
                 <h3 className="font-semibold text-foreground mb-2">
-                  Cross disciplinary learning was highly valued.
+                  Cross-disciplinary learning was highly valued.
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground mb-2">
                   Blending art, technology, and leadership emerged as a strong differentiator.
                 </p>
+                <p className="text-accent text-sm">
+                  → Modules blended creative craft with technology, entrepreneurship, and leadership skills.
+                </p>
               </div>
               
               <div>
                 <h3 className="font-semibold text-foreground mb-2">
-                  Global credibility mattered, but local relevance was non negotiable.
+                  Global credibility mattered, but local relevance was non-negotiable.
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground mb-2">
                   Curriculum needed to reflect Saudi cultural context while meeting international standards.
+                </p>
+                <p className="text-accent text-sm">
+                  → Curriculum balanced global benchmarks with Saudi-specific cultural and labour market realities.
                 </p>
               </div>
             </div>
@@ -204,20 +225,27 @@ const CaseStudyCreativeEducation = () => {
             </h2>
             
             <div className="space-y-6 text-lg text-foreground leading-relaxed">
-              <p>
-                The research resulted in a detailed curriculum blueprint with module level recommendations across six creative domains.
+              <p className="font-medium">
+                The research delivered three core outputs:
               </p>
               
-              <p>
-                Insights informed persona based learning pathways for students, early career, and mid career professionals.
-              </p>
-              
-              <p>
-                The final roadmap helped position the client as a forward looking leader in creative education and is now impacting thousands of students annually as the institution scales.
-              </p>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex gap-3">
+                  <span className="text-accent">→</span>
+                  <span>A curriculum blueprint across six creative domains with module-level recommendations</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-accent">→</span>
+                  <span>Persona-based learning pathways for students, early-career, and mid-career professionals</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-accent">→</span>
+                  <span>A prioritised roadmap aligning local relevance with global credibility</span>
+                </li>
+              </ul>
               
               <p className="text-muted-foreground italic">
-                Client feedback highlighted the role of research in strengthening both local and global credibility.
+                Stakeholders used the blueprint to guide institutional positioning and programme rollout.
               </p>
             </div>
           </div>
@@ -232,11 +260,11 @@ const CaseStudyCreativeEducation = () => {
             
             <div className="space-y-6 text-lg text-foreground leading-relaxed">
               <p>
-                This project reinforced the importance of designing education as a long term system rather than a static curriculum.
+                This project reinforced the importance of designing education as a long-term system rather than a static curriculum—one that evolves with industry, culture, and learner expectations.
               </p>
               
               <p>
-                With more experience now, I would push for parallel qualitative and quantitative work earlier to speed up timelines and reduce dependency bottlenecks across stakeholders.
+                If I did this again, I'd bring employer and industry signal data earlier to continuously track skill relevance over time, and push for tighter integration between curriculum design and labour market analytics.
               </p>
             </div>
           </div>
