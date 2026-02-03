@@ -132,18 +132,29 @@ const CaseStudyPersonalLoans = () => {
             Approach
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>
-              The study combined behavioural exploration with hands-on usability evaluation.
+          <div className="space-y-6">
+            <p className="text-muted-foreground leading-relaxed">
+              The study combined behavioural exploration with hands-on usability evaluation to uncover both why people hesitate and where the product unintentionally increased that hesitation.
             </p>
 
-            <p>
-              I focused on understanding not just where users dropped off, but what beliefs, fears, and mental models shaped their willingness to borrow digitally.
-            </p>
-
-            <p>
-              The goal was to uncover both why people hesitate and where the product unintentionally increased that hesitation.
-            </p>
+            <div className="space-y-4 mt-8">
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Week 1–2</span>
+                <p className="text-muted-foreground">Foundational interviews to understand borrowing beliefs, fears, and trust breakdowns</p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Week 3</span>
+                <p className="text-muted-foreground">Journey mapping + Jobs to Be Done analysis to identify decision moments</p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Week 4</span>
+                <p className="text-muted-foreground">Usability evaluation of the digital loan and KYC flow</p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Week 5</span>
+                <p className="text-muted-foreground">Stakeholder workshop to align product + marketing teams on trust-first improvements</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -157,20 +168,26 @@ const CaseStudyPersonalLoans = () => {
 
           <div className="space-y-10">
             <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
+              <h3 className="text-lg font-medium text-foreground mb-2">
                 Users didn't distrust loans. They distrusted ambiguity.
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground mb-3">
                 Hidden charges, unclear repayment terms, and vague language triggered hesitation more than interest rates.
+              </p>
+              <p className="text-accent text-sm font-medium">
+                → We rewrote repayment language, surfaced total cost earlier, and removed vague fee terminology.
               </p>
             </div>
 
             <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
+              <h3 className="text-lg font-medium text-foreground mb-2">
                 Speed mattered, but only after trust was established.
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground mb-3">
                 Fast approval was attractive, but not at the cost of clarity or perceived risk.
+              </p>
+              <p className="text-accent text-sm font-medium">
+                → We added reassurance cues, clearer lender context, and reduced cognitive overload during KYC.
               </p>
             </div>
 
@@ -182,14 +199,22 @@ const CaseStudyPersonalLoans = () => {
             </blockquote>
 
             <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
+              <h3 className="text-lg font-medium text-foreground mb-2">
                 Borrowing was emotional, not transactional.
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground mb-3">
                 First-time borrowers relied heavily on family and peer validation before committing.
+              </p>
+              <p className="text-accent text-sm font-medium">
+                → We introduced social proof elements and simplified language to reduce the feeling of being "locked in."
               </p>
             </div>
           </div>
+
+          {/* Strategic Shift */}
+          <p className="text-foreground font-medium mt-12 text-lg border-l-4 border-accent pl-6">
+            Insights shifted the team from speed-first messaging to clarity-first trust-building.
+          </p>
         </div>
       </section>
 
@@ -201,16 +226,22 @@ const CaseStudyPersonalLoans = () => {
           </h2>
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>
-              Research informed over ten UX improvements across the loan journey and shaped a clearer roadmap for future updates.
+            <p className="text-foreground font-medium">
+              Research informed concrete product changes across the loan journey:
             </p>
 
-            <p>
-              Insights were also used to refine marketing messaging and customer segmentation strategies.
-            </p>
+            <ul className="space-y-3 list-disc list-inside">
+              <li>Simplified jargon and repayment terminology across key screens</li>
+              <li>Surfaced total cost and terms earlier to reduce ambiguity</li>
+              <li>Added reassurance cues and social proof during high-anxiety steps like KYC</li>
+            </ul>
 
             <p>
-              Post changes, the client reported improved user retention and a significant increase in digital loan disbursals over the following year.
+              Stakeholders reported stronger completion rates and improved digital disbursals over the following year.
+            </p>
+
+            <p className="text-sm text-muted-foreground/80 italic border-l-2 border-border pl-4">
+              This work contributed to the broader foundation supporting the client's publicly reported milestone of 1 lakh+ personal loan disbursals worth ₹1,000 crore (Oct 2024), reflecting overall platform performance rather than direct experimental attribution.
             </p>
           </div>
         </div>
@@ -225,11 +256,15 @@ const CaseStudyPersonalLoans = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              This project reinforced that trust is not just a UX problem, but a product, brand, and organisational one.
+              This project reinforced that trust is not just a UX problem—it's a product, brand, and organisational one. Behavioural trust issues require cross-functional solutions.
             </p>
 
             <p>
               With more experience now, I would push for earlier triangulation with behavioural data and stronger longitudinal follow-ups to understand how trust evolves over time.
+            </p>
+
+            <p className="text-foreground font-medium">
+              If I did this again, I'd push earlier alignment with risk, compliance, and behavioural analytics to track trust over time.
             </p>
           </div>
         </div>
