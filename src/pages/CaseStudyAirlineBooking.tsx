@@ -53,16 +53,16 @@ const CaseStudyAirlineBooking = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p className="text-lg">
-              In airline booking, small moments of friction don't just slow users down. They create anxiety, reduce trust, and increase abandonment.
+              Airline booking is a high-pressure, high-revenue moment. Users are often comparing options, managing time constraints, and making irreversible financial decisions under stress.
             </p>
 
             <p>
-              The platform wasn't lacking features. The challenge was understanding which parts of the journey were quietly signalling uncertainty, and where users were most likely to drop off or disengage.
+              The platform wasn't lacking features. But small moments of friction—unclear pricing, ambiguous policies, inconsistent progress cues—were quietly eroding trust. In this environment, hesitation doesn't just slow users down. It triggers abandonment.
             </p>
 
             <p className="text-foreground font-medium">
-              The real question wasn't "what's broken?"<br />
-              It was "what matters most under pressure?"
+              This wasn't a usability issue.<br />
+              It was a confidence collapse at the point of purchase.
             </p>
           </div>
         </div>
@@ -77,11 +77,11 @@ const CaseStudyAirlineBooking = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              I contributed as a UX researcher on an end-to-end evaluative study, focusing on high-impact behavioural friction across booking, add-ons, checkout, and loyalty engagement.
+              I led the behavioural evaluation across booking, pricing transparency, checkout, and loyalty engagement. My focus was identifying where user confidence broke down and why—then translating those findings into a prioritised roadmap for experience improvements.
             </p>
 
             <p>
-              The work prioritised what was worth solving first, based on where user confidence and momentum broke down.
+              I mapped the moments where trust failures created drop-off risk, and worked with the team to prioritise fixes based on conversion impact and implementation effort.
             </p>
           </div>
         </div>
@@ -125,6 +125,9 @@ const CaseStudyAirlineBooking = () => {
                 Sample
               </h3>
               <p className="text-muted-foreground">10 frequent travellers · Mobile + desktop mix</p>
+              <p className="text-muted-foreground mt-2 text-sm">
+                Focused on conversion-critical journeys where hesitation becomes abandonment.
+              </p>
             </div>
           </div>
         </div>
@@ -137,24 +140,42 @@ const CaseStudyAirlineBooking = () => {
             Approach
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>
+          <div className="space-y-6">
+            <p className="text-muted-foreground leading-relaxed">
               Rather than running a broad usability sweep, we focused on decision-critical moments where users hesitate, abandon, or lose confidence.
             </p>
 
-            <p>Priority journeys included:</p>
+            <div className="space-y-4 mt-8">
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Phase 1</span>
+                <p className="text-muted-foreground">Moderated usability testing across booking and checkout flows</p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Phase 2</span>
+                <p className="text-muted-foreground">Friction mapping of hesitation and drop-off moments</p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Phase 3</span>
+                <p className="text-muted-foreground">Behavioural synthesis by traveller mindset and urgency level</p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Phase 4</span>
+                <p className="text-muted-foreground">Prioritisation of fixes based on trust impact and implementation effort</p>
+              </div>
+            </div>
 
-            <ul className="space-y-2 pl-4">
-              <li>Search initiation</li>
-              <li>Pricing and add-on transparency</li>
-              <li>Checkout momentum</li>
-              <li>Post-booking control</li>
-              <li>Loyalty value perception</li>
-            </ul>
-
-            <p>
-              This kept the research centred on conversion, retention, and trust.
-            </p>
+            <div className="mt-8 pt-6 border-t border-border">
+              <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
+                Priority Journeys
+              </h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>Search initiation and flight selection</li>
+                <li>Pricing transparency and add-on clarity</li>
+                <li>Checkout momentum and payment confidence</li>
+                <li>Post-booking control and modification</li>
+                <li>Loyalty value perception and engagement</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -168,20 +189,26 @@ const CaseStudyAirlineBooking = () => {
 
           <div className="space-y-10">
             <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
-                Booking friction was less interaction-level and more confidence-level.
+              <h3 className="text-lg font-medium text-foreground mb-2">
+                Users weren't stuck—they were unsure.
               </h3>
-              <p className="text-muted-foreground">
-                Users weren't stuck, they were unsure.
+              <p className="text-muted-foreground mb-3">
+                Booking friction was less interaction-level and more confidence-level. Ambiguity created hesitation, not complexity.
+              </p>
+              <p className="text-accent text-sm font-medium">
+                → Added clearer progress cues and reassurance at key decision points.
               </p>
             </div>
 
             <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
-                Pricing wasn't a detail problem. It was a trust problem.
+              <h3 className="text-lg font-medium text-foreground mb-2">
+                Pricing wasn't a detail problem—it was a trust problem.
               </h3>
-              <p className="text-muted-foreground">
-                Hidden or inconsistent breakdowns triggered hesitation late in the journey.
+              <p className="text-muted-foreground mb-3">
+                Hidden or inconsistent breakdowns triggered hesitation late in the journey, when commitment was highest.
+              </p>
+              <p className="text-accent text-sm font-medium">
+                → Surfaced total cost earlier and reduced hidden fee ambiguity.
               </p>
             </div>
 
@@ -193,20 +220,38 @@ const CaseStudyAirlineBooking = () => {
             </blockquote>
 
             <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
-                Loyalty underperformed not because of rewards, but because it stayed invisible.
+              <h3 className="text-lg font-medium text-foreground mb-2">
+                Time pressure turned anticipation into anxiety.
               </h3>
-              <p className="text-muted-foreground">
-                It wasn't surfaced at the moments users could care.
+              <p className="text-muted-foreground mb-3">
+                Session timers and countdown elements increased urgency but also amplified stress and second-guessing.
+              </p>
+              <p className="text-accent text-sm font-medium">
+                → Improved countdown framing and removed unnecessary urgency signals.
               </p>
             </div>
 
             <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
-                The experience felt like disconnected tools rather than one coherent journey.
+              <h3 className="text-lg font-medium text-foreground mb-2">
+                Loyalty stayed invisible.
               </h3>
-              <p className="text-muted-foreground">
-                This weakened brand reliability and overall trust.
+              <p className="text-muted-foreground mb-3">
+                Rewards and benefits weren't surfaced at the moments users were actively comparing value.
+              </p>
+              <p className="text-accent text-sm font-medium">
+                → Made loyalty value legible at key comparison and checkout moments.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-medium text-foreground mb-2">
+                The journey felt like disconnected tools.
+              </h3>
+              <p className="text-muted-foreground mb-3">
+                Booking, manage, and check-in flows lacked continuity—weakening brand reliability and overall trust.
+              </p>
+              <p className="text-accent text-sm font-medium">
+                → Created continuity across booking, post-booking, and check-in journeys.
               </p>
             </div>
           </div>
@@ -221,16 +266,20 @@ const CaseStudyAirlineBooking = () => {
           </h2>
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>
-              The work resulted in a prioritised set of experience improvements focused on:
+            <p className="text-foreground font-medium">
+              The work resulted in a prioritised set of experience interventions:
             </p>
 
-            <ul className="space-y-3 pl-4">
-              <li>Reducing anxiety and cognitive load in checkout</li>
-              <li>Making pricing and policies legible upfront</li>
-              <li>Bringing loyalty value into key decision moments</li>
-              <li>Creating continuity across booking, manage, and check-in flows</li>
+            <ul className="space-y-3 list-disc list-inside">
+              <li>Introduced reassurance and progress cues to reduce checkout anxiety</li>
+              <li>Made pricing, baggage rules, and policies legible upfront</li>
+              <li>Integrated loyalty value into key decision and comparison moments</li>
+              <li>Improved continuity across booking, post-booking, and check-in journeys</li>
             </ul>
+
+            <p className="mt-6">
+              Recommendations were prioritised by trust impact and implementation effort, giving the team a clear roadmap for phased improvements.
+            </p>
           </div>
         </div>
       </section>
@@ -244,11 +293,11 @@ const CaseStudyAirlineBooking = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              The most valuable research here wasn't finding every issue.
+              The most valuable research here wasn't finding every issue. It was identifying what users interpret as risk—and focusing on the moments that shape trust and follow-through.
             </p>
 
-            <p>
-              It was identifying what users interpret as risk, and focusing on the moments that shape trust and follow-through.
+            <p className="text-foreground font-medium">
+              If I did this again, I'd pair behavioural usability findings with funnel analytics earlier to quantify trust drop-off moments and track improvement over time.
             </p>
           </div>
         </div>
