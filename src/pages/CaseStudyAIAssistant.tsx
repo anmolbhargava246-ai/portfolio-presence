@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Gauge, Brain, ShieldAlert, HelpCircle } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 
 const CaseStudyAIAssistant = () => {
@@ -20,18 +20,11 @@ const CaseStudyAIAssistant = () => {
       <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-3xl">
           <div className="flex flex-wrap gap-2 mb-8">
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Tech/AI
-            </span>
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Trust & Safety
-            </span>
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Mental Models
-            </span>
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Generative Research
-            </span>
+            {["Tech/AI", "Trust & Safety", "Mental Models", "Generative Research"].map(tag => (
+              <span key={tag} className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
+                {tag}
+              </span>
+            ))}
           </div>
 
           <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
@@ -39,7 +32,7 @@ const CaseStudyAIAssistant = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mt-6 leading-relaxed">
-            An independent behavioural study exploring mental models, trust calibration, and reliance patterns in AI-powered productivity tools.
+            Independent behavioural study exploring mental models, trust calibration, and reliance patterns in AI-powered productivity tools.
           </p>
         </div>
       </section>
@@ -53,21 +46,11 @@ const CaseStudyAIAssistant = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p className="text-lg">
-              AI assistants are quickly becoming embedded in everyday work.
-            </p>
-
-            <p>
-              But trust in these systems is often miscalibrated. People either over-rely on confident outputs or under-use tools they don't fully understand.
-            </p>
-
-            <p>
-              The challenge isn't adoption alone.<br />
-              It's understanding the behavioural cues that shape when users delegate, verify, or disengage.
+              Trust in AI is often miscalibrated. People either over-rely on confident outputs or under-use tools they don't understand.
             </p>
 
             <p className="text-foreground font-medium">
-              The real question was:<br />
-              What makes an AI assistant feel trustworthy in the moment?
+              The real question: What makes an AI assistant feel trustworthy in the moment?
             </p>
           </div>
         </div>
@@ -80,14 +63,48 @@ const CaseStudyAIAssistant = () => {
             My Role
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>
-              I led this study independently end-to-end, from framing the research questions to designing tasks, moderating sessions, and synthesising behavioural patterns.
-            </p>
+          <p className="text-muted-foreground leading-relaxed">
+            Led end-to-end: framing research questions, designing tasks, moderating sessions, and synthesising behavioural patterns. Focused on how trust forms and breaks during real knowledge work, not just on usability.
+          </p>
+        </div>
+      </section>
 
-            <p>
-              The focus was not just on usability, but on how trust forms and breaks during real knowledge work.
-            </p>
+      {/* Approach — Visual: Stakes Spectrum */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-4">
+            Approach
+          </h2>
+          <p className="text-muted-foreground mb-8">
+            Tasks designed across a stakes spectrum to surface how trust shifts with consequence:
+          </p>
+
+          {/* Visual: Stakes Spectrum */}
+          <div className="bg-card border border-border rounded-xl p-6">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-xs text-muted-foreground uppercase tracking-wider">Low stakes</span>
+              <span className="text-xs text-muted-foreground uppercase tracking-wider">High stakes</span>
+            </div>
+            <div className="relative h-2 bg-secondary rounded-full mb-6">
+              <div className="absolute inset-0 bg-gradient-to-r from-accent/20 via-accent/50 to-accent rounded-full" />
+              <div className="absolute left-[15%] -top-1 w-4 h-4 bg-accent/30 border-2 border-accent rounded-full" />
+              <div className="absolute left-[50%] -top-1 w-4 h-4 bg-accent/60 border-2 border-accent rounded-full" />
+              <div className="absolute left-[85%] -top-1 w-4 h-4 bg-accent border-2 border-accent rounded-full" />
+            </div>
+            <div className="grid grid-cols-3 gap-4 text-center">
+              <div>
+                <p className="text-foreground text-sm font-medium">Quick edits</p>
+                <p className="text-muted-foreground text-xs">Accepted without scrutiny</p>
+              </div>
+              <div>
+                <p className="text-foreground text-sm font-medium">Analysis tasks</p>
+                <p className="text-muted-foreground text-xs">Selective verification</p>
+              </div>
+              <div>
+                <p className="text-foreground text-sm font-medium">Sensitive decisions</p>
+                <p className="text-muted-foreground text-xs">External validation sought</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -102,36 +119,19 @@ const CaseStudyAIAssistant = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                  Lens
-                </h3>
+                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">Lens</h3>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>Trust calibration and over-reliance</li>
-                  <li>User mental models of AI assistants</li>
+                  <li>Mental models of AI assistants</li>
                   <li>Verification behaviour under pressure</li>
-                  <li>Decision-making in high-stakes moments</li>
                 </ul>
               </div>
-
               <div>
-                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                  Methods
-                </h3>
+                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">Methods</h3>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>Remote moderated sessions</li>
                   <li>Task-based trust observation</li>
                   <li>Comparative response testing</li>
-                  <li>Thematic synthesis of trust cues</li>
-                </ul>
-              </div>
-
-              <div className="md:col-span-2">
-                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                  Sample
-                </h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>Knowledge workers using AI tools regularly</li>
-                  <li>Mixed familiarity levels across roles</li>
                 </ul>
               </div>
             </div>
@@ -139,84 +139,42 @@ const CaseStudyAIAssistant = () => {
         </div>
       </section>
 
-      {/* Approach */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
-            Approach
-          </h2>
-
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>
-              Rather than studying AI trust as a vague attitude, I focused on specific behavioural moments:
-            </p>
-
-            <ul className="space-y-2 pl-4">
-              <li>When do users accept AI instantly?</li>
-              <li>When do they pause and verify?</li>
-              <li>When does confidence become a liability?</li>
-            </ul>
-
-            <p>
-              Tasks were designed across low, medium, and high-stakes scenarios to surface how trust shifts depending on consequence, ambiguity, and perceived risk.
-            </p>
-
-            <p>
-              This kept the research centred on decision-making, not feature feedback.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Key Insights */}
+      {/* Key Insights — Visual Cards */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-10">
             Key Insights
           </h2>
 
-          <div className="space-y-10">
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
-                Trust was rarely about accuracy alone.
-              </h3>
-              <p className="text-muted-foreground">
-                Users trusted AI most when outputs felt legible and aligned with their intent, even before verification.
-              </p>
-            </div>
+          <div className="grid sm:grid-cols-2 gap-4 mb-6">
+            {[
+              { icon: Gauge, finding: "Trust was about legibility, not accuracy.", detail: "Users trusted outputs that felt aligned with their intent, even before verifying." },
+              { icon: Brain, finding: "Confidence created over-reliance.", detail: "Fluent responses accepted without scrutiny in low-effort tasks." },
+              { icon: ShieldAlert, finding: "Trust collapsed in high-stakes contexts.", detail: "Money, conflict, sensitive judgement — users sought external validation." },
+              { icon: HelpCircle, finding: "Users wanted verification support, not better answers.", detail: "Missing sourcing and uncertainty cues made trust fragile." },
+            ].map((item) => (
+              <div key={item.finding} className="bg-card border border-border rounded-xl p-5">
+                <item.icon className="h-5 w-5 text-accent mb-3" />
+                <h3 className="text-foreground font-medium text-sm mb-2">{item.finding}</h3>
+                <p className="text-muted-foreground text-xs">{item.detail}</p>
+              </div>
+            ))}
+          </div>
 
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
-                Confidence often created over-reliance.
-              </h3>
-              <p className="text-muted-foreground">
-                Highly fluent responses were frequently accepted without scrutiny, especially in low-effort productivity tasks.
-              </p>
-            </div>
-
-            {/* Pull Quote */}
-            <blockquote className="border-l-4 border-accent pl-6 py-4 my-12">
-              <p className="text-xl md:text-2xl font-display text-foreground italic">
-                "Trust collapsed in high-stakes contexts. When decisions involved money, workplace conflict, or sensitive judgement, users became far more sceptical and sought external validation."
-              </p>
-            </blockquote>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
-                Mental models shaped behaviour more than experience.
-              </h3>
-              <p className="text-muted-foreground">
-                Some users treated AI as autocomplete, others as an advisor, and a few as an authority. These models predicted reliance patterns.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
-                Users wanted support for verification, not just better answers.
-              </h3>
-              <p className="text-muted-foreground">
-                The absence of sourcing, boundaries, or uncertainty cues made trust feel fragile.
-              </p>
+          {/* Mental Models Visual */}
+          <div className="bg-card border border-border rounded-xl p-6">
+            <h3 className="text-foreground font-medium text-sm mb-4">Mental models shaped behaviour more than experience</h3>
+            <div className="grid grid-cols-3 gap-3">
+              {[
+                { model: "Autocomplete", reliance: "High, unquestioning" },
+                { model: "Advisor", reliance: "Moderate, selective" },
+                { model: "Authority", reliance: "Deference + anxiety" },
+              ].map((m) => (
+                <div key={m.model} className="text-center bg-secondary/50 rounded-lg p-3">
+                  <p className="text-foreground text-sm font-medium">{m.model}</p>
+                  <p className="text-muted-foreground text-xs mt-1">{m.reliance}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -229,11 +187,9 @@ const CaseStudyAIAssistant = () => {
             Output
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>
-              The study resulted in a clear behavioural framework for calibrated trust in AI assistants, highlighting the cues that drive reliance, hesitation, and responsible use in productivity workflows.
-            </p>
-          </div>
+          <p className="text-muted-foreground leading-relaxed">
+            Produced a behavioural framework for calibrated trust in AI assistants — highlighting cues that drive reliance, hesitation, and responsible use in productivity workflows.
+          </p>
         </div>
       </section>
 
@@ -244,17 +200,9 @@ const CaseStudyAIAssistant = () => {
             Reflection
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>
-              This project reinforced that trust in AI is not a static perception.<br />
-              It is a moment-by-moment decision.
-            </p>
-
-            <p>
-              Designing trustworthy AI systems requires more than accuracy.<br />
-              It requires helping users understand when to rely, when to question, and when to stay in control.
-            </p>
-          </div>
+          <p className="text-muted-foreground leading-relaxed">
+            Trust in AI is not a static perception — it is a moment-by-moment decision. Designing trustworthy AI requires helping users understand when to rely, when to question, and when to stay in control.
+          </p>
         </div>
       </section>
 

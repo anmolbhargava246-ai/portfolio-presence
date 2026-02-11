@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Droplets, Eye, RotateCcw, Sparkles, ShieldCheck } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 
 const CaseStudySensoryPreference = () => {
@@ -19,7 +19,6 @@ const CaseStudySensoryPreference = () => {
       {/* Hero Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-3xl">
-          {/* Bold Category Visual */}
           <div className="mb-10">
             <span className="inline-block px-4 py-2 bg-accent/10 text-accent text-lg font-medium rounded-lg border border-accent/20">
               Sensory Research · Brand Equity · Habit Formation
@@ -27,15 +26,11 @@ const CaseStudySensoryPreference = () => {
           </div>
 
           <div className="flex flex-wrap gap-2 mb-8">
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Dairy Category
-            </span>
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Default Preference
-            </span>
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Saudi Arabia
-            </span>
+            {["Dairy Category", "Default Preference", "Saudi Arabia"].map(tag => (
+              <span key={tag} className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
+                {tag}
+              </span>
+            ))}
           </div>
 
           <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
@@ -43,7 +38,7 @@ const CaseStudySensoryPreference = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mt-6 leading-relaxed">
-            This research clarified why consumers return to certain laban products without deliberation—and what sensory and emotional cues must be protected to maintain habitual repurchase.
+            Clarified why consumers return to certain laban products without deliberation — and what sensory and emotional cues must be protected for habitual repurchase.
           </p>
         </div>
       </section>
@@ -57,20 +52,11 @@ const CaseStudySensoryPreference = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p className="text-lg">
-              In high-frequency, low-deliberation categories, preference is rarely conscious. Consumers reach for the same product week after week—until something breaks the habit.
-            </p>
-
-            <p>
-              The brand team treated this as a product optimisation challenge: adjust sourness, improve texture, benchmark against competitors. But the real risk was deeper.
-            </p>
-
-            <p>
-              Laban is not chosen on taste alone. It carries emotional weight—tradition, comfort, authenticity. The danger wasn't losing a blind test. It was losing trust in ways that wouldn't surface until purchase shifted.
+              In high-frequency, low-deliberation categories, preference is rarely conscious. The brand team treated this as product optimisation. The real risk was deeper: losing trust in ways that wouldn't surface until purchase shifted.
             </p>
 
             <p className="text-foreground font-medium">
-              The real question was:<br />
-              What sensory and emotional cues create default preference—and what would quietly erode it?
+              The real question: What sensory and emotional cues create default preference — and what would quietly erode it?
             </p>
           </div>
         </div>
@@ -83,49 +69,36 @@ const CaseStudySensoryPreference = () => {
             My Role
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>
-              I shaped the research focus to move beyond flavour benchmarking toward behavioural drivers of habit and trust. This meant reframing the study around decision defaults, not taste preference.
-            </p>
-
-            <p>
-              I led synthesis across taste testing, qualitative discussion, and competitor mapping—translating subjective sensory language into actionable product and positioning direction.
-            </p>
-          </div>
+          <p className="text-muted-foreground leading-relaxed">
+            Reframed the study from flavour benchmarking toward behavioural drivers of habit and trust. Led synthesis across taste testing, qualitative discussion, and competitor mapping — translating subjective sensory language into actionable product and positioning direction.
+          </p>
         </div>
       </section>
 
-      {/* Decision Focus */}
+      {/* Decision Focus — Visual Cards */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
             Decision Focus
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>
-              This research needed to unlock three interconnected decisions:
-            </p>
-
-            <ul className="space-y-3 pl-6">
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span><strong className="text-foreground">Product optimisation:</strong> Which sensory attributes to protect, adjust, or amplify</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span><strong className="text-foreground">Positioning and authenticity:</strong> What signals "real laban" to habitual buyers</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span><strong className="text-foreground">Competitive differentiation:</strong> Where the brand could credibly win in habitual purchase, not just trial</span>
-              </li>
-            </ul>
-
-            <p>
-              The trade-off was clear: optimise for taste test performance, or optimise for sustained default preference. These are not the same goal.
-            </p>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              { icon: Droplets, title: "Product optimisation", desc: "Which sensory attributes to protect, adjust, or amplify" },
+              { icon: ShieldCheck, title: "Authenticity cues", desc: "What signals 'real laban' to habitual buyers" },
+              { icon: RotateCcw, title: "Competitive defence", desc: "Credibly win in habitual purchase, not just trial" },
+            ].map((item) => (
+              <div key={item.title} className="bg-card border border-border rounded-xl p-5 text-center">
+                <item.icon className="h-5 w-5 text-accent mx-auto mb-3" />
+                <h3 className="text-foreground font-medium text-sm mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-xs">{item.desc}</p>
+              </div>
+            ))}
           </div>
+
+          <p className="text-sm text-muted-foreground mt-6 italic">
+            The trade-off: optimise for taste test performance, or optimise for sustained default preference. These are not the same goal.
+          </p>
         </div>
       </section>
 
@@ -139,83 +112,63 @@ const CaseStudySensoryPreference = () => {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div>
-                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                  Lens
-                </h3>
+                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">Lens</h3>
                 <ul className="space-y-2 text-muted-foreground text-sm">
-                  <li>Default preference and habit formation</li>
+                  <li>Default preference and habit</li>
                   <li>Authenticity as sensory judgement</li>
                   <li>Trust signals beyond flavour</li>
-                  <li>Repurchase drivers vs trial drivers</li>
+                  <li>Repurchase vs trial drivers</li>
                 </ul>
               </div>
-
               <div>
-                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                  Methods
-                </h3>
+                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">Methods</h3>
                 <ul className="space-y-2 text-muted-foreground text-sm">
                   <li>Mini group discussions</li>
-                  <li>Blind taste testing (multiple recipes)</li>
+                  <li>Blind taste testing</li>
                   <li>Competitor benchmarking</li>
                   <li>Sensory-to-behaviour mapping</li>
                 </ul>
               </div>
-
               <div>
-                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                  Sample
-                </h3>
+                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">Sample</h3>
                 <ul className="space-y-2 text-muted-foreground text-sm">
-                  <li>Heavy category users (3x+ weekly)</li>
-                  <li>Brand loyalists + competitor users</li>
+                  <li>Heavy users (3x+ weekly)</li>
+                  <li>Loyalists + competitor users</li>
                   <li>Riyadh + Jeddah</li>
-                  <li>Male + female, across life stages</li>
                 </ul>
               </div>
             </div>
-
-            <p className="text-sm text-muted-foreground mt-8 pt-6 border-t border-border">
-              Focused on habitual buyers where sensory cues drive automatic repurchase, not deliberate comparison.
-            </p>
           </div>
         </div>
       </section>
 
-      {/* Approach */}
+      {/* Approach — Visual Stepper */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
             Approach
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>
-              The research combined sensory evaluation with behavioural interpretation—designed to surface what consumers judge instinctively, not just what they can articulate.
-            </p>
-
-            <div className="space-y-4 mt-8">
-              <div className="flex gap-4">
-                <span className="text-accent font-medium min-w-[100px]">Phase 1</span>
-                <span>Contextual discussion to surface category rituals, emotional associations, and authenticity expectations</span>
+          <div className="space-y-0">
+            {[
+              { step: "1", title: "Contextual discussion", desc: "Category rituals, emotional associations, authenticity expectations" },
+              { step: "2", title: "Blind taste testing", desc: "Multiple recipe variants to isolate sensory drivers of preference" },
+              { step: "3", title: "Competitor benchmarking", desc: "Category defaults and differentiation opportunities" },
+              { step: "4", title: "Behavioural mapping", desc: "Sensory reactions mapped to trust and repurchase intent" },
+            ].map((item, i, arr) => (
+              <div key={item.step} className="flex gap-4">
+                <div className="flex flex-col items-center">
+                  <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-accent font-medium text-sm">{item.step}</span>
+                  </div>
+                  {i < arr.length - 1 && <div className="w-px h-full bg-accent/20 my-1" />}
+                </div>
+                <div className="pb-6">
+                  <h3 className="font-medium text-foreground text-sm">{item.title}</h3>
+                  <p className="text-muted-foreground text-xs mt-1">{item.desc}</p>
+                </div>
               </div>
-              <div className="flex gap-4">
-                <span className="text-accent font-medium min-w-[100px]">Phase 2</span>
-                <span>Blind taste testing across recipe variants to isolate sensory drivers of preference</span>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-accent font-medium min-w-[100px]">Phase 3</span>
-                <span>Competitor benchmarking to identify category defaults and differentiation opportunities</span>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-accent font-medium min-w-[100px]">Phase 4</span>
-                <span>Synthesis mapping sensory reactions to behavioural trust and repurchase intent</span>
-              </div>
-            </div>
-
-            <p className="mt-8">
-              The priority was connecting what people feel in the mouth to what they decide at shelf—treating sensory experience as a trust signal, not just a product attribute.
-            </p>
+            ))}
           </div>
         </div>
       </section>
@@ -225,7 +178,7 @@ const CaseStudySensoryPreference = () => {
         <div className="container mx-auto max-w-3xl">
           <blockquote className="border-l-4 border-accent pl-6 py-4">
             <p className="text-xl md:text-2xl font-display text-foreground italic leading-relaxed">
-              "The best laban stays with you. It's not just about the first sip—it's how it feels after."
+              "The best laban stays with you. It's not just about the first sip — it's how it feels after."
             </p>
             <footer className="mt-4 text-sm text-muted-foreground">
               — Participant, Riyadh focus group
@@ -234,73 +187,34 @@ const CaseStudySensoryPreference = () => {
         </div>
       </section>
 
-      {/* Key Insights */}
+      {/* Key Insights — Visual Cards */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-10">
             Key Insights
           </h2>
 
-          <div className="space-y-10">
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
-                Authenticity is a sensory judgement, not a marketing claim.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Consumers assessed "real laban" through texture, weight, and aftertaste—not packaging or heritage messaging. Authenticity had to be felt, not told.
-              </p>
-              <p className="text-sm text-accent">
-                → Positioning shifted from narrative authenticity to sensory authenticity cues.
-              </p>
-            </div>
+          {/* Visual: Sensory Trust Model */}
+          <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            {[
+              { icon: Sparkles, finding: "Authenticity is a sensory judgement, not a marketing claim.", detail: "Assessed through texture, weight, and aftertaste — not packaging.", shift: "Positioning shifted to sensory authenticity cues." },
+              { icon: Droplets, finding: "Texture operates as a trust signal.", detail: "Thickness and smoothness predicted preference. Watery texture triggered immediate doubt.", shift: "Product optimisation prioritised consistency over intensity." },
+              { icon: RotateCcw, finding: "Aftertaste drives repurchase, not trial.", detail: "Strongest recipes left a lingering, balanced finish. This is where habit forms.", shift: "Recipe development focused on aftertaste as the primary loyalty lever." },
+              { icon: Eye, finding: "Visual cues shape expectation before tasting.", detail: "Whiteness signalled freshness. Yellowish hues triggered mixed reactions.", shift: "Visual consistency added to quality control priorities." },
+            ].map((item) => (
+              <div key={item.finding} className="bg-card border border-border rounded-xl p-5">
+                <item.icon className="h-5 w-5 text-accent mb-3" />
+                <h3 className="text-foreground font-medium text-sm mb-2">{item.finding}</h3>
+                <p className="text-muted-foreground text-xs mb-3">{item.detail}</p>
+                <p className="text-accent text-xs font-medium">→ {item.shift}</p>
+              </div>
+            ))}
+          </div>
 
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
-                Texture operates as a trust signal.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Thickness and smoothness consistently predicted preference. Watery or inconsistent texture triggered immediate doubt—before conscious evaluation began.
-              </p>
-              <p className="text-sm text-accent">
-                → Product optimisation prioritised texture consistency over flavour intensity.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
-                Aftertaste drives repurchase, not trial.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                The strongest recipes weren't the most intense on first sip. They left a lingering, balanced finish that made consumers want another. This is where habit forms.
-              </p>
-              <p className="text-sm text-accent">
-                → Recipe development focused on aftertaste profile as the primary loyalty lever.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
-                Visual cues shape expectation before tasting.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Pure whiteness signalled freshness and purity. Yellowish hues triggered mixed reactions—natural to some, inconsistent to others. Expectation was set before the first sip.
-              </p>
-              <p className="text-sm text-accent">
-                → Visual consistency added to quality control priorities alongside sensory benchmarks.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-3">
-                Habitual preference resists conscious comparison.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Heavy users rarely evaluated alternatives actively. Their default was set by accumulated experience, not deliberate choice. Winning trial and winning habit require different strategies.
-              </p>
-              <p className="text-sm text-accent">
-                → Competitive strategy separated trial-focused tactics from habit-protection priorities.
-              </p>
-            </div>
+          <div className="bg-card border border-border rounded-xl p-5">
+            <h3 className="text-foreground font-medium text-sm mb-2">Habitual preference resists conscious comparison.</h3>
+            <p className="text-muted-foreground text-xs mb-3">Heavy users rarely evaluated alternatives. Default set by accumulated experience, not deliberate choice.</p>
+            <p className="text-accent text-xs font-medium">→ Competitive strategy separated trial-focused tactics from habit-protection priorities.</p>
           </div>
         </div>
       </section>
@@ -312,29 +226,18 @@ const CaseStudySensoryPreference = () => {
             Output and Impact
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>
-              The research shifted the brand's approach from flavour optimisation to habit protection:
-            </p>
-
-            <ul className="space-y-3 pl-6 mt-6">
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span>Clarified which sensory attributes to protect (texture, aftertaste) vs adjust (sourness intensity)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span>Repositioned authenticity from heritage messaging to sensory credibility</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span>Separated competitive strategy for trial acquisition vs habitual defence</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span>Informed quality control priorities to reduce trust-breaking inconsistency</span>
-              </li>
-            </ul>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {[
+              "Sensory attributes to protect (texture, aftertaste) vs adjust (sourness)",
+              "Authenticity repositioned from heritage to sensory credibility",
+              "Competitive strategy split: trial acquisition vs habitual defence",
+              "Quality control priorities to reduce trust-breaking inconsistency",
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-3 bg-card border border-border rounded-lg p-4">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" />
+                <span className="text-muted-foreground text-sm">{item}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -346,19 +249,12 @@ const CaseStudySensoryPreference = () => {
             Reflection
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>
-              Sensory research in staple categories often gets treated as product development input. The real value is behavioural: understanding what creates trust, habit, and automatic repurchase.
-            </p>
-
-            <p>
-              If running this again, I would integrate pack-level cue testing earlier and pair sensory findings with purchase frequency data to quantify the commercial weight of each attribute.
-            </p>
-
-            <p className="text-foreground font-medium">
-              Good sensory research makes invisible defaults measurable—and protects the trust that keeps consumers reaching for the same product without thinking.
-            </p>
-          </div>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            The real value of sensory research in staple categories is behavioural: understanding what creates trust, habit, and automatic repurchase.
+          </p>
+          <p className="text-foreground font-medium text-sm">
+            Next time, I'd integrate pack-level cue testing earlier and pair findings with purchase frequency data to quantify commercial weight.
+          </p>
         </div>
       </section>
 
