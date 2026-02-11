@@ -19,7 +19,6 @@ const CaseStudyDigitalWallet = () => {
       {/* Hero Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-3xl">
-          {/* Bold Category Visual */}
           <div className="mb-10">
             <span className="inline-block px-6 py-3 bg-accent/10 text-accent text-lg font-medium rounded-lg border border-accent/20">
               Fintech UX · Pre-Launch Risk
@@ -46,7 +45,7 @@ const CaseStudyDigitalWallet = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mt-6 leading-relaxed">
-            A pre-launch usability programme focused on identifying where trust, comprehension, and task momentum break down in real transaction flows.
+            A pre-launch research programme that identified where trust, comprehension, and behavioural confidence collapsed in real transaction flows — and translated those breakdowns into prioritised launch decisions.
           </p>
         </div>
       </section>
@@ -60,25 +59,19 @@ const CaseStudyDigitalWallet = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p className="text-lg">
-              In fintech, usability is not about preference.<br />
-              It is about whether users feel confident enough to proceed.
+              The product was feature-complete and approaching launch. But one risk remained unresolved: whether users would feel confident enough to activate, transact, and return.
             </p>
 
             <p>
-              The product was approaching launch with a broad set of features, but one unresolved challenge:
-            </p>
-
-            <p className="text-foreground font-medium italic">
-              Which parts of the experience create hesitation, misinterpretation, or abandonment when real money is involved?
-            </p>
-
-            <p>
-              So the work wasn't framed as "test the interface".<br />
-              It was framed as:
+              In fintech, usability is not about preference. It is about whether someone trusts the interface enough to move real money through it. Hesitation at any point — sign-up, first transaction, post-transfer confirmation — compounds into abandonment.
             </p>
 
             <p className="text-foreground font-medium">
-              What could prevent activation, completion, and repeat use in the first week?
+              The real question was not "is the interface usable?" but "what will prevent activation, completion, and repeat use in the first week?"
+            </p>
+
+            <p>
+              The product team had strong assumptions about feature value. What was missing was a behavioural read on where certainty collapses under financial stakes.
             </p>
           </div>
         </div>
@@ -93,71 +86,72 @@ const CaseStudyDigitalWallet = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              I worked as a UX researcher on a moderated usability initiative designed to stress-test the product under real behavioural conditions.
+              I shaped the behavioural framing for this initiative — defining which journeys carried the highest adoption risk, structuring task scenarios around user intent rather than screens, and leading the synthesis that converted messy session data into clear product direction.
             </p>
 
-            <p>I contributed across:</p>
-
-            <ul className="space-y-2 pl-4">
-              <li>Defining the highest-risk journeys to test</li>
-              <li>Structuring task scenarios around user intent, not screens</li>
-              <li>Moderation support and behavioural probing</li>
-              <li>Synthesising breakdowns into prioritised product actions</li>
-            </ul>
+            <p>
+              My focus was on judgement and translation: identifying which breakdowns were cosmetic, which were structural, and which would directly threaten launch readiness. I worked closely with product and design to ensure findings landed as prioritised decisions, not open-ended recommendations.
+            </p>
 
             <p className="text-foreground font-medium">
-              The core responsibility was turning messy user behaviour into clear launch decisions.
+              The core responsibility was turning observed behaviour into launch confidence.
             </p>
           </div>
         </div>
       </section>
 
-      {/* How I Structured the Problem */}
+      {/* Framing the Risk */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
-            How I Structured the Problem
+            Framing the Risk
           </h2>
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              Rather than treating the wallet as one experience, I broke it into three behavioural systems:
+              Rather than treating the wallet as a single experience to evaluate, I decomposed it into three behavioural systems — each representing a distinct layer of trust that users must build sequentially:
             </p>
 
-            <div className="space-y-4 mt-6">
-              <div>
-                <h3 className="text-foreground font-medium">1. Entry trust</h3>
-                <p>Do users understand what this product is, and feel safe signing up?</p>
+            <div className="space-y-6 mt-8">
+              <div className="border-l-2 border-accent/30 pl-6">
+                <h3 className="text-foreground font-medium mb-2">Entry trust</h3>
+                <p>
+                  Does the user understand what this product is, and feel safe enough to begin? This is where category confusion, verification friction, and unclear value propositions kill activation before it starts.
+                </p>
               </div>
 
-              <div>
-                <h3 className="text-foreground font-medium">2. Transaction trust</h3>
-                <p>Do users feel in control when adding or sending money?</p>
+              <div className="border-l-2 border-accent/30 pl-6">
+                <h3 className="text-foreground font-medium mb-2">Transaction trust</h3>
+                <p>
+                  Does the user feel in control when adding or sending money? This is where cognitive load, ambiguous confirmation states, and unfamiliar flows create hesitation that prevents first use from becoming habitual use.
+                </p>
               </div>
 
-              <div>
-                <h3 className="text-foreground font-medium">3. Feedback trust</h3>
-                <p>Do users receive enough confirmation and visibility after actions?</p>
+              <div className="border-l-2 border-accent/30 pl-6">
+                <h3 className="text-foreground font-medium mb-2">Feedback trust</h3>
+                <p>
+                  Does the user receive enough confirmation and visibility after actions? Without clear system feedback, users lose confidence that their money arrived, their request was processed, or their action was reversible.
+                </p>
               </div>
             </div>
 
-            <p className="mt-6">
-              This framing helped us avoid surface-level UI critique and focus on adoption mechanics.
+            <p className="mt-6 text-foreground font-medium">
+              This framing shifted the conversation from "does it work?" to "where does certainty collapse?" — and gave the product team a prioritisation logic tied to adoption mechanics, not UI preferences.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Research Snapshot */}
+      {/* Research Approach */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <div className="bg-card border border-border rounded-xl p-8 md:p-10">
             <h2 className="font-display text-xl md:text-2xl font-medium text-foreground mb-8">
-              Research Design
+              Research Approach
             </h2>
 
             <p className="text-muted-foreground mb-8">
-              To solve for launch readiness, we tested only what could realistically block adoption:
+              The programme was scoped to test only what could realistically block adoption. We prioritised flows where financial stakes were highest and where hesitation would compound into abandonment:
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -166,10 +160,10 @@ const CaseStudyDigitalWallet = () => {
                   Priority Flows
                 </h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>Activation and verification</li>
-                  <li>Adding funds</li>
+                  <li>Activation and identity verification</li>
+                  <li>Adding funds for the first time</li>
                   <li>Domestic and international transfers</li>
-                  <li>Payment utilities and social flows</li>
+                  <li>Payment utilities and social transaction flows</li>
                 </ul>
               </div>
 
@@ -178,110 +172,117 @@ const CaseStudyDigitalWallet = () => {
                   Analysis Lenses
                 </h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>Satisfaction</li>
-                  <li>Efficiency</li>
-                  <li>Memorability</li>
-                  <li>Confusion</li>
+                  <li>Satisfaction and perceived effort</li>
+                  <li>Efficiency under cognitive load</li>
+                  <li>Memorability and learnability</li>
+                  <li>Confusion and recovery behaviour</li>
                 </ul>
               </div>
             </div>
 
             <div className="mt-8 pt-6 border-t border-border">
               <p className="text-muted-foreground italic">
-                The goal was not to collect opinions.<br />
-                It was to observe failure points under cognitive load.
+                The goal was to observe failure points under real cognitive and emotional load — not to collect preferences.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* How I Approached Synthesis */}
+      {/* How Synthesis Worked */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
-            How I Approached Synthesis
+            How Synthesis Worked
           </h2>
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p className="text-lg">
-              The most important work happened after sessions.
+              The most consequential work happened after sessions ended.
             </p>
 
             <p>
-              Instead of reporting "users disliked X", I mapped issues into decision categories:
+              Rather than reporting what users disliked, I mapped every observed breakdown into categories based on what type of risk it posed to adoption:
             </p>
           </div>
 
           <div className="space-y-6 mt-8">
             <div className="border-l-2 border-accent/30 pl-6">
-              <h3 className="text-foreground font-medium mb-2">Breakdowns caused by unclear mental models</h3>
+              <h3 className="text-foreground font-medium mb-2">Mental model failures</h3>
               <p className="text-muted-foreground text-sm">
-                Example: users not understanding why multiple authentication layers exist.
+                Users not understanding why multiple authentication layers existed, leading to perceived redundancy and drop-off during onboarding.
               </p>
             </div>
 
             <div className="border-l-2 border-accent/30 pl-6">
-              <h3 className="text-foreground font-medium mb-2">Breakdowns caused by missing hierarchy</h3>
+              <h3 className="text-foreground font-medium mb-2">Hierarchy failures</h3>
               <p className="text-muted-foreground text-sm">
-                Example: key actions present, but visually non-prominent during scanning.
+                Key actions present but visually buried — users scanning past critical affordances because the interface did not signal priority.
               </p>
             </div>
 
             <div className="border-l-2 border-accent/30 pl-6">
-              <h3 className="text-foreground font-medium mb-2">Breakdowns caused by compliance friction</h3>
+              <h3 className="text-foreground font-medium mb-2">Compliance friction</h3>
               <p className="text-muted-foreground text-sm">
-                Example: KYC steps feeling intrusive without user benefit framing.
+                KYC steps experienced as intrusive rather than protective, because the interface failed to frame verification as a user benefit.
               </p>
             </div>
 
             <div className="border-l-2 border-accent/30 pl-6">
-              <h3 className="text-foreground font-medium mb-2">Breakdowns caused by weak system feedback</h3>
+              <h3 className="text-foreground font-medium mb-2">Feedback gaps</h3>
               <p className="text-muted-foreground text-sm">
-                Example: uncertainty around notifications, completion, and request visibility.
+                Uncertainty around notifications, completion states, and request visibility — creating anxiety about whether money had arrived or actions were reversible.
               </p>
             </div>
           </div>
 
           <p className="text-muted-foreground mt-8">
-            This allowed prioritisation based on adoption risk, not volume of comments.
+            This structure allowed prioritisation based on adoption risk severity, not volume of comments. It gave product a decision framework, not a backlog.
           </p>
         </div>
       </section>
 
-      {/* Highlighted Quote */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <blockquote className="border-l-4 border-accent pl-6 py-4">
-            <p className="text-xl md:text-2xl font-display text-foreground italic">
-              "In high-trust products, the job of UX research is to find where certainty collapses—and to make that actionable before launch."
-            </p>
-          </blockquote>
-        </div>
-      </section>
-
-      {/* Output */}
+      {/* What the Work Enabled */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
-            What the Work Produced
+            What the Work Enabled
           </h2>
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              The output was a launch-facing set of product decisions focused on:
+              The output was a set of prioritised risk removals, framed for launch decision-making:
             </p>
 
-            <ul className="space-y-3 pl-4">
-              <li>Clarifying category and trust cues early in onboarding</li>
-              <li>Making security steps legible rather than redundant</li>
-              <li>Reducing cognitive load through action hierarchy on the homepage</li>
-              <li>Scaffolding new features with lightweight explanation and feedback loops</li>
-              <li>Condensing long transactional flows where perceived effort was high</li>
-            </ul>
+            <div className="space-y-6 mt-4">
+              <div className="border-l-2 border-accent/30 pl-6">
+                <h3 className="text-foreground font-medium mb-1">Trust signalling brought forward</h3>
+                <p className="text-sm">Category and safety cues repositioned to appear early in onboarding, reducing activation hesitation.</p>
+              </div>
 
-            <p className="text-foreground font-medium mt-6">
-              These were framed as risk removals, not design tweaks.
+              <div className="border-l-2 border-accent/30 pl-6">
+                <h3 className="text-foreground font-medium mb-1">Security steps made legible</h3>
+                <p className="text-sm">Multi-layer authentication reframed from redundant friction to visible protection — reducing perceived effort without reducing actual security.</p>
+              </div>
+
+              <div className="border-l-2 border-accent/30 pl-6">
+                <h3 className="text-foreground font-medium mb-1">Homepage hierarchy restructured</h3>
+                <p className="text-sm">Action prominence redesigned to match scanning behaviour under cognitive load, reducing time-to-first-action.</p>
+              </div>
+
+              <div className="border-l-2 border-accent/30 pl-6">
+                <h3 className="text-foreground font-medium mb-1">Transaction flows condensed</h3>
+                <p className="text-sm">Long multi-step flows restructured where perceived effort exceeded actual complexity, improving completion confidence.</p>
+              </div>
+
+              <div className="border-l-2 border-accent/30 pl-6">
+                <h3 className="text-foreground font-medium mb-1">Feedback loops scaffolded</h3>
+                <p className="text-sm">New features given lightweight explanation and confirmation patterns, reducing first-use anxiety.</p>
+              </div>
+            </div>
+
+            <p className="text-foreground font-medium mt-8">
+              These were framed as risk removals for launch readiness — not design tweaks. Each addressed a specific point where behavioural confidence would have collapsed at scale.
             </p>
           </div>
         </div>
@@ -296,16 +297,30 @@ const CaseStudyDigitalWallet = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p className="text-lg">
-              A wallet does not earn adoption through feature breadth.<br />
-              It earns adoption through behavioural confidence.
+              A digital wallet does not earn adoption through feature breadth. It earns adoption through behavioural confidence — the user's belief that their money is safe, their actions are understood, and the product behaves predictably.
             </p>
 
             <p>
-              This project reinforced a core principle:
+              Without this work, the product would have launched with strong functionality but unresolved trust gaps in the moments that matter most: first sign-up, first transaction, first transfer to another person. These are the moments where hesitation compounds into permanent abandonment.
             </p>
 
             <p className="text-foreground font-medium">
-              In high-trust products, the job of UX research is to find where certainty collapses, and to make that actionable before launch.
+              In high-trust products, the role of research is not to validate the interface. It is to find where certainty collapses — and to make that actionable before the cost of discovery shifts from a research session to lost users at scale.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Reflection */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+            Reflection
+          </h2>
+
+          <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <p>
+              If running this again, I would integrate lightweight behavioural tracking from the first testable build — capturing hesitation duration, back-navigation frequency, and task abandonment patterns as quantitative inputs alongside moderated observation. This would have strengthened the evidence base for prioritisation and given product teams a measurable baseline to track post-launch improvement against.
             </p>
           </div>
         </div>
@@ -315,7 +330,7 @@ const CaseStudyDigitalWallet = () => {
       <section className="py-16 md:py-24 border-t border-border">
         <div className="container mx-auto max-w-3xl text-center">
           <p className="text-lg text-muted-foreground mb-6">
-            If you're building financial products where trust is the conversion funnel, I enjoy working at that edge.
+            If you're building financial products where trust is the conversion funnel, I work at that edge.
           </p>
           <Link
             to="/contact"
