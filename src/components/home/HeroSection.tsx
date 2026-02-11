@@ -49,23 +49,6 @@ export function HeroSection() {
             </Button>
           </div>
 
-          {/* Credibility signals */}
-          <div className="flex flex-wrap justify-center gap-8 md:gap-12 pt-12 opacity-0 animate-fade-up stagger-4">
-            {[
-              { value: "100+", label: "User Interviews Conducted" },
-              { value: "20+", label: "Usability Studies Led" },
-              { value: "Direct", label: "Roadmap Influence" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="font-display text-3xl md:text-4xl font-semibold text-foreground">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
