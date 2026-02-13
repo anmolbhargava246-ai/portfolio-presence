@@ -1,148 +1,276 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
-import heroImage from "@/assets/case-study-urban-hero.jpg";
 
 const CaseStudyUrbanPlanning = () => {
   return (
     <Layout>
-      <div className="container mx-auto pt-8">
-        <Link to="/projects" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-          <ArrowLeft className="h-4 w-4" /> Back to Projects
-        </Link>
-      </div>
-
-      {/* Hero Image */}
-      <section className="py-8">
-        <div className="container mx-auto max-w-4xl">
-          <div className="rounded-2xl overflow-hidden">
-            <img src={heroImage} alt="Urban planning aerial concept" className="w-full h-64 md:h-80 object-cover" />
-          </div>
+      <div className="min-h-screen bg-background">
+        {/* Back Navigation */}
+        <div className="max-w-3xl mx-auto px-6 pt-8">
+          <Link 
+            to="/projects" 
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors text-sm"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Projects
+          </Link>
         </div>
-      </section>
 
-      <section className="pb-16">
-        <div className="container mx-auto max-w-3xl">
+        {/* Hero Section */}
+        <section className="max-w-3xl mx-auto px-6 pt-16 pb-20">
           <div className="flex flex-wrap gap-2 mb-8">
-            {["Urban Planning", "Real Estate", "Mixed Methods", "Saudi Arabia"].map(tag => (
-              <span key={tag} className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">{tag}</span>
-            ))}
+            <span className="text-xs text-muted-foreground">Urban Planning</span>
+            <span className="text-xs text-muted-foreground">·</span>
+            <span className="text-xs text-muted-foreground">Real Estate</span>
+            <span className="text-xs text-muted-foreground">·</span>
+            <span className="text-xs text-muted-foreground">Mixed Methods Research</span>
+            <span className="text-xs text-muted-foreground">·</span>
+            <span className="text-xs text-muted-foreground">Concept Testing</span>
+            <span className="text-xs text-muted-foreground">·</span>
+            <span className="text-xs text-muted-foreground">Saudi Arabia</span>
           </div>
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
+          
+          <h1 className="text-4xl md:text-5xl font-light text-foreground mb-6 leading-tight">
             Designing a Community Hub Around How People Actually Live
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mt-6 leading-relaxed">
-            Mixed-methods study shaping a large-scale urban development in Jeddah — grounded in real community behaviour, not assumptions.
+          
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            A mixed-methods study to understand lifestyle preferences, daily behaviours, and amenity needs of residents in Jeddah—shaping a large-scale urban development grounded in real community adoption.
           </p>
-        </div>
-      </section>
+        </section>
 
-      {/* Problem */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-6">The Problem</h2>
-          <p className="text-lg text-muted-foreground">
-            High-investment, mixed-use community hub. The risk wasn't construction — it was building a space residents would adopt and integrate into daily life.
-          </p>
-          <p className="text-foreground font-medium mt-4">A behavioural adoption challenge at city scale.</p>
-        </div>
-      </section>
-
-      {/* Role */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-6">My Role</h2>
-          <p className="text-muted-foreground leading-relaxed">
-            Key researcher — shaped the research plan, led fieldwork and synthesis, translated findings into actionable design recommendations for layout, amenity mix, and segment priorities.
-          </p>
-        </div>
-      </section>
-
-      {/* Approach — Stepper */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">Approach</h2>
-          <div className="space-y-0">
-            {[
-              { step: "1", title: "Digital activities", desc: "Asynchronous capture of real lifestyle patterns" },
-              { step: "2", title: "Focus groups", desc: "Emotional needs and trade-offs in community use" },
-              { step: "3", title: "Concept testing", desc: "Proposed hub layouts and amenity reactions" },
-              { step: "4", title: "Quantitative validation", desc: "500+ survey responses to prioritise features" },
-              { step: "5", title: "Actionable synthesis", desc: "Recommendations for planning and design" },
-            ].map((item, i, arr) => (
-              <div key={item.step} className="flex gap-4">
-                <div className="flex flex-col items-center">
-                  <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-accent font-medium text-sm">{item.step}</span>
-                  </div>
-                  {i < arr.length - 1 && <div className="w-px h-full bg-accent/20 my-1" />}
-                </div>
-                <div className="pb-6">
-                  <h3 className="font-medium text-foreground text-sm">{item.title}</h3>
-                  <p className="text-muted-foreground text-xs mt-1">{item.desc}</p>
-                </div>
-              </div>
-            ))}
+        {/* The Problem */}
+        <section className="max-w-3xl mx-auto px-6 py-16 border-t border-border">
+          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
+            The Problem
+          </h2>
+          
+          <div className="space-y-6">
+            <p className="text-foreground leading-relaxed">
+              The client was planning a high-investment, mixed-use community hub in Jeddah—combining public spaces, F&B, entertainment, offices, and residential areas.
+            </p>
+            
+            <p className="text-foreground leading-relaxed">
+              The risk wasn't construction feasibility. It was building a space that residents would actually adopt, return to, and integrate into their daily lives.
+            </p>
+            
+            <p className="text-foreground leading-relaxed">
+              Getting this wrong meant low footfall, poor commercial viability, and a development people pass through rather than belong to.
+            </p>
+            
+            <p className="text-foreground font-medium">
+              This wasn't a design challenge. It was a behavioural adoption challenge at city scale.
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Key Insights */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-10">Key Insights</h2>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {[
-              { finding: "Accessibility mattered more than novelty.", shift: "Planning focused on everyday convenience over landmarks." },
-              { finding: "Green spaces and F&B were central, not add-ons.", shift: "Increased emphasis on outdoor social zones and dining anchors." },
-              { finding: "Different segments wanted different experiences.", shift: "Separate pathways and zones recommended by segment." },
-              { finding: "Concept clarity influenced intent.", shift: "Layout visuals refined for immediate comprehension." },
-            ].map((item) => (
-              <div key={item.finding} className="bg-card border border-border rounded-xl p-5">
-                <h3 className="text-foreground font-medium text-sm mb-2">{item.finding}</h3>
-                <p className="text-accent text-xs font-medium">→ {item.shift}</p>
-              </div>
-            ))}
+        {/* My Role */}
+        <section className="max-w-3xl mx-auto px-6 py-16 border-t border-border">
+          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
+            My Role
+          </h2>
+          
+          <div className="space-y-6">
+            <p className="text-foreground leading-relaxed">
+              I was a key researcher on this project, helping shape the research plan, leading parts of fieldwork and synthesis, and translating findings into actionable design recommendations.
+            </p>
+            
+            <p className="text-foreground leading-relaxed">
+              I supported strategic decisions on layout, amenity mix, and segment priorities—grounded in how residents actually live, socialise, and spend their time.
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Outcome */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">Outcome</h2>
-          <div className="space-y-3">
-            {[
-              "Shaped multiple iterations of the hub concept and amenity mix",
-              "Prioritised high-demand features validated through 500+ responses",
-              "Enabled confident investment decisions for Phase One",
-              "Client commissioned Phase Two study to refine further",
-            ].map((item) => (
-              <div key={item} className="flex items-start gap-3 bg-card border border-border rounded-lg p-4">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" />
-                <span className="text-muted-foreground text-sm">{item}</span>
+        {/* Research Snapshot */}
+        <section className="max-w-3xl mx-auto px-6 py-16 border-t border-border">
+          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
+            Research Snapshot
+          </h2>
+          
+          <div className="bg-muted/30 border border-border rounded-lg p-6">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-3">
+                  Methods
+                </h3>
+                <ul className="space-y-2 text-foreground text-sm">
+                  <li>Digital activity-based focus groups</li>
+                  <li>Moderated focus group discussions</li>
+                  <li>Concept testing</li>
+                  <li>Quantitative survey (500+ responses)</li>
+                </ul>
               </div>
-            ))}
+              
+              <div>
+                <h3 className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-3">
+                  Participants
+                </h3>
+                <ul className="space-y-2 text-foreground text-sm">
+                  <li>Residents of Jeddah</li>
+                  <li>Young professionals</li>
+                  <li>Families</li>
+                  <li>Mixed age groups</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="mt-6 pt-6 border-t border-border">
+              <p className="text-sm text-muted-foreground">
+                Insights informed early-stage investment and master planning decisions.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Reflection */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-6">Reflection</h2>
-          <p className="text-foreground font-medium text-sm">
-            Next time, I'd integrate behavioural footfall modelling and longitudinal community signals earlier to predict long-term engagement.
-          </p>
-        </div>
-      </section>
+        {/* Approach */}
+        <section className="max-w-3xl mx-auto px-6 py-16 border-t border-border">
+          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
+            Approach
+          </h2>
+          
+          <div className="space-y-4">
+            <div className="flex gap-4">
+              <span className="text-sm text-muted-foreground whitespace-nowrap">Phase 1</span>
+              <p className="text-foreground text-sm">Asynchronous digital activities to capture real lifestyle patterns</p>
+            </div>
+            <div className="flex gap-4">
+              <span className="text-sm text-muted-foreground whitespace-nowrap">Phase 2</span>
+              <p className="text-foreground text-sm">Moderated focus groups to uncover emotional needs and trade-offs</p>
+            </div>
+            <div className="flex gap-4">
+              <span className="text-sm text-muted-foreground whitespace-nowrap">Phase 3</span>
+              <p className="text-foreground text-sm">Concept testing of proposed hub layouts and amenities</p>
+            </div>
+            <div className="flex gap-4">
+              <span className="text-sm text-muted-foreground whitespace-nowrap">Phase 4</span>
+              <p className="text-foreground text-sm">Quantitative survey validation to prioritise features at scale</p>
+            </div>
+            <div className="flex gap-4">
+              <span className="text-sm text-muted-foreground whitespace-nowrap">Phase 5</span>
+              <p className="text-foreground text-sm">Synthesis into actionable recommendations for planning and design</p>
+            </div>
+          </div>
+        </section>
 
-      <section className="py-16 md:py-24 border-t border-border">
-        <div className="container mx-auto max-w-3xl text-center">
-          <p className="text-lg text-muted-foreground mb-6">Interested in research that informs large-scale, long-term decisions?</p>
-          <Link to="/contact" className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-colors">Let's talk →</Link>
-        </div>
-      </section>
+        {/* Key Insights */}
+        <section className="max-w-3xl mx-auto px-6 py-16 border-t border-border">
+          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
+            Key Insights
+          </h2>
+          
+          <div className="space-y-8">
+            {/* Pull Quote */}
+            <blockquote className="border-l-2 border-foreground pl-6 py-4 my-8">
+              <p className="text-xl text-foreground font-light italic leading-relaxed">
+                "Accessibility mattered more than novelty. Residents prioritised ease of access and proximity over flagship attractions."
+              </p>
+            </blockquote>
+            
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-foreground font-medium mb-2">
+                  Accessibility mattered more than novelty.
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-2">
+                  Residents prioritised ease of access and proximity over flashy flagship attractions.
+                </p>
+                <p className="text-foreground text-sm leading-relaxed">
+                  → Planning prioritised proximity, walkability, and everyday convenience over landmark features.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-foreground font-medium mb-2">
+                  Green spaces and F&B were central, not add-ons.
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-2">
+                  They were central to how people imagined spending time in the community hub.
+                </p>
+                <p className="text-foreground text-sm leading-relaxed">
+                  → Hub design increased emphasis on outdoor social zones and casual dining anchors.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-foreground font-medium mb-2">
+                  Different segments wanted different experiences.
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-2">
+                  Families valued safety and open spaces, while young professionals leaned towards dining, entertainment, and social experiences.
+                </p>
+                <p className="text-foreground text-sm leading-relaxed">
+                  → Separate pathways and zones were recommended for families vs young professionals.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-foreground font-medium mb-2">
+                  Concept clarity influenced intent.
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-2">
+                  Clear articulation of amenities and layout significantly increased interest and likelihood of engagement.
+                </p>
+                <p className="text-foreground text-sm leading-relaxed">
+                  → Messaging and layout visuals were refined to make amenities immediately understandable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Outcome and Impact */}
+        <section className="max-w-3xl mx-auto px-6 py-16 border-t border-border">
+          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
+            Outcome and Impact
+          </h2>
+          
+          <div className="space-y-6">
+            <ul className="space-y-3 text-foreground leading-relaxed">
+              <li>• Shaped multiple iterations of the hub concept and amenity mix</li>
+              <li>• Prioritised high-demand community features validated through 500+ survey responses</li>
+              <li>• Enabled more confident investment and planning decisions for Phase One development</li>
+              <li>• Client commissioned a Phase Two study to refine strategy and design further</li>
+            </ul>
+            
+            <p className="text-foreground leading-relaxed pt-4">
+              Stakeholders used the research to guide institutional positioning, layout efficiency, and overall development appeal.
+            </p>
+          </div>
+        </section>
+
+        {/* Reflection */}
+        <section className="max-w-3xl mx-auto px-6 py-16 border-t border-border">
+          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
+            Reflection
+          </h2>
+          
+          <div className="space-y-6">
+            <p className="text-foreground leading-relaxed">
+              This project reinforced the value of mixed-methods research in high-investment, long-term decisions like urban development. Clear prioritisation of resident behaviour—backed by both depth and quantitative confidence—was key to building stakeholder trust and driving action.
+            </p>
+            
+            <p className="text-foreground leading-relaxed">
+              If I did this again, I'd integrate behavioural footfall modelling and longitudinal community adoption signals earlier to predict long-term engagement and inform phased rollouts.
+            </p>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="max-w-3xl mx-auto px-6 py-20 border-t border-border">
+          <div className="text-center">
+            <p className="text-lg text-foreground mb-6">
+              Interested in research that informs large-scale, long-term decisions?
+            </p>
+            <Link 
+              to="/contact"
+              className="inline-flex items-center gap-2 text-foreground border-b border-foreground pb-1 hover:text-muted-foreground hover:border-muted-foreground transition-colors"
+            >
+              Let's talk
+            </Link>
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 };

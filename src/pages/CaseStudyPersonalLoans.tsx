@@ -1,82 +1,159 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
-import heroImage from "@/assets/case-study-loans-hero.jpg";
 
 const CaseStudyPersonalLoans = () => {
   return (
     <Layout>
+      {/* Back Navigation */}
       <div className="container mx-auto pt-8">
-        <Link to="/projects" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-          <ArrowLeft className="h-4 w-4" /> Back to Projects
+        <Link
+          to="/projects"
+          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <ArrowLeft className="h-4 w-4" />
+          Back to Projects
         </Link>
       </div>
 
-      {/* Hero Image */}
-      <section className="py-8">
-        <div className="container mx-auto max-w-4xl">
-          <div className="rounded-2xl overflow-hidden">
-            <img src={heroImage} alt="Financial trust and transparency layers" className="w-full h-64 md:h-80 object-cover" />
-          </div>
-        </div>
-      </section>
-
-      <section className="pb-16">
+      {/* Hero Section */}
+      <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-3xl">
           <div className="flex flex-wrap gap-2 mb-8">
-            {["FinTech", "Personal Loans", "Foundational + Evaluative", "Contract Role"].map(tag => (
-              <span key={tag} className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">{tag}</span>
-            ))}
+            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
+              FinTech
+            </span>
+            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
+              Personal Loans
+            </span>
+            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
+              Foundational + Evaluative Research
+            </span>
+            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
+              Contract Role
+            </span>
           </div>
+
           <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
             Understanding Why Users Hesitate to Take Personal Loans Digitally
           </h1>
+
           <p className="text-lg md:text-xl text-muted-foreground mt-6 leading-relaxed">
-            Foundational and evaluative study exploring trust, decision-making, and UX friction in a large Indian FinTech product.
+            A foundational and evaluative study exploring trust, decision making, and UX friction in a large Indian FinTech product.
           </p>
         </div>
       </section>
 
-      {/* Problem */}
+      {/* The Problem */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-6">The Problem</h2>
-          <p className="text-lg text-muted-foreground">
-            Technically seamless product, low adoption. The team believed speed was the driver. What they lacked was understanding of how users think about borrowing money.
-          </p>
-          <p className="text-foreground font-medium mt-4">This wasn't a usability issue. It was a behavioural one.</p>
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+            The Problem
+          </h2>
+
+          <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <p className="text-lg">
+              Despite a technically seamless product, adoption of digital personal loans was low.
+            </p>
+
+            <p>
+              The team believed speed and convenience were the main drivers. What they lacked was a clear understanding of how users think about borrowing money, where trust breaks down, and how product language and flow amplify hesitation.
+            </p>
+
+            <p className="text-foreground font-medium">
+              This wasn't just a usability issue.<br />
+              It was a behavioural one.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Role */}
+      {/* My Role */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-6">My Role</h2>
-          <p className="text-muted-foreground leading-relaxed">
-            Primary researcher end-to-end — all interviews, usability sessions, and analysis. Contributed to framing insights and aligning recommendations with product and marketing stakeholders.
-          </p>
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+            My Role
+          </h2>
+
+          <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <p>
+              I was the primary researcher responsible for leading all interviews, usability sessions, and analysis. I owned the execution end-to-end—from participant recruitment through synthesis.
+            </p>
+
+            <p>
+              For research strategy and final reporting, I worked as part of a small team, contributing actively to how we framed insights and aligned recommendations with product and marketing stakeholders.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Approach — Timeline */}
+      {/* Research Snapshot */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">Approach</h2>
-          <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
-            <div className="grid grid-cols-4 gap-3">
-              {[
-                { week: "1–2", title: "Foundational interviews", desc: "Borrowing beliefs and trust breakdowns" },
-                { week: "3", title: "Journey + JTBD", desc: "Decision moments and switching triggers" },
-                { week: "4", title: "Usability evaluation", desc: "Loan and KYC flow friction" },
-                { week: "5", title: "Stakeholder workshop", desc: "Aligning on trust-first improvements" },
-              ].map((item, i) => (
-                <div key={item.week} className="text-center">
-                  <div className="w-full h-1 rounded-full bg-accent mb-3" style={{ opacity: 0.3 + (i * 0.23) }} />
-                  <p className="text-accent text-xs font-medium mb-1">Week {item.week}</p>
-                  <h3 className="text-foreground font-medium text-xs mb-1">{item.title}</h3>
-                  <p className="text-muted-foreground text-xs leading-tight">{item.desc}</p>
-                </div>
-              ))}
+          <div className="bg-card border border-border rounded-xl p-8 md:p-10">
+            <h2 className="font-display text-xl md:text-2xl font-medium text-foreground mb-8">
+              Research Snapshot
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
+                  Methods
+                </h3>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>In-depth interviews</li>
+                  <li>Usability testing</li>
+                  <li>Jobs to be Done analysis</li>
+                  <li>Journey mapping</li>
+                  <li>Cognitive load analysis</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
+                  Participants
+                </h3>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>Loan users</li>
+                  <li>Applied but dropped off</li>
+                  <li>Credit users who avoided loans</li>
+                  <li>Tier 1, Tier 2, Tier 3 cities</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Approach */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+            Approach
+          </h2>
+
+          <div className="space-y-6">
+            <p className="text-muted-foreground leading-relaxed">
+              The study combined behavioural exploration with hands-on usability evaluation to uncover both why people hesitate and where the product unintentionally increased that hesitation.
+            </p>
+
+            <div className="space-y-4 mt-8">
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Week 1–2</span>
+                <p className="text-muted-foreground">Foundational interviews to understand borrowing beliefs, fears, and trust breakdowns</p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Week 3</span>
+                <p className="text-muted-foreground">Journey mapping + Jobs to Be Done analysis to identify decision moments</p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Week 4</span>
+                <p className="text-muted-foreground">Usability evaluation of the digital loan and KYC flow</p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Week 5</span>
+                <p className="text-muted-foreground">Stakeholder workshop to align product + marketing teams on trust-first improvements</p>
+              </div>
             </div>
           </div>
         </div>
@@ -85,64 +162,126 @@ const CaseStudyPersonalLoans = () => {
       {/* Key Insights */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-10">Key Insights</h2>
-          <div className="space-y-4">
-            {[
-              { finding: "Users distrusted ambiguity, not loans.", shift: "Repayment language rewritten, total cost surfaced earlier." },
-              { finding: "Speed mattered only after trust.", shift: "Reassurance cues added, cognitive overload reduced during KYC." },
-              { finding: "Borrowing was emotional, not transactional.", shift: "Social proof added, 'locked in' feeling reduced." },
-            ].map((item) => (
-              <div key={item.finding} className="bg-card border border-border rounded-xl p-5">
-                <h3 className="text-foreground font-medium text-sm mb-2">{item.finding}</h3>
-                <p className="text-accent text-xs font-medium">→ {item.shift}</p>
-              </div>
-            ))}
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-10">
+            Key Insights
+          </h2>
+
+          <div className="space-y-10">
+            <div>
+              <h3 className="text-lg font-medium text-foreground mb-2">
+                Users didn't distrust loans. They distrusted ambiguity.
+              </h3>
+              <p className="text-muted-foreground mb-3">
+                Hidden charges, unclear repayment terms, and vague language triggered hesitation more than interest rates.
+              </p>
+              <p className="text-accent text-sm font-medium">
+                → We rewrote repayment language, surfaced total cost earlier, and removed vague fee terminology.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-medium text-foreground mb-2">
+                Speed mattered, but only after trust was established.
+              </h3>
+              <p className="text-muted-foreground mb-3">
+                Fast approval was attractive, but not at the cost of clarity or perceived risk.
+              </p>
+              <p className="text-accent text-sm font-medium">
+                → We added reassurance cues, clearer lender context, and reduced cognitive overload during KYC.
+              </p>
+            </div>
+
+            {/* Pull Quote */}
+            <blockquote className="border-l-4 border-accent pl-6 py-4 my-12">
+              <p className="text-xl md:text-2xl font-display text-foreground italic">
+                "High cognitive load amplified anxiety. Complex forms and dense information during KYC made users second-guess their decision mid-flow."
+              </p>
+            </blockquote>
+
+            <div>
+              <h3 className="text-lg font-medium text-foreground mb-2">
+                Borrowing was emotional, not transactional.
+              </h3>
+              <p className="text-muted-foreground mb-3">
+                First-time borrowers relied heavily on family and peer validation before committing.
+              </p>
+              <p className="text-accent text-sm font-medium">
+                → We introduced social proof elements and simplified language to reduce the feeling of being "locked in."
+              </p>
+            </div>
           </div>
 
-          <blockquote className="border-l-4 border-accent pl-6 py-4 mt-8">
-            <p className="text-lg font-display text-foreground italic">
-              Insights shifted the team from speed-first messaging to clarity-first trust-building.
-            </p>
-          </blockquote>
+          {/* Strategic Shift */}
+          <p className="text-foreground font-medium mt-12 text-lg border-l-4 border-accent pl-6">
+            Insights shifted the team from speed-first messaging to clarity-first trust-building.
+          </p>
         </div>
       </section>
 
       {/* Impact */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">Impact</h2>
-          <div className="grid sm:grid-cols-3 gap-4 mb-6">
-            {[
-              "Simplified jargon and repayment terminology",
-              "Total cost surfaced earlier to reduce ambiguity",
-              "Reassurance cues added during high-anxiety KYC steps",
-            ].map((item) => (
-              <div key={item} className="flex items-start gap-3 bg-card border border-border rounded-lg p-4">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" />
-                <span className="text-muted-foreground text-sm">{item}</span>
-              </div>
-            ))}
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+            Impact
+          </h2>
+
+          <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <p className="text-foreground font-medium">
+              Research informed concrete product changes across the loan journey:
+            </p>
+
+            <ul className="space-y-3 list-disc list-inside">
+              <li>Simplified jargon and repayment terminology across key screens</li>
+              <li>Surfaced total cost and terms earlier to reduce ambiguity</li>
+              <li>Added reassurance cues and social proof during high-anxiety steps like KYC</li>
+            </ul>
+
+            <p>
+              Stakeholders reported stronger completion rates and improved digital disbursals over the following year.
+            </p>
+
+            <p className="text-sm text-muted-foreground/80 italic border-l-2 border-border pl-4">
+              This work contributed to the broader foundation supporting the client's publicly reported milestone of 1 lakh+ personal loan disbursals worth ₹1,000 crore (Oct 2024), reflecting overall platform performance rather than direct experimental attribution.
+            </p>
           </div>
-          <p className="text-sm text-muted-foreground/80 italic border-l-2 border-border pl-4">
-            This work contributed to the foundation supporting the client's publicly reported milestone of 1 lakh+ personal loan disbursals worth ₹1,000 crore (Oct 2024).
-          </p>
         </div>
       </section>
 
       {/* Reflection */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-6">Reflection</h2>
-          <p className="text-foreground font-medium text-sm">
-            Next time, I'd push earlier alignment with risk, compliance, and behavioural analytics to track trust over time.
-          </p>
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+            Reflection
+          </h2>
+
+          <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <p>
+              This project reinforced that trust is not just a UX problem—it's a product, brand, and organisational one. Behavioural trust issues require cross-functional solutions.
+            </p>
+
+            <p>
+              With more experience now, I would push for earlier triangulation with behavioural data and stronger longitudinal follow-ups to understand how trust evolves over time.
+            </p>
+
+            <p className="text-foreground font-medium">
+              If I did this again, I'd push earlier alignment with risk, compliance, and behavioural analytics to track trust over time.
+            </p>
+          </div>
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-16 md:py-24 border-t border-border">
         <div className="container mx-auto max-w-3xl text-center">
-          <p className="text-lg text-muted-foreground mb-6">Want to talk about behavioural research, trust, or decision-making in products?</p>
-          <Link to="/contact" className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-colors">Let's talk →</Link>
+          <p className="text-lg text-muted-foreground mb-6">
+            Want to talk about behavioural research, trust, or decision making in products?
+          </p>
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-colors"
+          >
+            Let's talk →
+          </Link>
         </div>
       </section>
     </Layout>
