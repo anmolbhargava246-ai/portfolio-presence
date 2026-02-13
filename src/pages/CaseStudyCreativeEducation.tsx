@@ -1,81 +1,67 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft, Briefcase, Users, Layers, Globe } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import heroImage from "@/assets/case-study-education-hero.jpg";
 
 const CaseStudyCreativeEducation = () => {
   return (
     <Layout>
-      {/* Back Navigation */}
       <div className="container mx-auto pt-8">
-        <Link
-          to="/projects"
-          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back to Projects
+        <Link to="/projects" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+          <ArrowLeft className="h-4 w-4" /> Back to Projects
         </Link>
       </div>
 
-      {/* Hero Section */}
-      <section className="py-16 md:py-24">
+      {/* Hero Image */}
+      <section className="py-8">
+        <div className="container mx-auto max-w-4xl">
+          <div className="rounded-2xl overflow-hidden">
+            <img src={heroImage} alt="Learning pathways blueprint" className="w-full h-64 md:h-80 object-cover" />
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-16">
         <div className="container mx-auto max-w-3xl">
           <div className="flex flex-wrap gap-2 mb-8">
-            {["Education", "Curriculum Design", "Mixed Methods", "Strategy Research", "Saudi Arabia"].map(tag => (
-              <span key={tag} className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-                {tag}
-              </span>
+            {["Education", "Curriculum Design", "Mixed Methods", "Saudi Arabia"].map(tag => (
+              <span key={tag} className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">{tag}</span>
             ))}
           </div>
-
           <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
             Shaping the Future of Creative Education in Saudi Arabia
           </h1>
-
           <p className="text-lg md:text-xl text-muted-foreground mt-6 leading-relaxed">
             Large-scale mixed methods study to redesign curriculum across creative domains and position a new institution for long-term relevance.
           </p>
         </div>
       </section>
 
-      {/* The Problem */}
+      {/* Problem */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
-            The Problem
-          </h2>
-
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p className="text-lg">
-              The client aimed to lead creative education in Saudi Arabia but lacked clarity on what skills mattered to learners, employers, and the evolving job market.
-            </p>
-
-            <p className="text-foreground font-medium italic">
-              This wasn't a content problem. It was a relevance and legitimacy problem.
-            </p>
-          </div>
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-6">The Problem</h2>
+          <p className="text-lg text-muted-foreground">
+            The client aimed to lead creative education in Saudi Arabia but lacked clarity on what skills mattered to learners, employers, and the evolving job market.
+          </p>
+          <p className="text-foreground font-medium mt-4 italic">This wasn't a content problem. It was a relevance and legitimacy problem.</p>
         </div>
       </section>
 
-      {/* My Role */}
+      {/* Role */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
-            My Role
-          </h2>
-
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-6">My Role</h2>
           <p className="text-muted-foreground leading-relaxed">
             Led research strategy and execution across a three-member team. Owned discussion guide design, global expert interviews, and synthesis. Translated insights into a curriculum blueprint leadership could act on.
           </p>
         </div>
       </section>
 
-      {/* Approach — Visual Stepper */}
+      {/* Approach — Stepper */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
-            Approach
-          </h2>
-
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">Approach</h2>
           <div className="space-y-0">
             {[
               { step: "1", title: "Global benchmarking", desc: "Desk research across creative education institutions" },
@@ -101,24 +87,19 @@ const CaseStudyCreativeEducation = () => {
         </div>
       </section>
 
-      {/* Key Insights — Visual Cards */}
+      {/* Key Insights */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-10">
-            Key Insights
-          </h2>
-
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-10">Key Insights</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              { icon: Briefcase, finding: "Clear mismatch between education and job market.", detail: "Students wanted practical skills; institutions optimised for theory.", shift: "Curriculum shifted to applied, portfolio-based learning." },
-              { icon: Users, finding: "Different cohorts needed different value propositions.", detail: "Early career: skill building. Mid-career: leadership and adaptability.", shift: "Separate learning pathways designed by career stage." },
-              { icon: Layers, finding: "Cross-disciplinary learning was highly valued.", detail: "Blending art, technology, and leadership emerged as a differentiator.", shift: "Modules blended craft with tech, entrepreneurship, and leadership." },
-              { icon: Globe, finding: "Global credibility needed, local relevance non-negotiable.", detail: "Curriculum had to reflect Saudi context while meeting international standards.", shift: "Balanced global benchmarks with local cultural and labour market realities." },
+              { finding: "Clear mismatch between education and job market.", shift: "Curriculum shifted to applied, portfolio-based learning." },
+              { finding: "Different cohorts needed different value propositions.", shift: "Separate learning pathways designed by career stage." },
+              { finding: "Cross-disciplinary learning was highly valued.", shift: "Modules blended craft with tech, entrepreneurship, and leadership." },
+              { finding: "Global credibility needed, local relevance non-negotiable.", shift: "Balanced global benchmarks with local cultural and labour market realities." },
             ].map((item) => (
               <div key={item.finding} className="bg-card border border-border rounded-xl p-5">
-                <item.icon className="h-5 w-5 text-accent mb-3" />
                 <h3 className="text-foreground font-medium text-sm mb-2">{item.finding}</h3>
-                <p className="text-muted-foreground text-xs mb-3">{item.detail}</p>
                 <p className="text-accent text-xs font-medium">→ {item.shift}</p>
               </div>
             ))}
@@ -129,10 +110,7 @@ const CaseStudyCreativeEducation = () => {
       {/* Outcome */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
-            Outcome
-          </h2>
-
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">Outcome</h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {[
               "Curriculum blueprint across six creative domains",
@@ -151,28 +129,17 @@ const CaseStudyCreativeEducation = () => {
       {/* Reflection */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
-            Reflection
-          </h2>
-
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-6">Reflection</h2>
           <p className="text-foreground font-medium text-sm">
-            Next time, I'd bring employer and industry signal data earlier to track skill relevance over time and push for tighter integration between curriculum design and labour market analytics.
+            Next time, I'd bring employer and industry signal data earlier to track skill relevance over time.
           </p>
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-16 md:py-24 border-t border-border">
         <div className="container mx-auto max-w-3xl text-center">
-          <p className="text-lg text-muted-foreground mb-6">
-            Interested in research that shapes strategy, systems, and long-term direction?
-          </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-colors"
-          >
-            Let's talk →
-          </Link>
+          <p className="text-lg text-muted-foreground mb-6">Interested in research that shapes strategy, systems, and long-term direction?</p>
+          <Link to="/contact" className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-colors">Let's talk →</Link>
         </div>
       </section>
     </Layout>
