@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { FrictionMap } from "@/components/case-study/FrictionMap";
 
 const CaseStudyPersonalLoans = () => {
   return (
@@ -156,6 +157,24 @@ const CaseStudyPersonalLoans = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Trust Friction Map */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto max-w-3xl">
+          <FrictionMap
+            title="Trust Friction Map"
+            subtitle="Where hesitation intensified across the loan journey."
+            items={[
+              { label: "Discovery", severity: "medium", description: "Loan product awareness and initial interest" },
+              { label: "Eligibility", severity: "high", description: "Ambiguity around terms, fees, and hidden charges" },
+              { label: "KYC", severity: "critical", description: "Cognitive overload and anxiety during verification" },
+              { label: "Approval", severity: "medium", description: "Speed vs clarity trade-off in decision confidence" },
+              { label: "Disbursal", severity: "low", description: "Post-approval confirmation and repayment clarity" },
+            ]}
+            footnote="Friction mapped by behavioural hesitation, not task completion rate."
+          />
         </div>
       </section>
 

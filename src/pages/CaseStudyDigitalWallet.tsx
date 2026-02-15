@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { SequentialFlow } from "@/components/case-study/SequentialFlow";
+import { RiskGrid } from "@/components/case-study/RiskGrid";
 
 const CaseStudyDigitalWallet = () => {
   return (
@@ -112,32 +114,16 @@ const CaseStudyDigitalWallet = () => {
               Rather than treating the wallet as a single experience to evaluate, I decomposed it into three behavioural systems — each representing a distinct layer of trust that users must build sequentially:
             </p>
 
-            <div className="space-y-6 mt-8">
-              <div className="border-l-2 border-accent/30 pl-6">
-                <h3 className="text-foreground font-medium mb-2">Entry trust</h3>
-                <p>
-                  Does the user understand what this product is, and feel safe enough to begin? This is where category confusion, verification friction, and unclear value propositions kill activation before it starts.
-                </p>
-              </div>
-
-              <div className="border-l-2 border-accent/30 pl-6">
-                <h3 className="text-foreground font-medium mb-2">Transaction trust</h3>
-                <p>
-                  Does the user feel in control when adding or sending money? This is where cognitive load, ambiguous confirmation states, and unfamiliar flows create hesitation that prevents first use from becoming habitual use.
-                </p>
-              </div>
-
-              <div className="border-l-2 border-accent/30 pl-6">
-                <h3 className="text-foreground font-medium mb-2">Feedback trust</h3>
-                <p>
-                  Does the user receive enough confirmation and visibility after actions? Without clear system feedback, users lose confidence that their money arrived, their request was processed, or their action was reversible.
-                </p>
-              </div>
-            </div>
-
-            <p className="mt-6 text-foreground font-medium">
-              This framing shifted the conversation from "does it work?" to "where does certainty collapse?" — and gave the product team a prioritisation logic tied to adoption mechanics, not UI preferences.
-            </p>
+            <SequentialFlow
+              title=""
+              subtitle=""
+              steps={[
+                { title: "Entry Trust", description: "Do I feel safe signing up?" },
+                { title: "Transaction Trust", description: "Do I feel in control sending money?" },
+                { title: "Feedback Trust", description: "Do I know what happened?" },
+              ]}
+              footnote='Shifted the conversation from "does it work?" to "where does certainty collapse?"'
+            />
           </div>
         </div>
       </section>
@@ -206,39 +192,17 @@ const CaseStudyDigitalWallet = () => {
             </p>
           </div>
 
-          <div className="space-y-6 mt-8">
-            <div className="border-l-2 border-accent/30 pl-6">
-              <h3 className="text-foreground font-medium mb-2">Mental model failures</h3>
-              <p className="text-muted-foreground text-sm">
-                Users not understanding why multiple authentication layers existed, leading to perceived redundancy and drop-off during onboarding.
-              </p>
-            </div>
-
-            <div className="border-l-2 border-accent/30 pl-6">
-              <h3 className="text-foreground font-medium mb-2">Hierarchy failures</h3>
-              <p className="text-muted-foreground text-sm">
-                Key actions present but visually buried — users scanning past critical affordances because the interface did not signal priority.
-              </p>
-            </div>
-
-            <div className="border-l-2 border-accent/30 pl-6">
-              <h3 className="text-foreground font-medium mb-2">Compliance friction</h3>
-              <p className="text-muted-foreground text-sm">
-                KYC steps experienced as intrusive rather than protective, because the interface failed to frame verification as a user benefit.
-              </p>
-            </div>
-
-            <div className="border-l-2 border-accent/30 pl-6">
-              <h3 className="text-foreground font-medium mb-2">Feedback gaps</h3>
-              <p className="text-muted-foreground text-sm">
-                Uncertainty around notifications, completion states, and request visibility — creating anxiety about whether money had arrived or actions were reversible.
-              </p>
-            </div>
-          </div>
-
-          <p className="text-muted-foreground mt-8">
-            This structure allowed prioritisation based on adoption risk severity, not volume of comments. It gave product a decision framework, not a backlog.
-          </p>
+          <RiskGrid
+            title=""
+            subtitle=""
+            items={[
+              { severity: "critical", title: "Mental model failures", description: "Users couldn't understand multi-layer auth" },
+              { severity: "high", title: "Hierarchy failures", description: "Key actions visually buried" },
+              { severity: "high", title: "Compliance friction", description: "KYC felt intrusive, not protective" },
+              { severity: "critical", title: "Feedback gaps", description: "Uncertainty whether money arrived" },
+            ]}
+            footnote="Prioritised by adoption risk severity, not comment volume."
+          />
         </div>
       </section>
 

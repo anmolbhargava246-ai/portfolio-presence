@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { FrictionMap } from "@/components/case-study/FrictionMap";
 
 const CaseStudySensoryPreference = () => {
   return (
@@ -231,6 +232,24 @@ const CaseStudySensoryPreference = () => {
               — Participant, Riyadh focus group
             </footer>
           </blockquote>
+        </div>
+      </section>
+
+      {/* Sensory Trust Map */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto max-w-3xl">
+          <FrictionMap
+            title="Sensory Trust Map"
+            subtitle="Which sensory attributes drive default preference vs erode it."
+            items={[
+              { label: "Texture", severity: "critical", description: "Primary trust signal — thickness and smoothness predict preference" },
+              { label: "Aftertaste", severity: "high", description: "Lingering finish drives repurchase, not trial" },
+              { label: "Visual cues", severity: "high", description: "Colour sets expectation before first sip" },
+              { label: "Sourness", severity: "medium", description: "Adjustable without breaking habit — a lever, not a foundation" },
+              { label: "Aroma", severity: "low", description: "Noticed when wrong, invisible when right" },
+            ]}
+            footnote="Mapped by impact on habitual repurchase, not blind-test preference."
+          />
         </div>
       </section>
 

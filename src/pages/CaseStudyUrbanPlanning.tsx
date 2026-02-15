@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { RiskGrid } from "@/components/case-study/RiskGrid";
 
 const CaseStudyUrbanPlanning = () => {
   return (
@@ -151,6 +152,21 @@ const CaseStudyUrbanPlanning = () => {
               <p className="text-foreground text-sm">Synthesis into actionable recommendations for planning and design</p>
             </div>
           </div>
+        </section>
+
+        {/* Adoption Risk Grid */}
+        <section className="max-w-3xl mx-auto px-6 py-16 border-t border-border">
+          <RiskGrid
+            title="Adoption Risk Map"
+            subtitle="Where the development risked low engagement, mapped by behavioural barrier."
+            items={[
+              { severity: "high", title: "Accessibility over novelty", description: "Proximity and ease of access mattered more than flagship attractions" },
+              { severity: "critical", title: "Green space as infrastructure", description: "Outdoor zones and F&B were central to adoption, not peripheral" },
+              { severity: "high", title: "Segment divergence", description: "Families and young professionals wanted fundamentally different experiences" },
+              { severity: "medium", title: "Concept legibility", description: "Unclear amenity articulation reduced engagement intent" },
+            ]}
+            footnote="Prioritised by impact on long-term community adoption, not feature novelty."
+          />
         </section>
 
         {/* Key Insights */}

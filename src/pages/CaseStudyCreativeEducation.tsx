@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { RiskGrid } from "@/components/case-study/RiskGrid";
 
 const CaseStudyCreativeEducation = () => {
   return (
@@ -148,6 +149,23 @@ const CaseStudyCreativeEducation = () => {
                 <span>Synthesis and prioritisation into a module-level curriculum roadmap</span>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Curriculum Risk Grid */}
+        <section className="container mx-auto px-6 py-16 border-t border-border">
+          <div className="max-w-3xl">
+            <RiskGrid
+              title="Curriculum Alignment Risks"
+              subtitle="Where institutional design risked failing learner and market expectations."
+              items={[
+                { severity: "critical", title: "Skills-market mismatch", description: "Theory-heavy curriculum misaligned with employer expectations" },
+                { severity: "high", title: "Cohort differentiation gap", description: "Early-career and mid-career learners served identical pathways" },
+                { severity: "high", title: "Cultural relevance deficit", description: "Global benchmarks applied without local adaptation" },
+                { severity: "medium", title: "Cross-disciplinary blind spot", description: "Siloed domains missing high-value blended learning" },
+              ]}
+              footnote="Prioritised by impact on institutional credibility and learner employability."
+            />
           </div>
         </section>
 

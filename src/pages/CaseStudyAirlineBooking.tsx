@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { FrictionMap } from "@/components/case-study/FrictionMap";
 
 const CaseStudyAirlineBooking = () => {
   return (
@@ -177,6 +178,24 @@ const CaseStudyAirlineBooking = () => {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Journey Friction Map */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto max-w-3xl">
+          <FrictionMap
+            title="Journey Friction Map"
+            subtitle="Where confidence collapsed across the booking journey."
+            items={[
+              { label: "Search", severity: "low", description: "Flight discovery and comparison" },
+              { label: "Pricing", severity: "high", description: "Total cost visibility and add-on transparency" },
+              { label: "Checkout", severity: "high", description: "Progress confidence and payment completion" },
+              { label: "Post-booking", severity: "medium", description: "Modification and management certainty" },
+              { label: "Loyalty", severity: "medium", description: "Reward visibility at comparison moments" },
+            ]}
+            footnote="Friction mapped by trust impact, not interaction count."
+          />
         </div>
       </section>
 
