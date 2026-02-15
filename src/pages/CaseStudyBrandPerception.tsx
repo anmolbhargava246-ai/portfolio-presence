@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { RiskGrid } from "@/components/case-study/RiskGrid";
 
 const CaseStudyBrandPerception = () => {
   return (
@@ -219,6 +220,23 @@ const CaseStudyBrandPerception = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Brand Risk Grid */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto max-w-3xl">
+          <RiskGrid
+            title="Preference Risk Map"
+            subtitle="Mapped by barrier type to habitual preference, not stated attitude."
+            items={[
+              { severity: "critical", title: "Mental availability gap", description: "Brand absent from consideration at key decision moments" },
+              { severity: "high", title: "Social risk aversion", description: "Consumers default to 'safe' brands in group contexts" },
+              { severity: "high", title: "Emotional territory deficit", description: "Competitors own nostalgia and reliability associations" },
+              { severity: "medium", title: "Cultural origin invisibility", description: "Local roots unknown to most consumers" },
+            ]}
+            footnote="Prioritised by impact on habitual purchase, not brand perception scores."
+          />
         </div>
       </section>
 

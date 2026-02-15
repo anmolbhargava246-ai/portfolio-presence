@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { SequentialFlow } from "@/components/case-study/SequentialFlow";
 
 const CaseStudyAIAssistant = () => {
   return (
@@ -165,6 +166,23 @@ const CaseStudyAIAssistant = () => {
               This kept the research centred on decision-making, not feature feedback.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Trust Calibration Flow */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto max-w-3xl">
+          <SequentialFlow
+            title="Trust Calibration Sequence"
+            subtitle="How reliance decisions form during AI-assisted work."
+            steps={[
+              { title: "Output Legibility", description: "Does the response feel aligned with my intent?" },
+              { title: "Confidence Assessment", description: "Is the AI's certainty proportionate to the task?" },
+              { title: "Verification Threshold", description: "Do I have enough signal to accept or must I check?" },
+              { title: "Reliance Decision", description: "Do I delegate, edit, or discard?" },
+            ]}
+            footnote="Trust was a moment-by-moment decision, not a stable attitude."
+          />
         </div>
       </section>
 
