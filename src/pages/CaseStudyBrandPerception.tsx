@@ -12,7 +12,7 @@ const CaseStudyBrandPerception = () => {
           to="/projects"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
         >
-          <ArrowLeft className="h-4 w-4" />
+          <ArrowLeft className="w-4 h-4" />
           Back to Projects
         </Link>
       </div>
@@ -22,7 +22,7 @@ const CaseStudyBrandPerception = () => {
         <div className="container mx-auto max-w-3xl">
           {/* Bold Category Visual */}
           <div className="mb-10">
-            <span className="inline-block px-4 py-2 bg-accent/10 text-accent text-lg font-medium rounded-lg border border-accent/20">
+            <span className="inline-block px-4 py-2 bg-secondary text-secondary-foreground text-lg font-medium rounded-lg">
               Brand Equity · Consumer Decision-Making
             </span>
           </div>
@@ -181,8 +181,8 @@ const CaseStudyBrandPerception = () => {
 
           <div className="space-y-8">
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
-                <span className="text-accent font-medium text-sm">1</span>
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
+                <span className="text-secondary-foreground font-medium text-sm">1</span>
               </div>
               <div>
                 <h3 className="font-medium text-foreground mb-1">Competitor association mapping</h3>
@@ -191,8 +191,8 @@ const CaseStudyBrandPerception = () => {
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
-                <span className="text-accent font-medium text-sm">2</span>
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
+                <span className="text-secondary-foreground font-medium text-sm">2</span>
               </div>
               <div>
                 <h3 className="font-medium text-foreground mb-1">Context-specific preference exploration</h3>
@@ -201,8 +201,8 @@ const CaseStudyBrandPerception = () => {
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
-                <span className="text-accent font-medium text-sm">3</span>
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
+                <span className="text-secondary-foreground font-medium text-sm">3</span>
               </div>
               <div>
                 <h3 className="font-medium text-foreground mb-1">Cultural identity and local relevance testing</h3>
@@ -211,8 +211,8 @@ const CaseStudyBrandPerception = () => {
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
-                <span className="text-accent font-medium text-sm">4</span>
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
+                <span className="text-secondary-foreground font-medium text-sm">4</span>
               </div>
               <div>
                 <h3 className="font-medium text-foreground mb-1">Quantitative prioritisation</h3>
@@ -248,50 +248,50 @@ const CaseStudyBrandPerception = () => {
           </h2>
 
           <div className="space-y-10">
-            <div className="border-l-2 border-accent/30 pl-6">
+            <div className="border-l-4 border-accent pl-6">
               <h3 className="text-lg font-medium text-foreground mb-2">
                 Category choice is driven by social risk, not taste preference.
               </h3>
               <p className="text-muted-foreground mb-3">
                 In group contexts, people default to "safe" brands that require no explanation. The client was seen as a personal choice, not a group-safe choice.
               </p>
-              <p className="text-sm text-accent">
+              <p className="text-sm text-accent font-medium">
                 → Positioning needed to build group legitimacy, not just individual appeal.
               </p>
             </div>
 
-            <div className="border-l-2 border-accent/30 pl-6">
+            <div className="border-l-4 border-accent pl-6">
               <h3 className="text-lg font-medium text-foreground mb-2">
                 Competitors owned nostalgia and reliability. The client owned lightness and value.
               </h3>
               <p className="text-muted-foreground mb-3">
                 Association mapping revealed clear territory separation. Competing on nostalgia would require years of investment; leading on modernity and affordability was immediately credible.
               </p>
-              <p className="text-sm text-accent">
+              <p className="text-sm text-accent font-medium">
                 → Strategy shifted to doubling down on existing strengths rather than chasing competitor territory.
               </p>
             </div>
 
-            <div className="border-l-2 border-accent/30 pl-6">
+            <div className="border-l-4 border-accent pl-6">
               <h3 className="text-lg font-medium text-foreground mb-2">
                 Regional origin increased affinity—but only when made explicit.
               </h3>
               <p className="text-muted-foreground mb-3">
                 Participants who knew the brand's local roots showed higher warmth and trust. Most didn't know.
               </p>
-              <p className="text-sm text-accent">
+              <p className="text-sm text-accent font-medium">
                 → Recommended surfacing cultural origin in brand communications as an underutilised differentiation lever.
               </p>
             </div>
 
-            <div className="border-l-2 border-accent/30 pl-6">
+            <div className="border-l-4 border-accent pl-6">
               <h3 className="text-lg font-medium text-foreground mb-2">
                 The barrier wasn't rejection—it was absence from consideration.
               </h3>
               <p className="text-muted-foreground mb-3">
                 Most competitor-primary users had neutral or positive perceptions of the client. They simply didn't think of them at the decision moment.
               </p>
-              <p className="text-sm text-accent">
+              <p className="text-sm text-accent font-medium">
                 → Salience-building and context-specific triggers prioritised over perception repair.
               </p>
             </div>
@@ -310,7 +310,7 @@ const CaseStudyBrandPerception = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span>Delivered a positioning framework clarifying which emotional territories to own vs. avoid</span>
+                <span>Delivered a positioning framework clarifying which emotional territories to own vs. cede to competitors</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />

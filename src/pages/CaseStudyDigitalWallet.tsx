@@ -13,7 +13,7 @@ const CaseStudyDigitalWallet = () => {
           to="/projects"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
         >
-          <ArrowLeft className="h-4 w-4" />
+          <ArrowLeft className="w-4 h-4" />
           Back to Projects
         </Link>
       </div>
@@ -21,8 +21,9 @@ const CaseStudyDigitalWallet = () => {
       {/* Hero Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-3xl">
+          {/* Bold Category Visual */}
           <div className="mb-10">
-            <span className="inline-block px-6 py-3 bg-accent/10 text-accent text-lg font-medium rounded-lg border border-accent/20">
+            <span className="inline-block px-4 py-2 bg-secondary text-secondary-foreground text-lg font-medium rounded-lg">
               Fintech UX · Pre-Launch Risk
             </span>
           </div>
@@ -145,7 +146,7 @@ const CaseStudyDigitalWallet = () => {
                 <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
                   Priority Flows
                 </h3>
-                <ul className="space-y-2 text-muted-foreground">
+                <ul className="space-y-2 text-muted-foreground text-sm">
                   <li>Activation and identity verification</li>
                   <li>Adding funds for the first time</li>
                   <li>Domestic and international transfers</li>
@@ -157,7 +158,7 @@ const CaseStudyDigitalWallet = () => {
                 <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
                   Analysis Lenses
                 </h3>
-                <ul className="space-y-2 text-muted-foreground">
+                <ul className="space-y-2 text-muted-foreground text-sm">
                   <li>Satisfaction and perceived effort</li>
                   <li>Efficiency under cognitive load</li>
                   <li>Memorability and learnability</li>
@@ -167,7 +168,7 @@ const CaseStudyDigitalWallet = () => {
             </div>
 
             <div className="mt-8 pt-6 border-t border-border">
-              <p className="text-muted-foreground italic">
+              <p className="text-muted-foreground italic text-sm">
                 The goal was to observe failure points under real cognitive and emotional load — not to collect preferences.
               </p>
             </div>
@@ -192,17 +193,19 @@ const CaseStudyDigitalWallet = () => {
             </p>
           </div>
 
-          <RiskGrid
-            title=""
-            subtitle=""
-            items={[
-              { severity: "critical", title: "Mental model failures", description: "Users couldn't understand multi-layer auth" },
-              { severity: "high", title: "Hierarchy failures", description: "Key actions visually buried" },
-              { severity: "high", title: "Compliance friction", description: "KYC felt intrusive, not protective" },
-              { severity: "critical", title: "Feedback gaps", description: "Uncertainty whether money arrived" },
-            ]}
-            footnote="Prioritised by adoption risk severity, not comment volume."
-          />
+          <div className="mt-8">
+            <RiskGrid
+              title=""
+              subtitle=""
+              items={[
+                { severity: "critical", title: "Mental model failures", description: "Users couldn't understand multi-layer auth" },
+                { severity: "high", title: "Hierarchy failures", description: "Key actions visually buried" },
+                { severity: "high", title: "Compliance friction", description: "KYC felt intrusive, not protective" },
+                { severity: "critical", title: "Feedback gaps", description: "Uncertainty whether money arrived" },
+              ]}
+              footnote="Prioritised by adoption risk severity, not comment volume."
+            />
+          </div>
         </div>
       </section>
 
@@ -219,29 +222,29 @@ const CaseStudyDigitalWallet = () => {
             </p>
 
             <div className="space-y-6 mt-4">
-              <div className="border-l-2 border-accent/30 pl-6">
+              <div className="border-l-4 border-accent pl-6">
                 <h3 className="text-foreground font-medium mb-1">Trust signalling brought forward</h3>
-                <p className="text-sm">Category and safety cues repositioned to appear early in onboarding, reducing activation hesitation.</p>
+                <p className="text-sm text-muted-foreground">Category and safety cues repositioned to appear early in onboarding, reducing activation hesitation.</p>
               </div>
 
-              <div className="border-l-2 border-accent/30 pl-6">
+              <div className="border-l-4 border-accent pl-6">
                 <h3 className="text-foreground font-medium mb-1">Security steps made legible</h3>
-                <p className="text-sm">Multi-layer authentication reframed from redundant friction to visible protection — reducing perceived effort without reducing actual security.</p>
+                <p className="text-sm text-muted-foreground">Multi-layer authentication reframed from redundant friction to visible protection — reducing perceived effort without reducing actual security.</p>
               </div>
 
-              <div className="border-l-2 border-accent/30 pl-6">
+              <div className="border-l-4 border-accent pl-6">
                 <h3 className="text-foreground font-medium mb-1">Homepage hierarchy restructured</h3>
-                <p className="text-sm">Action prominence redesigned to match scanning behaviour under cognitive load, reducing time-to-first-action.</p>
+                <p className="text-sm text-muted-foreground">Action prominence redesigned to match scanning behaviour under cognitive load, reducing time-to-first-action.</p>
               </div>
 
-              <div className="border-l-2 border-accent/30 pl-6">
+              <div className="border-l-4 border-accent pl-6">
                 <h3 className="text-foreground font-medium mb-1">Transaction flows condensed</h3>
-                <p className="text-sm">Long multi-step flows restructured where perceived effort exceeded actual complexity, improving completion confidence.</p>
+                <p className="text-sm text-muted-foreground">Long multi-step flows restructured where perceived effort exceeded actual complexity, improving completion confidence.</p>
               </div>
 
-              <div className="border-l-2 border-accent/30 pl-6">
+              <div className="border-l-4 border-accent pl-6">
                 <h3 className="text-foreground font-medium mb-1">Feedback loops scaffolded</h3>
-                <p className="text-sm">New features given lightweight explanation and confirmation patterns, reducing first-use anxiety.</p>
+                <p className="text-sm text-muted-foreground">New features given lightweight explanation and confirmation patterns, reducing first-use anxiety.</p>
               </div>
             </div>
 
