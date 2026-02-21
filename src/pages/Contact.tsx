@@ -68,6 +68,16 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Info */}
             <div className="space-y-8">
+              {/* Photograph */}
+              <div className="rounded-xl overflow-hidden aspect-[4/5]">
+                <img
+                  src="/portfolio-presence/anmol-bhargava.jpg"
+                  alt="Anmol Bhargava – Founder"
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
               <div>
                 <h2 className="font-display text-2xl font-medium text-foreground mb-6">
                   Get in Touch

@@ -21,13 +21,6 @@ const CaseStudyDigitalWallet = () => {
       {/* Hero Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-3xl">
-          {/* Bold Category Visual */}
-          <div className="mb-10">
-            <span className="inline-block px-4 py-2 bg-secondary text-secondary-foreground text-lg font-medium rounded-lg">
-              Fintech UX · Pre-Launch Risk
-            </span>
-          </div>
-
           <div className="flex flex-wrap gap-2 mb-8">
             <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
               Fintech UX

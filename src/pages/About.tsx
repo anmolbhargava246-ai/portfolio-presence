@@ -25,16 +25,16 @@ const About = () => {
                 Hi, I'm Anmol 👋
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a UX researcher with four years of experience. Basically, I look at 
+                I'm a UX researcher with four years of experience. Basically, I look at
                 the "people" side of product development. 👥
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                My way of working is embedded in strategy, not just execution. I step in early, 
+                My way of working is embedded in strategy, not just execution. I step in early,
                 challenge assumptions, and turn human behaviour into clear product direction. 🧭
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I have a master's degree in psychology, which makes me, honestly, a bit of a 
-                user behaviour enthusiast. I look at biases, mental models, trust, friction… 
+                I have a master's degree in psychology, which makes me, honestly, a bit of a
+                user behaviour enthusiast. I look at biases, mental models, trust, friction…
                 so kind of everywhere the real insight lives. 💡
               </p>
               <div className="flex flex-col gap-2 text-muted-foreground">
@@ -59,8 +59,9 @@ const About = () => {
             <div className="relative">
               <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-medium">
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=750&fit=crop"
-                  alt="Anmol - UX Researcher"
+                  src="/portfolio-presence/anmol-bhargava.jpg"
+                  alt="Anmol Bhargava – Founder"
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>

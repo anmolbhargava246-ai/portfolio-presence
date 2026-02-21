@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 
-const categories = ["All", "Fintech/Banking", "Travel", "Education", "Consumer Study", "Enterprise", "Tech/AI"];
+const categories = ["All", "Fintech/Banking", "Travel", "Education", "Consumer Study", "Enterprise"];
 
 const projects = [
   {
@@ -77,16 +77,6 @@ const projects = [
     tags: ["Fintech UX", "Pre-Launch Risk", "Behavioural UX", "Usability Testing"],
     href: "/projects/digital-wallet",
   },
-  {
-    id: 8,
-    title: "AI Assistant Trust Study",
-    description:
-      "An independent behavioural study exploring mental models, trust calibration, and reliance patterns in AI-powered productivity tools.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
-    category: "Tech/AI",
-    tags: ["Generative Research", "Mental Models", "Trust & Safety", "Independent"],
-    href: "/projects/ai-assistant",
-  },
 ];
 
 const Projects = () => {
@@ -126,11 +116,10 @@ const Projects = () => {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                  activeCategory === category
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${activeCategory === category
                     ? "bg-primary text-primary-foreground"
                     : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
-                }`}
+                  }`}
               >
                 {category}
               </button>

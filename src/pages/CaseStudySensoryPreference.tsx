@@ -20,13 +20,6 @@ const CaseStudySensoryPreference = () => {
       {/* Hero Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-3xl">
-          {/* Bold Category Visual */}
-          <div className="mb-10">
-            <span className="inline-block px-4 py-2 bg-accent/10 text-accent text-lg font-medium rounded-lg border border-accent/20">
-              Sensory Research · Brand Equity · Habit Formation
-            </span>
-          </div>
-
           <div className="flex flex-wrap gap-2 mb-8">
             <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
               Dairy Category
@@ -138,7 +131,7 @@ const CaseStudySensoryPreference = () => {
               Research Snapshot
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
                   Lens
@@ -197,19 +190,19 @@ const CaseStudySensoryPreference = () => {
 
             <div className="space-y-4 mt-8">
               <div className="flex gap-4">
-                <span className="text-accent font-medium min-w-[100px]">Phase 1</span>
+                <span className="text-accent font-medium whitespace-nowrap">Phase 1</span>
                 <span>Contextual discussion to surface category rituals, emotional associations, and authenticity expectations</span>
               </div>
               <div className="flex gap-4">
-                <span className="text-accent font-medium min-w-[100px]">Phase 2</span>
+                <span className="text-accent font-medium whitespace-nowrap">Phase 2</span>
                 <span>Blind taste testing across recipe variants to isolate sensory drivers of preference</span>
               </div>
               <div className="flex gap-4">
-                <span className="text-accent font-medium min-w-[100px]">Phase 3</span>
+                <span className="text-accent font-medium whitespace-nowrap">Phase 3</span>
                 <span>Competitor benchmarking to identify category defaults and differentiation opportunities</span>
               </div>
               <div className="flex gap-4">
-                <span className="text-accent font-medium min-w-[100px]">Phase 4</span>
+                <span className="text-accent font-medium whitespace-nowrap">Phase 4</span>
                 <span>Synthesis mapping sensory reactions to behavioural trust and repurchase intent</span>
               </div>
             </div>

@@ -23,12 +23,12 @@ const featuredProjects = [
   },
   {
     id: 3,
-    title: "AI Assistant Trust Study",
+    title: "Airline Booking Platform UX",
     description:
-      "Mapped mental models and trust calibration patterns, informing design principles for appropriate reliance on AI-powered tools.",
-    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop",
-    tags: ["Behavioural Research", "Mental Models", "Trust & Safety"],
-    href: "/projects/ai-assistant",
+      "Identified where clarity, confidence, and loyalty break down in a high-stakes airline booking journey, reducing booking friction and building trust.",
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&h=600&fit=crop",
+    tags: ["Conversion UX", "Behavioural Insight", "Usability Testing"],
+    href: "/projects/airline-booking",
   },
 ];
 

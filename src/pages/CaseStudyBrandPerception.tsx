@@ -20,13 +20,6 @@ const CaseStudyBrandPerception = () => {
       {/* Hero Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-3xl">
-          {/* Bold Category Visual */}
-          <div className="mb-10">
-            <span className="inline-block px-4 py-2 bg-secondary text-secondary-foreground text-lg font-medium rounded-lg">
-              Brand Equity · Consumer Decision-Making
-            </span>
-          </div>
-
           <div className="flex flex-wrap gap-2 mb-8">
             <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
               QSR Category
@@ -179,44 +172,27 @@ const CaseStudyBrandPerception = () => {
             Approach
           </h2>
 
-          <div className="space-y-8">
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
-                <span className="text-secondary-foreground font-medium text-sm">1</span>
-              </div>
-              <div>
-                <h3 className="font-medium text-foreground mb-1">Competitor association mapping</h3>
-                <p className="text-muted-foreground text-sm">Established which emotional territories competitors already owned—nostalgia, reliability, family safety—to identify realistic positioning space.</p>
-              </div>
-            </div>
+          <div className="space-y-6">
+            <p className="text-muted-foreground leading-relaxed">
+              The research was designed to surface behavioural drivers of preference, not just stated attitudes.
+            </p>
 
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
-                <span className="text-secondary-foreground font-medium text-sm">2</span>
+            <div className="space-y-4 mt-8">
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Phase 1</span>
+                <p className="text-muted-foreground">Competitor association mapping to establish which emotional territories competitors already owned—nostalgia, reliability, family safety</p>
               </div>
-              <div>
-                <h3 className="font-medium text-foreground mb-1">Context-specific preference exploration</h3>
-                <p className="text-muted-foreground text-sm">Focused on three decision moments: group gatherings, solo comfort, and celebration. These contexts revealed different default behaviours and switching barriers.</p>
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Phase 2</span>
+                <p className="text-muted-foreground">Context-specific preference exploration across group gatherings, solo comfort, and celebration decision moments</p>
               </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
-                <span className="text-secondary-foreground font-medium text-sm">3</span>
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Phase 3</span>
+                <p className="text-muted-foreground">Cultural identity and local relevance testing to explore regional origin as a differentiation lever</p>
               </div>
-              <div>
-                <h3 className="font-medium text-foreground mb-1">Cultural identity and local relevance testing</h3>
-                <p className="text-muted-foreground text-sm">Explored whether regional origin could serve as a differentiation lever in a category dominated by global brands.</p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
-                <span className="text-secondary-foreground font-medium text-sm">4</span>
-              </div>
-              <div>
-                <h3 className="font-medium text-foreground mb-1">Quantitative prioritisation</h3>
-                <p className="text-muted-foreground text-sm">Validated qualitative themes at scale to distinguish signal from noise and prioritise positioning investments.</p>
+              <div className="flex gap-4">
+                <span className="text-accent font-medium whitespace-nowrap">Phase 4</span>
+                <p className="text-muted-foreground">Quantitative prioritisation to validate qualitative themes at scale and prioritise positioning investments</p>
               </div>
             </div>
           </div>
@@ -248,50 +224,57 @@ const CaseStudyBrandPerception = () => {
           </h2>
 
           <div className="space-y-10">
-            <div className="border-l-4 border-accent pl-6">
+            <div>
               <h3 className="text-lg font-medium text-foreground mb-2">
                 Category choice is driven by social risk, not taste preference.
               </h3>
               <p className="text-muted-foreground mb-3">
                 In group contexts, people default to "safe" brands that require no explanation. The client was seen as a personal choice, not a group-safe choice.
               </p>
-              <p className="text-sm text-accent font-medium">
+              <p className="text-accent text-sm font-medium">
                 → Positioning needed to build group legitimacy, not just individual appeal.
               </p>
             </div>
 
-            <div className="border-l-4 border-accent pl-6">
+            <div>
               <h3 className="text-lg font-medium text-foreground mb-2">
                 Competitors owned nostalgia and reliability. The client owned lightness and value.
               </h3>
               <p className="text-muted-foreground mb-3">
                 Association mapping revealed clear territory separation. Competing on nostalgia would require years of investment; leading on modernity and affordability was immediately credible.
               </p>
-              <p className="text-sm text-accent font-medium">
+              <p className="text-accent text-sm font-medium">
                 → Strategy shifted to doubling down on existing strengths rather than chasing competitor territory.
               </p>
             </div>
 
-            <div className="border-l-4 border-accent pl-6">
+            {/* Pull Quote */}
+            <blockquote className="border-l-4 border-accent pl-6 py-4 my-12">
+              <p className="text-xl md:text-2xl font-display text-foreground italic">
+                "The barrier wasn't rejection—it was absence from consideration."
+              </p>
+            </blockquote>
+
+            <div>
               <h3 className="text-lg font-medium text-foreground mb-2">
                 Regional origin increased affinity—but only when made explicit.
               </h3>
               <p className="text-muted-foreground mb-3">
                 Participants who knew the brand's local roots showed higher warmth and trust. Most didn't know.
               </p>
-              <p className="text-sm text-accent font-medium">
+              <p className="text-accent text-sm font-medium">
                 → Recommended surfacing cultural origin in brand communications as an underutilised differentiation lever.
               </p>
             </div>
 
-            <div className="border-l-4 border-accent pl-6">
+            <div>
               <h3 className="text-lg font-medium text-foreground mb-2">
                 The barrier wasn't rejection—it was absence from consideration.
               </h3>
               <p className="text-muted-foreground mb-3">
                 Most competitor-primary users had neutral or positive perceptions of the client. They simply didn't think of them at the decision moment.
               </p>
-              <p className="text-sm text-accent font-medium">
+              <p className="text-accent text-sm font-medium">
                 → Salience-building and context-specific triggers prioritised over perception repair.
               </p>
             </div>
