@@ -11,6 +11,13 @@ const socialLinks = [
   { icon: Twitter, href: "#", label: "Twitter" },
 ];
 
+const subjectLabels: Record<string, string> = {
+  project: "Project Inquiry",
+  consulting: "Consulting",
+  collaboration: "Collaboration",
+  other: "Other"
+};
+
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -35,13 +42,21 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Replace these placeholders with your actual EmailJS Service ID, Template ID, and Public Key
-      await emailjs.sendForm(
-        'service_o4v8mav',
-        'template_tbz85oj',
-        formRef.current,
-        'yQwTVKyWAbZKxvvVy'
-      );
+      // Send both the notification to you and the auto-reply to the user concurrently
+      await Promise.all([
+        emailjs.sendForm(
+          'service_o4v8mav',
+          'template_tbz85oj', // Your main template
+          formRef.current,
+          'yQwTVKyWAbZKxvvVy'
+        ),
+        emailjs.sendForm(
+          'service_o4v8mav',
+          'template_1yh50ym', // The auto-reply template
+          formRef.current,
+          'yQwTVKyWAbZKxvvVy'
+        )
+      ]);
 
       toast({
         title: "Message sent!",
@@ -163,6 +178,7 @@ const Contact = () => {
                 className="bg-card p-8 rounded-xl shadow-soft space-y-6"
               >
                 <input type="hidden" name="time" value={new Date().toLocaleString()} />
+                <input type="hidden" name="subject_label" value={subjectLabels[formData.subject] || ''} />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label
