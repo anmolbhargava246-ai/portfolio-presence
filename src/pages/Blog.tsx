@@ -23,22 +23,20 @@ It's time to move past the hype and look at the "psychological side-eye" we're a
   },
   {
     id: 2,
-    slug: "ai-emotional-intelligence-test",
-    title:
-      "AI just aced an Emotional Intelligence test. Why am I not impressed?",
-    subtitle: "",
-    body: `The headlines are everywhere: "AI is now more emotionally intelligent than humans." In a lab at the Université de Genève, the machines crushed the benchmarks. But as a psychologist, I can't help but feel a strong sense of déjà vu.
+    slug: "the-emotional-intelligence-illusion",
+    title: "The Emotional Intelligence Illusion",
+    subtitle: "AI just aced an Emotional Intelligence test. Why am I not impressed?",
+    body: `The headlines are everywhere: "AI is now more emotionally intelligent than humans." In a lab at the Université de Genève, the machines crushed the benchmarks. But as a psychologist, I can’t help but feel a strong sense of déjà vu.
 
-We've seen this before. In psychology, we call it the "W.E.I.R.D." problem. This refers to research that looks perfect in a controlled lab but falls apart in the messy, diverse reality of the real world. AI isn't showing empathy; it's showing obedience. It isn't feeling your pain; it's predicting the "polite" pattern you want to hear.
+We’ve seen this before. In psychology, we call it the "W.E.I.R.D." problem. This refers to research that looks perfect in a controlled lab but falls apart in the messy, diverse reality of the real world. AI isn't showing empathy; it’s showing obedience. It isn't feeling your pain; it’s predicting the "polite" pattern you want to hear.
 
-In this piece, I dive into why we shouldn't mistake a machine's performance for its presence. We look at the "People-Pleaser Problem" in LLMs and why the real danger isn't that AI is faking empathy. The real danger is that we might be foolish enough to believe it.
+In this piece, I dive into why we shouldn't mistake a machine’s performance for its presence. We look at the "People-Pleaser Problem" in LLMs and why the real danger isn't that AI is faking empathy. The real danger is that we might be foolish enough to believe it.
 
-Is empathy just a pattern to be solved, or are we losing the "human" in the HCI equation? Let's look past the test scores.`,
+Is empathy just a pattern to be solved, or are we losing the "human" in the HCI equation? Let’s look past the test scores.`,
     ctaText: "Read the full article",
     ctaUrl: "https://substack.com/home/post/p-172588778",
-    metaTitle: "AI and Emotional Intelligence | Anmol Bhargava",
-    metaDescription:
-      "A psychological critique of AI emotional intelligence benchmarks and the WEIRD research problem.",
+    metaTitle: "The Emotional Intelligence Illusion | Anmol Bhargava",
+    metaDescription: "A psychological critique of AI emotional intelligence benchmarks and the WEIRD research problem.",
   },
 ];
 
@@ -83,9 +81,11 @@ const Blog = () => {
                     </p>
                   )}
 
-                  <p className="text-muted-foreground text-sm leading-relaxed line-clamp-6 flex-grow">
-                    {article.body}
-                  </p>
+                  <div className="text-muted-foreground text-sm leading-relaxed line-clamp-6 flex-grow space-y-4">
+                    {article.body.split('\n\n').map((paragraph, i) => (
+                      <p key={i}>{paragraph}</p>
+                    ))}
+                  </div>
 
                   <div className="pt-4">
                     <a
