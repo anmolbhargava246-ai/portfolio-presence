@@ -39,7 +39,7 @@ const CaseStudyCreativeEducation = () => {
             </span>
           </div>
 
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
             Shaping the Future of Creative Education in Saudi Arabia
           </h1>
 
@@ -49,14 +49,30 @@ const CaseStudyCreativeEducation = () => {
         </div>
       </section>
 
+      {/* Case Study Visual */}
+      <section className="py-6 md:py-8">
+        <div className="container mx-auto max-w-3xl">
+          <div className="rounded-xl overflow-hidden shadow-medium">
+            <img
+              src="/portfolio-presence/case-study-images/creative-education.png"
+              alt="Abstract knowledge networks representing creative thinking and pedagogy"
+              loading="lazy"
+              className="w-full h-auto object-cover aspect-[16/9]"
+            />
+          </div>
+        </div>
+      </section>
+
+
+
       {/* The Problem */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             The Problem
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p className="text-lg">
               The client aimed to become a leading institution for creative education in Saudi Arabia—but lacked clarity on what skills truly mattered to learners, employers, and the evolving job market.
             </p>
@@ -76,11 +92,11 @@ const CaseStudyCreativeEducation = () => {
       {/* My Role */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             My Role
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               I led the research strategy and execution across a three-member team—owning discussion guide design, global expert interviews, and synthesis. I ensured cultural validity by coordinating closely with Arabic moderators for local interviews.
             </p>
@@ -100,7 +116,7 @@ const CaseStudyCreativeEducation = () => {
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <div className="bg-card border border-border rounded-xl p-8 md:p-10">
-            <h2 className="font-display text-xl md:text-2xl font-medium text-foreground mb-8">
+            <h2 className="text-xl md:text-2xl text-foreground mb-6">
               Research Snapshot
             </h2>
 
@@ -137,12 +153,12 @@ const CaseStudyCreativeEducation = () => {
       {/* Approach */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Approach
           </h2>
 
           <div className="space-y-6">
-            <div className="space-y-4 text-muted-foreground">
+            <div className="space-y-3 text-muted-foreground">
               <div className="flex gap-4">
                 <span className="text-accent font-medium whitespace-nowrap">Phase 1</span>
                 <p className="text-muted-foreground">Desk research and global benchmark analysis across creative education institutions</p>
@@ -188,11 +204,11 @@ const CaseStudyCreativeEducation = () => {
       {/* Key Insights */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-10">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Key Insights
           </h2>
 
-          <div className="space-y-10">
+          <div className="space-y-8">
             <div>
               <h3 className="text-lg font-medium text-foreground mb-2">
                 There was a clear mismatch between traditional education and job market expectations.
@@ -207,7 +223,7 @@ const CaseStudyCreativeEducation = () => {
 
             {/* Pull Quote */}
             <blockquote className="border-l-4 border-accent pl-6 py-4 my-12">
-              <p className="text-xl md:text-2xl font-display text-foreground italic">
+              <p className="text-xl md:text-2xl text-foreground italic">
                 "Global credibility mattered, but local relevance was non-negotiable."
               </p>
             </blockquote>
@@ -254,11 +270,11 @@ const CaseStudyCreativeEducation = () => {
       {/* Outcome and Impact */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Outcome and Impact
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p className="text-foreground font-medium">
               The research delivered three core outputs:
             </p>
@@ -279,11 +295,11 @@ const CaseStudyCreativeEducation = () => {
       {/* Reflection */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Reflection
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               This project reinforced the importance of designing education as a long-term system rather than a static curriculum—one that evolves with industry, culture, and learner expectations.
             </p>

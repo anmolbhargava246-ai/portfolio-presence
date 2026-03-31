@@ -38,7 +38,7 @@ const CaseStudyUrbanPlanning = () => {
             </span>
           </div>
 
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
             Designing a Community Hub Around How People Actually Live
           </h1>
 
@@ -48,14 +48,30 @@ const CaseStudyUrbanPlanning = () => {
         </div>
       </section>
 
+      {/* Case Study Visual */}
+      <section className="py-6 md:py-8">
+        <div className="container mx-auto max-w-3xl">
+          <div className="rounded-xl overflow-hidden shadow-medium">
+            <img
+              src="/portfolio-presence/case-study-images/urban-planning.png"
+              alt="Urban planning data visualisation with abstract city mapping"
+              loading="lazy"
+              className="w-full h-auto object-cover aspect-[16/9]"
+            />
+          </div>
+        </div>
+      </section>
+
+
+
       {/* The Problem */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             The Problem
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p className="text-lg">
               The client was planning a high-investment, mixed-use community hub in Jeddah—combining public spaces, F&B, entertainment, offices, and residential areas.
             </p>
@@ -78,11 +94,11 @@ const CaseStudyUrbanPlanning = () => {
       {/* My Role */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             My Role
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               I was a key researcher on this project, helping shape the research plan, leading parts of fieldwork and synthesis, and translating findings into actionable design recommendations.
             </p>
@@ -98,7 +114,7 @@ const CaseStudyUrbanPlanning = () => {
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <div className="bg-card border border-border rounded-xl p-8 md:p-10">
-            <h2 className="font-display text-xl md:text-2xl font-medium text-foreground mb-8">
+            <h2 className="text-xl md:text-2xl text-foreground mb-6">
               Research Snapshot
             </h2>
 
@@ -140,7 +156,7 @@ const CaseStudyUrbanPlanning = () => {
       {/* Approach */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Approach
           </h2>
 
@@ -191,14 +207,14 @@ const CaseStudyUrbanPlanning = () => {
       {/* Key Insights */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Key Insights
           </h2>
 
           <div className="space-y-8">
             {/* Pull Quote */}
             <blockquote className="border-l-4 border-accent pl-6 py-4 my-8">
-              <p className="text-xl md:text-2xl font-display text-foreground italic">
+              <p className="text-xl md:text-2xl text-foreground italic">
                 "Accessibility mattered more than novelty. Residents prioritised ease of access and proximity over flagship attractions."
               </p>
             </blockquote>
@@ -259,11 +275,11 @@ const CaseStudyUrbanPlanning = () => {
       {/* Outcome and Impact */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Outcome and Impact
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <ul className="space-y-3 list-inside">
               <li>• Shaped multiple iterations of the hub concept and amenity mix</li>
               <li>• Prioritised high-demand community features validated through 500+ survey responses</li>
@@ -281,11 +297,11 @@ const CaseStudyUrbanPlanning = () => {
       {/* Reflection */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Reflection
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               This project reinforced the value of mixed-methods research in high-investment, long-term decisions like urban development. Clear prioritisation of resident behaviour—backed by both depth and quantitative confidence—was key to building stakeholder trust and driving action.
             </p>

@@ -35,7 +35,7 @@ const CaseStudyAIAssistant = () => {
             </span>
           </div>
 
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
             Understanding How Knowledge Workers Decide When to Trust AI
           </h1>
 
@@ -45,14 +45,30 @@ const CaseStudyAIAssistant = () => {
         </div>
       </section>
 
+      {/* Case Study Visual */}
+      <section className="py-6 md:py-8">
+        <div className="container mx-auto max-w-3xl">
+          <div className="rounded-xl overflow-hidden shadow-medium">
+            <img
+              src="/portfolio-presence/case-study-images/ai-assistant.png"
+              alt="Human brain interacting with AI system through neural networks"
+              loading="lazy"
+              className="w-full h-auto object-cover aspect-[16/9]"
+            />
+          </div>
+        </div>
+      </section>
+
+
+
       {/* The Problem */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             The Problem
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p className="text-lg">
               AI assistants are quickly becoming embedded in everyday work.
             </p>
@@ -77,11 +93,11 @@ const CaseStudyAIAssistant = () => {
       {/* My Role */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             My Role
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               I led this study independently end-to-end, from framing the research questions to designing tasks, moderating sessions, and synthesising behavioural patterns.
             </p>
@@ -97,7 +113,7 @@ const CaseStudyAIAssistant = () => {
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <div className="bg-card border border-border rounded-xl p-8 md:p-10">
-            <h2 className="font-display text-xl md:text-2xl font-medium text-foreground mb-8">
+            <h2 className="text-xl md:text-2xl text-foreground mb-6">
               Research Snapshot
             </h2>
 
@@ -143,11 +159,11 @@ const CaseStudyAIAssistant = () => {
       {/* Approach */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Approach
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               Rather than studying AI trust as a vague attitude, I focused on specific behavioural moments:
             </p>
@@ -189,11 +205,11 @@ const CaseStudyAIAssistant = () => {
       {/* Key Insights */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-10">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Key Insights
           </h2>
 
-          <div className="space-y-10">
+          <div className="space-y-8">
             <div>
               <h3 className="text-lg font-medium text-foreground mb-3">
                 Trust was rarely about accuracy alone.
@@ -214,7 +230,7 @@ const CaseStudyAIAssistant = () => {
 
             {/* Pull Quote */}
             <blockquote className="border-l-4 border-accent pl-6 py-4 my-12">
-              <p className="text-xl md:text-2xl font-display text-foreground italic">
+              <p className="text-xl md:text-2xl text-foreground italic">
                 "Trust collapsed in high-stakes contexts. When decisions involved money, workplace conflict, or sensitive judgement, users became far more sceptical and sought external validation."
               </p>
             </blockquote>
@@ -243,11 +259,11 @@ const CaseStudyAIAssistant = () => {
       {/* Output */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Output
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               The study resulted in a clear behavioural framework for calibrated trust in AI assistants, highlighting the cues that drive reliance, hesitation, and responsible use in productivity workflows.
             </p>
@@ -258,11 +274,11 @@ const CaseStudyAIAssistant = () => {
       {/* Reflection */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Reflection
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               This project reinforced that trust in AI is not a static perception.<br />
               It is a moment-by-moment decision.

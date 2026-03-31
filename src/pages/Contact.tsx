@@ -85,7 +85,7 @@ const Contact = () => {
             <span className="text-accent font-medium text-sm uppercase tracking-wider">
               Contact
             </span>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mt-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mt-4">
               Let's Work Together
             </h1>
             <p className="text-lg text-muted-foreground mt-6 leading-relaxed">
@@ -113,7 +113,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <h2 className="font-display text-2xl font-medium text-foreground mb-6">
+                <h2 className="text-2xl text-foreground mb-6">
                   Get in Touch
                 </h2>
                 <p className="text-muted-foreground">
@@ -286,7 +286,7 @@ const Contact = () => {
       <section className="py-16 md:py-24 bg-card">
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground">
+            <h2 className="text-3xl md:text-4xl text-foreground">
               Frequently Asked Questions
             </h2>
           </div>

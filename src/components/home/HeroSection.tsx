@@ -25,7 +25,7 @@ export function HeroSection() {
           </div>
 
           {/* Main heading */}
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-foreground leading-tight opacity-0 animate-fade-up stagger-1">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground leading-tight opacity-0 animate-fade-up stagger-1">
             I help product teams understand
             <span className="block text-gradient">why users trust, hesitate, and decide</span>
           </h1>

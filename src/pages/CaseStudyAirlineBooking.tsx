@@ -35,7 +35,7 @@ const CaseStudyAirlineBooking = () => {
             </span>
           </div>
 
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
             Reducing Booking Friction and Building Trust in a High-Stakes Digital Journey
           </h1>
 
@@ -45,14 +45,30 @@ const CaseStudyAirlineBooking = () => {
         </div>
       </section>
 
+      {/* Case Study Visual */}
+      <section className="py-6 md:py-8">
+        <div className="container mx-auto max-w-3xl">
+          <div className="rounded-xl overflow-hidden shadow-medium">
+            <img
+              src="/portfolio-presence/case-study-images/airline-booking.png"
+              alt="Traveller navigating a digital airline booking interface with data flows"
+              loading="lazy"
+              className="w-full h-auto object-cover aspect-[16/9]"
+            />
+          </div>
+        </div>
+      </section>
+
+
+
       {/* The Problem */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             The Problem
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p className="text-lg">
               Airline booking is a high-pressure, high-revenue moment. Users are often comparing options, managing time constraints, and making irreversible financial decisions under stress.
             </p>
@@ -72,11 +88,11 @@ const CaseStudyAirlineBooking = () => {
       {/* My Role */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             My Role
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               I led the behavioural evaluation across booking, pricing transparency, checkout, and loyalty engagement. My focus was identifying where user confidence broke down and why—then translating those findings into a prioritised roadmap for experience improvements.
             </p>
@@ -92,7 +108,7 @@ const CaseStudyAirlineBooking = () => {
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <div className="bg-card border border-border rounded-xl p-8 md:p-10">
-            <h2 className="font-display text-xl md:text-2xl font-medium text-foreground mb-8">
+            <h2 className="text-xl md:text-2xl text-foreground mb-6">
               Research Snapshot
             </h2>
 
@@ -137,7 +153,7 @@ const CaseStudyAirlineBooking = () => {
       {/* Approach */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Approach
           </h2>
 
@@ -146,7 +162,7 @@ const CaseStudyAirlineBooking = () => {
               Rather than running a broad usability sweep, we focused on decision-critical moments where users hesitate, abandon, or lose confidence.
             </p>
 
-            <div className="space-y-4 mt-8">
+            <div className="space-y-3 mt-6">
               <div className="flex gap-4">
                 <span className="text-accent font-medium whitespace-nowrap">Phase 1</span>
                 <p className="text-muted-foreground">Moderated usability testing across booking and checkout flows</p>
@@ -202,11 +218,11 @@ const CaseStudyAirlineBooking = () => {
       {/* Key Insights */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-10">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Key Insights
           </h2>
 
-          <div className="space-y-10">
+          <div className="space-y-8">
             <div>
               <h3 className="text-lg font-medium text-foreground mb-2">
                 Users weren't stuck—they were unsure.
@@ -233,7 +249,7 @@ const CaseStudyAirlineBooking = () => {
 
             {/* Pull Quote */}
             <blockquote className="border-l-4 border-accent pl-6 py-4 my-12">
-              <p className="text-xl md:text-2xl font-display text-foreground italic">
+              <p className="text-xl md:text-2xl text-foreground italic">
                 "Time pressure changed behaviour. Session timers and unclear progress cues turned anticipation into anxiety."
               </p>
             </blockquote>
@@ -280,11 +296,11 @@ const CaseStudyAirlineBooking = () => {
       {/* Output */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Output
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p className="text-foreground font-medium">
               The work resulted in a prioritised set of experience interventions:
             </p>
@@ -306,11 +322,11 @@ const CaseStudyAirlineBooking = () => {
       {/* Reflection */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Reflection
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               The most valuable research here wasn't finding every issue. It was identifying what users interpret as risk—and focusing on the moments that shape trust and follow-through.
             </p>

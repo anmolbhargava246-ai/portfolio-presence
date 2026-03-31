@@ -15,7 +15,7 @@ interface SequentialFlowProps {
 export function SequentialFlow({ title, subtitle, steps, footnote }: SequentialFlowProps) {
   return (
     <div className="my-12">
-      <h3 className="font-display text-xl md:text-2xl font-medium text-foreground mb-2">
+      <h3 className="text-xl md:text-2xl font-medium text-foreground mb-2">
         {title}
       </h3>
       {subtitle && (

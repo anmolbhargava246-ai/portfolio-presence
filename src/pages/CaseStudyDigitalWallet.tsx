@@ -36,7 +36,7 @@ const CaseStudyDigitalWallet = () => {
             </span>
           </div>
 
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
             Reducing Adoption Risk in a New Digital Wallet Before Launch
           </h1>
 
@@ -46,14 +46,30 @@ const CaseStudyDigitalWallet = () => {
         </div>
       </section>
 
+      {/* Case Study Visual */}
+      <section className="py-6 md:py-8">
+        <div className="container mx-auto max-w-3xl">
+          <div className="rounded-xl overflow-hidden shadow-medium">
+            <img
+              src="/portfolio-presence/case-study-images/digital-wallet.png"
+              alt="Digital wallet interface with secure transaction flows"
+              loading="lazy"
+              className="w-full h-auto object-cover aspect-[16/9]"
+            />
+          </div>
+        </div>
+      </section>
+
+
+
       {/* The Problem */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             The Problem
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p className="text-lg">
               The product was feature-complete and approaching launch. But one risk remained unresolved: whether users would feel confident enough to activate, transact, and return.
             </p>
@@ -76,11 +92,11 @@ const CaseStudyDigitalWallet = () => {
       {/* My Role */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             My Role
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               I shaped the behavioural framing for this initiative — defining which journeys carried the highest adoption risk, structuring task scenarios around user intent rather than screens, and leading the synthesis that converted messy session data into clear product direction.
             </p>
@@ -99,11 +115,11 @@ const CaseStudyDigitalWallet = () => {
       {/* Framing the Risk */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Framing the Risk
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               Rather than treating the wallet as a single experience to evaluate, I decomposed it into three behavioural systems — each representing a distinct layer of trust that users must build sequentially:
             </p>
@@ -126,7 +142,7 @@ const CaseStudyDigitalWallet = () => {
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <div className="bg-card border border-border rounded-xl p-8 md:p-10">
-            <h2 className="font-display text-xl md:text-2xl font-medium text-foreground mb-8">
+            <h2 className="text-xl md:text-2xl text-foreground mb-6">
               Research Approach
             </h2>
 
@@ -172,11 +188,11 @@ const CaseStudyDigitalWallet = () => {
       {/* How Synthesis Worked */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             How Synthesis Worked
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p className="text-lg">
               The most consequential work happened after sessions ended.
             </p>
@@ -205,11 +221,11 @@ const CaseStudyDigitalWallet = () => {
       {/* What the Work Enabled */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             What the Work Enabled
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               The output was a set of prioritised risk removals, framed for launch decision-making:
             </p>
@@ -251,11 +267,11 @@ const CaseStudyDigitalWallet = () => {
       {/* Why This Mattered */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Why This Mattered
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p className="text-lg">
               A digital wallet does not earn adoption through feature breadth. It earns adoption through behavioural confidence — the user's belief that their money is safe, their actions are understood, and the product behaves predictably.
             </p>
@@ -274,11 +290,11 @@ const CaseStudyDigitalWallet = () => {
       {/* Reflection */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Reflection
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               If running this again, I would integrate lightweight behavioural tracking from the first testable build — capturing hesitation duration, back-navigation frequency, and task abandonment patterns as quantitative inputs alongside moderated observation. This would have strengthened the evidence base for prioritisation and given product teams a measurable baseline to track post-launch improvement against.
             </p>

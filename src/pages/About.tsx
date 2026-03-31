@@ -21,7 +21,7 @@ const About = () => {
               <span className="text-accent font-medium text-sm uppercase tracking-wider">
                 About Me
               </span>
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground">
                 Hi, I'm Anmol 👋
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -79,7 +79,7 @@ const About = () => {
             <span className="text-accent font-medium text-sm uppercase tracking-wider">
               Expertise
             </span>
-            <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mt-4">
+            <h2 className="text-3xl md:text-4xl text-foreground mt-4">
               Skills & Tools
             </h2>
           </div>
@@ -113,7 +113,7 @@ const About = () => {
             <span className="text-accent font-medium text-sm uppercase tracking-wider">
               Let's Connect
             </span>
-            <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground">
+            <h2 className="text-3xl md:text-4xl text-foreground">
               Want clarity over noise?
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -136,7 +136,7 @@ const About = () => {
             <span className="text-accent font-medium text-sm uppercase tracking-wider">
               Approach
             </span>
-            <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mt-4">
+            <h2 className="text-3xl md:text-4xl text-foreground mt-4">
               How I Approach Research
             </h2>
           </div>
@@ -160,7 +160,7 @@ const About = () => {
               },
             ].map((value) => (
               <div key={value.title} className="text-center space-y-4">
-                <h3 className="font-display text-xl font-medium text-foreground">
+                <h3 className="text-xl font-medium text-foreground">
                   {value.title}
                 </h3>
                 <p className="text-muted-foreground">{value.description}</p>

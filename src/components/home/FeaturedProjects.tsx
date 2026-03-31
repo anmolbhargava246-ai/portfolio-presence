@@ -42,7 +42,7 @@ export function FeaturedProjects() {
             <span className="text-accent font-medium text-sm uppercase tracking-wider">
               Research That Drove Decisions
             </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-foreground">
               Featured Case Studies
             </h2>
           </div>
@@ -79,7 +79,7 @@ export function FeaturedProjects() {
 
                 {/* Content */}
                 <div className="p-6 space-y-4">
-                  <h3 className="font-display text-xl font-medium text-foreground group-hover:text-accent transition-colors">
+                  <h3 className="text-xl font-medium text-foreground group-hover:text-accent transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">

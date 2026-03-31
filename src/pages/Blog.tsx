@@ -50,7 +50,7 @@ const Blog = () => {
             <span className="text-accent font-medium text-sm uppercase tracking-wider">
               Thinking Space
             </span>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mt-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mt-4">
               Ideas & Insights
             </h1>
             <p className="text-lg text-muted-foreground mt-6 leading-relaxed">
@@ -71,7 +71,7 @@ const Blog = () => {
                 className="h-full bg-card rounded-xl overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="p-8 space-y-4 flex flex-col h-full">
-                  <h2 className="font-display text-xl md:text-2xl font-medium text-foreground">
+                  <h2 className="text-xl md:text-2xl text-foreground">
                     {article.title}
                   </h2>
 

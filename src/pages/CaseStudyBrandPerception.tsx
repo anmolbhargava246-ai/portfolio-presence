@@ -32,7 +32,7 @@ const CaseStudyBrandPerception = () => {
             </span>
           </div>
 
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
             Decoding Brand Preference in a Habit-Driven Category
           </h1>
 
@@ -42,14 +42,30 @@ const CaseStudyBrandPerception = () => {
         </div>
       </section>
 
+      {/* Case Study Visual */}
+      <section className="py-6 md:py-8">
+        <div className="container mx-auto max-w-3xl">
+          <div className="rounded-xl overflow-hidden shadow-medium">
+            <img
+              src="/portfolio-presence/case-study-images/brand-perception.png"
+              alt="Abstract representation of brand perception layers and consumer psychology"
+              loading="lazy"
+              className="w-full h-auto object-cover aspect-[16/9]"
+            />
+          </div>
+        </div>
+      </section>
+
+
+
       {/* The Problem */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             The Problem
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p className="text-lg">
               The client had strong awareness but weak habitual preference. In a category driven by emotional defaults—comfort, nostalgia, group safety—awareness alone wasn't converting to first-choice status.
             </p>
@@ -68,11 +84,11 @@ const CaseStudyBrandPerception = () => {
       {/* My Role */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             My Role
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               I shaped the research focus toward decision contexts rather than generic brand attributes—prioritising the moments where preference actually forms.
             </p>
@@ -87,11 +103,11 @@ const CaseStudyBrandPerception = () => {
       {/* Decision Focus */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Decision Focus
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               This research was commissioned to inform brand positioning and marketing investment priorities. The client needed clarity on:
             </p>
@@ -118,7 +134,7 @@ const CaseStudyBrandPerception = () => {
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <div className="bg-card border border-border rounded-xl p-8 md:p-10">
-            <h2 className="font-display text-xl md:text-2xl font-medium text-foreground mb-8">
+            <h2 className="text-xl md:text-2xl text-foreground mb-6">
               Research Snapshot
             </h2>
 
@@ -168,7 +184,7 @@ const CaseStudyBrandPerception = () => {
       {/* Approach */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Approach
           </h2>
 
@@ -177,7 +193,7 @@ const CaseStudyBrandPerception = () => {
               The research was designed to surface behavioural drivers of preference, not just stated attitudes.
             </p>
 
-            <div className="space-y-4 mt-8">
+            <div className="space-y-3 mt-6">
               <div className="flex gap-4">
                 <span className="text-accent font-medium whitespace-nowrap">Phase 1</span>
                 <p className="text-muted-foreground">Competitor association mapping to establish which emotional territories competitors already owned—nostalgia, reliability, family safety</p>
@@ -219,11 +235,11 @@ const CaseStudyBrandPerception = () => {
       {/* Key Insights */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-10">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Key Insights
           </h2>
 
-          <div className="space-y-10">
+          <div className="space-y-8">
             <div>
               <h3 className="text-lg font-medium text-foreground mb-2">
                 Category choice is driven by social risk, not taste preference.
@@ -250,7 +266,7 @@ const CaseStudyBrandPerception = () => {
 
             {/* Pull Quote */}
             <blockquote className="border-l-4 border-accent pl-6 py-4 my-12">
-              <p className="text-xl md:text-2xl font-display text-foreground italic">
+              <p className="text-xl md:text-2xl text-foreground italic">
                 "The barrier wasn't rejection—it was absence from consideration."
               </p>
             </blockquote>
@@ -285,11 +301,11 @@ const CaseStudyBrandPerception = () => {
       {/* Output and Impact */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Output and Impact
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
@@ -319,11 +335,11 @@ const CaseStudyBrandPerception = () => {
       {/* Reflection */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Reflection
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               Brand research often defaults to measuring attributes and awareness. This project reinforced that preference is behavioural—shaped by context, social risk, and mental shortcuts, not just perception scores.
             </p>

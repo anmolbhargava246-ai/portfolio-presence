@@ -32,7 +32,7 @@ const CaseStudySensoryPreference = () => {
             </span>
           </div>
 
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
             Identifying What Creates Default Preference in a High-Frequency Staple Category
           </h1>
 
@@ -42,14 +42,30 @@ const CaseStudySensoryPreference = () => {
         </div>
       </section>
 
+      {/* Case Study Visual */}
+      <section className="py-6 md:py-8">
+        <div className="container mx-auto max-w-3xl">
+          <div className="rounded-xl overflow-hidden shadow-medium">
+            <img
+              src="/portfolio-presence/case-study-images/sensory-preference.png"
+              alt="Abstract representation of human sensory perception and preference research"
+              loading="lazy"
+              className="w-full h-auto object-cover aspect-[16/9]"
+            />
+          </div>
+        </div>
+      </section>
+
+
+
       {/* The Problem */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             The Problem
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p className="text-lg">
               In high-frequency, low-deliberation categories, preference is rarely conscious. Consumers reach for the same product week after week—until something breaks the habit.
             </p>
@@ -73,11 +89,11 @@ const CaseStudySensoryPreference = () => {
       {/* My Role */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             My Role
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               I shaped the research focus to move beyond flavour benchmarking toward behavioural drivers of habit and trust. This meant reframing the study around decision defaults, not taste preference.
             </p>
@@ -92,11 +108,11 @@ const CaseStudySensoryPreference = () => {
       {/* Decision Focus */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Decision Focus
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               This research needed to unlock three interconnected decisions:
             </p>
@@ -127,7 +143,7 @@ const CaseStudySensoryPreference = () => {
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <div className="bg-card border border-border rounded-xl p-8 md:p-10">
-            <h2 className="font-display text-xl md:text-2xl font-medium text-foreground mb-8">
+            <h2 className="text-xl md:text-2xl text-foreground mb-6">
               Research Snapshot
             </h2>
 
@@ -179,16 +195,16 @@ const CaseStudySensoryPreference = () => {
       {/* Approach */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Approach
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               The research combined sensory evaluation with behavioural interpretation—designed to surface what consumers judge instinctively, not just what they can articulate.
             </p>
 
-            <div className="space-y-4 mt-8">
+            <div className="space-y-3 mt-6">
               <div className="flex gap-4">
                 <span className="text-accent font-medium whitespace-nowrap">Phase 1</span>
                 <span>Contextual discussion to surface category rituals, emotional associations, and authenticity expectations</span>
@@ -218,7 +234,7 @@ const CaseStudySensoryPreference = () => {
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <blockquote className="border-l-4 border-accent pl-6 py-4">
-            <p className="text-xl md:text-2xl font-display text-foreground italic leading-relaxed">
+            <p className="text-xl md:text-2xl text-foreground italic leading-relaxed">
               "The best laban stays with you. It's not just about the first sip—it's how it feels after."
             </p>
             <footer className="mt-4 text-sm text-muted-foreground">
@@ -249,11 +265,11 @@ const CaseStudySensoryPreference = () => {
       {/* Key Insights */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-10">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Key Insights
           </h2>
 
-          <div className="space-y-10">
+          <div className="space-y-8">
             <div>
               <h3 className="text-lg font-medium text-foreground mb-3">
                 Authenticity is a sensory judgement, not a marketing claim.
@@ -320,11 +336,11 @@ const CaseStudySensoryPreference = () => {
       {/* Output and Impact */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Output and Impact
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               The research shifted the brand's approach from flavour optimisation to habit protection:
             </p>
@@ -354,11 +370,11 @@ const CaseStudySensoryPreference = () => {
       {/* Reflection */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Reflection
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               Sensory research in staple categories often gets treated as product development input. The real value is behavioural: understanding what creates trust, habit, and automatic repurchase.
             </p>

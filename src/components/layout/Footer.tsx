@@ -25,7 +25,7 @@ export function Footer() {
           <div className="space-y-4">
             <Link
               to="/"
-              className="font-display text-xl font-semibold text-foreground"
+              className="text-xl font-semibold text-foreground"
             >
               Portfolio
             </Link>

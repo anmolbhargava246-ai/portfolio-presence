@@ -63,7 +63,7 @@ const Services = () => {
             <span className="text-accent font-medium text-sm uppercase tracking-wider">
               Let's Connect
             </span>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mt-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mt-4">
               How I Can Help
             </h1>
             <p className="text-lg text-muted-foreground mt-6 leading-relaxed">
@@ -88,7 +88,7 @@ const Services = () => {
             <span className="text-accent font-medium text-sm uppercase tracking-wider">
               Expertise
             </span>
-            <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mt-4">
+            <h2 className="text-3xl md:text-4xl text-foreground mt-4">
               What I Bring to the Table
             </h2>
             <p className="text-muted-foreground mt-4">
@@ -105,7 +105,7 @@ const Services = () => {
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
                   <item.icon className="h-6 w-6 text-accent" />
                 </div>
-                <h3 className="font-display text-lg font-medium text-foreground mb-2">
+                <h3 className="text-lg font-medium text-foreground mb-2">
                   {item.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
@@ -124,7 +124,7 @@ const Services = () => {
             <span className="text-accent font-medium text-sm uppercase tracking-wider">
               How It Works
             </span>
-            <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mt-4">
+            <h2 className="text-3xl md:text-4xl text-foreground mt-4">
               My Process
             </h2>
           </div>
@@ -172,7 +172,7 @@ const Services = () => {
                     0{index + 1}
                   </div>
                   
-                  <h3 className="font-display text-lg font-medium text-foreground mb-2">
+                  <h3 className="text-lg font-medium text-foreground mb-2">
                     {item.title}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed max-w-xs mx-auto">
@@ -189,7 +189,7 @@ const Services = () => {
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto text-center space-y-6">
-            <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground">
+            <h2 className="text-3xl md:text-4xl text-foreground">
               Ready to Start?
             </h2>
             <p className="text-lg text-muted-foreground">

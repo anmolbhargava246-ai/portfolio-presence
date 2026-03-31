@@ -32,7 +32,7 @@ export function ServicesPreview() {
           <span className="text-accent font-medium text-sm uppercase tracking-wider">
             How I Work
           </span>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mt-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-foreground mt-4">
             Research That Moves Product Forward
           </h2>
           <p className="text-muted-foreground mt-4 text-lg">
@@ -51,7 +51,7 @@ export function ServicesPreview() {
               <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
                 <service.icon className="h-6 w-6 text-accent" />
               </div>
-              <h3 className="font-display text-xl font-medium text-foreground mb-3">
+              <h3 className="text-xl font-medium text-foreground mb-3">
                 {service.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed">

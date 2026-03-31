@@ -96,12 +96,11 @@ const Projects = () => {
             <span className="text-accent font-medium text-sm uppercase tracking-wider">
               Portfolio
             </span>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mt-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mt-4">
               Selected Projects
             </h1>
             <p className="text-lg text-muted-foreground mt-6 leading-relaxed">
-              A collection of projects I've worked on, from web applications to
-              mobile apps and open source contributions.
+              Selected case studies exploring trust, decision-making, and user behaviour across industries.
             </p>
           </div>
         </div>
@@ -150,7 +149,7 @@ const Projects = () => {
                 {/* Content */}
                 <div className="p-6 space-y-4">
                   <div className="flex items-start justify-between gap-4">
-                    <h2 className="font-display text-xl font-medium text-foreground group-hover:text-accent transition-colors">
+                    <h2 className="text-xl text-foreground group-hover:text-accent transition-colors">
                       {project.title}
                     </h2>
                     <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs font-medium rounded">

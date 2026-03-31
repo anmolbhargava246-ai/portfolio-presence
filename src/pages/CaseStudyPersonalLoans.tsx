@@ -35,7 +35,7 @@ const CaseStudyPersonalLoans = () => {
             </span>
           </div>
 
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
             Understanding Why Users Hesitate to Take Personal Loans Digitally
           </h1>
 
@@ -45,14 +45,30 @@ const CaseStudyPersonalLoans = () => {
         </div>
       </section>
 
+      {/* Case Study Visual */}
+      <section className="py-6 md:py-8">
+        <div className="container mx-auto max-w-3xl">
+          <div className="rounded-xl overflow-hidden shadow-medium">
+            <img
+              src="/portfolio-presence/case-study-images/personal-loans.png"
+              alt="Abstract visualisation of trust and risk in digital financial transactions"
+              loading="lazy"
+              className="w-full h-auto object-cover aspect-[16/9]"
+            />
+          </div>
+        </div>
+      </section>
+
+
+
       {/* The Problem */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             The Problem
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p className="text-lg">
               Despite a technically seamless product, adoption of digital personal loans was low.
             </p>
@@ -72,11 +88,11 @@ const CaseStudyPersonalLoans = () => {
       {/* My Role */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             My Role
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               I was the primary researcher responsible for leading all interviews, usability sessions, and analysis. I owned the execution end-to-end—from participant recruitment through synthesis.
             </p>
@@ -92,7 +108,7 @@ const CaseStudyPersonalLoans = () => {
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
           <div className="bg-card border border-border rounded-xl p-8 md:p-10">
-            <h2 className="font-display text-xl md:text-2xl font-medium text-foreground mb-8">
+            <h2 className="text-xl md:text-2xl text-foreground mb-6">
               Research Snapshot
             </h2>
 
@@ -129,7 +145,7 @@ const CaseStudyPersonalLoans = () => {
       {/* Approach */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Approach
           </h2>
 
@@ -138,7 +154,7 @@ const CaseStudyPersonalLoans = () => {
               The study combined behavioural exploration with hands-on usability evaluation to uncover both why people hesitate and where the product unintentionally increased that hesitation.
             </p>
 
-            <div className="space-y-4 mt-8">
+            <div className="space-y-3 mt-6">
               <div className="flex gap-4">
                 <span className="text-accent font-medium whitespace-nowrap">Week 1–2</span>
                 <p className="text-muted-foreground">Foundational interviews to understand borrowing beliefs, fears, and trust breakdowns</p>
@@ -181,11 +197,11 @@ const CaseStudyPersonalLoans = () => {
       {/* Key Insights */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-10">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Key Insights
           </h2>
 
-          <div className="space-y-10">
+          <div className="space-y-8">
             <div>
               <h3 className="text-lg font-medium text-foreground mb-2">
                 Users didn't distrust loans. They distrusted ambiguity.
@@ -212,7 +228,7 @@ const CaseStudyPersonalLoans = () => {
 
             {/* Pull Quote */}
             <blockquote className="border-l-4 border-accent pl-6 py-4 my-12">
-              <p className="text-xl md:text-2xl font-display text-foreground italic">
+              <p className="text-xl md:text-2xl text-foreground italic">
                 "High cognitive load amplified anxiety. Complex forms and dense information during KYC made users second-guess their decision mid-flow."
               </p>
             </blockquote>
@@ -240,11 +256,11 @@ const CaseStudyPersonalLoans = () => {
       {/* Impact */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Impact
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p className="text-foreground font-medium">
               Research informed concrete product changes across the loan journey:
             </p>
@@ -269,11 +285,11 @@ const CaseStudyPersonalLoans = () => {
       {/* Reflection */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
             Reflection
           </h2>
 
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               This project reinforced that trust is not just a UX problem—it's a product, brand, and organisational one. Behavioural trust issues require cross-functional solutions.
             </p>
