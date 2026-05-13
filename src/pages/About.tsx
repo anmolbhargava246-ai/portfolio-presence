@@ -1,173 +1,96 @@
-import { Link } from "react-router-dom";
-import { ArrowRight, Download, MapPin, Briefcase, GraduationCap } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-
-const skills = [
-  { category: "Research Methods", items: ["In-depth Interviews", "Usability Testing", "Contextual Inquiry", "Diary Studies", "Surveys"] },
-  { category: "Behavioural Science", items: ["Cognitive Biases", "Mental Models", "Decision Heuristics", "Behavioural Economics", "Trust & Friction"] },
-  { category: "Analysis", items: ["Thematic Analysis", "Affinity Mapping", "Journey Mapping", "Insight Synthesis", "Stakeholder Workshops"] },
-  { category: "Tools", items: ["Dovetail", "Miro", "Notion", "UserTesting", "Figma"] },
-];
 
 const About = () => {
   return (
     <Layout>
-      {/* Hero */}
-      <section className="py-20 md:py-32 bg-gradient-hero">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <span className="text-accent font-medium text-sm uppercase tracking-wider">
-                About Me
-              </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground">
-                Hi, I'm Anmol 👋
-              </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a UX researcher with four years of experience. Basically, I look at
-                the "people" side of product development. 👥
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                My way of working is embedded in strategy, not just execution. I step in early,
-                challenge assumptions, and turn human behaviour into clear product direction. 🧭
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I have a master's degree in psychology, which makes me, honestly, a bit of a
-                user behaviour enthusiast. I look at biases, mental models, trust, friction…
-                so kind of everywhere the real insight lives. 💡
-              </p>
-              <div className="flex flex-col gap-2 text-muted-foreground">
-                <span className="flex items-center gap-2">
-                  <GraduationCap className="h-4 w-4 text-accent" />
-                  Master's in Psychology, TISS Mumbai
-                </span>
-                <span className="flex items-center gap-2">
-                  <GraduationCap className="h-4 w-4 text-accent" />
-                  Bachelor's in Psychology, Mumbai University
-                </span>
-              </div>
-              <div className="flex flex-wrap gap-4 pt-4">
-                <Button variant="accent" size="lg" asChild>
-                  <Link to="/contact">
-                    Let's Talk
-                    <ArrowRight className="h-5 w-5" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-medium">
-                <img
-                  src="/portfolio-presence/anmol-bhargava.jpg"
-                  alt="Anmol Bhargava – Founder"
-                  loading="lazy"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-accent/20 rounded-full blur-3xl" />
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-accent/10 rounded-full blur-2xl" />
-            </div>
+      <section className="container-page">
+        <h1 className="h1">About</h1>
+
+        <div className="prose-text">
+          <p>
+            I'm a UX researcher with a Master's in Applied Psychology, driven by a curiosity to
+            decode human behaviour and translate it into product, design, and business decisions.
+          </p>
+
+          <p>
+            My experience spans enterprise B2B SaaS at Atlassian, FinTech research on contract at
+            getCurious, and consumer research across industries at 4SiGHT. I came into UX research
+            from psychology, and that lens still shapes how I work. Behaviour is rarely what people
+            say it is, and research is at its most useful when it reveals what's actually driving
+            the decisions inside the data.
+          </p>
+
+          <p>
+            I work most effectively when qualitative depth is paired with quantitative validation,
+            and when research lives inside product decisions rather than next to them. My current
+            focus is B2B SaaS, where behavioural questions around trust, activation, and retention
+            sit at the centre of product growth.
+          </p>
+        </div>
+
+        <div className="section-label" style={{ marginTop: "3rem" }}>
+          Experience
+        </div>
+
+        <ul className="work-list">
+          <li>
+            <span className="work-role">UX Researcher, Atlassian</span>{" "}
+            <span className="work-desc">— enterprise B2B SaaS, cross-functional product research</span>
+          </li>
+          <li>
+            <span className="work-role">UX Researcher (contract), getCurious</span>{" "}
+            <span className="work-desc">— FinTech app usability</span>
+          </li>
+          <li>
+            <span className="work-role">Research Executive, 4SiGHT</span>{" "}
+            <span className="work-desc">— consumer research across industries</span>
+          </li>
+          <li>
+            <span className="work-role">Research Intern, Thinking Spree</span>{" "}
+            <span className="work-desc">— mixed-methods social enterprise research</span>
+          </li>
+        </ul>
+
+        <div className="section-label">How I work with teams</div>
+
+        <div className="capability-block">
+          <div className="capability-title">With design</div>
+          <div className="capability-desc">
+            I involve design teams from the start, immersing them in user POV so they don't just see
+            user experiences, they internalise them.
           </div>
         </div>
-      </section>
 
-      {/* Skills */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto">
-          <div className="max-w-2xl mb-12">
-            <span className="text-accent font-medium text-sm uppercase tracking-wider">
-              Expertise
-            </span>
-            <h2 className="text-3xl md:text-4xl text-foreground mt-4">
-              Skills & Tools
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {skills.map((skillGroup) => (
-              <div key={skillGroup.category} className="space-y-4">
-                <h3 className="font-sans text-sm font-semibold text-foreground uppercase tracking-wider">
-                  {skillGroup.category}
-                </h3>
-                <ul className="space-y-2">
-                  {skillGroup.items.map((skill) => (
-                    <li
-                      key={skill}
-                      className="text-muted-foreground hover:text-foreground transition-colors"
-                    >
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+        <div className="capability-block">
+          <div className="capability-title">With product</div>
+          <div className="capability-desc">
+            I focus on impact, translating user voice into business context that product teams can
+            act on.
           </div>
         </div>
-      </section>
 
-      {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-card">
-        <div className="container mx-auto">
-          <div className="max-w-2xl mx-auto text-center space-y-6">
-            <span className="text-accent font-medium text-sm uppercase tracking-wider">
-              Let's Connect
-            </span>
-            <h2 className="text-3xl md:text-4xl text-foreground">
-              Want clarity over noise?
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              If you want insight that actually moves things forward, let's talk. 👇🏼
-            </p>
-            <Button variant="accent" size="lg" asChild>
-              <Link to="/contact">
-                Get in Touch
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-            </Button>
+        <div className="capability-block">
+          <div className="capability-title">With marketing</div>
+          <div className="capability-desc">
+            I tell the story rather than handing over a deck. Personas, delights, and pain points
+            framed as a narrative that influences decisions.
           </div>
         </div>
-      </section>
 
-      {/* Values */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto">
-          <div className="max-w-2xl mx-auto text-center mb-12">
-            <span className="text-accent font-medium text-sm uppercase tracking-wider">
-              Approach
-            </span>
-            <h2 className="text-3xl md:text-4xl text-foreground mt-4">
-              How I Approach Research
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {[
-              {
-                title: "Strategy First",
-                description:
-                  "Research should inform direction, not just validate decisions. I embed early and challenge assumptions.",
-              },
-              {
-                title: "Behavioural Lens",
-                description:
-                  "Understanding why people do what they do, through biases, mental models, and the moments where friction lives.",
-              },
-              {
-                title: "Clarity Over Noise",
-                description:
-                  "Insights only matter if they move things. I translate complex findings into clear, actionable direction.",
-              },
-            ].map((value) => (
-              <div key={value.title} className="text-center space-y-4">
-                <h3 className="text-xl font-medium text-foreground">
-                  {value.title}
-                </h3>
-                <p className="text-muted-foreground">{value.description}</p>
-              </div>
-            ))}
-          </div>
+        <div className="section-label" style={{ marginTop: "3rem" }}>
+          Education
         </div>
+
+        <ul className="work-list">
+          <li>
+            <span className="work-role">Master's in Applied Psychology</span>{" "}
+            <span className="work-desc">— TISS Mumbai</span>
+          </li>
+          <li>
+            <span className="work-role">Bachelor's in Psychology</span>{" "}
+            <span className="work-desc">— Mumbai University</span>
+          </li>
+        </ul>
       </section>
     </Layout>
   );

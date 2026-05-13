@@ -1,370 +1,190 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
-import { RiskGrid } from "@/components/case-study/RiskGrid";
 
 const CaseStudyBrandPerception = () => {
   return (
     <Layout>
-      {/* Back Navigation */}
-      <div className="container mx-auto pt-8">
-        <Link
-          to="/projects"
-          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Back to Projects
+      <article className="container-page">
+        <Link to="/projects" className="back-link">
+          <i className="ti ti-arrow-left" aria-hidden="true"></i>
+          Selected work
         </Link>
-      </div>
 
-      {/* Hero Section */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto max-w-3xl">
-          <div className="flex flex-wrap gap-2 mb-8">
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              QSR Category
-            </span>
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Mixed Methods
-            </span>
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              UAE
-            </span>
+        <div className="project-meta">Project 07 · Consumer brand · Positioning research</div>
+
+        <h1 className="h1">Liked, but never the default</h1>
+
+        <p className="subtitle">
+          Why a brand with strong awareness still wasn't being chosen, and how the research shifted
+          strategy from perception repair to mental availability.
+        </p>
+
+        <div className="tag-row">
+          <span className="tag">Default preference</span>
+          <span className="tag">Strategy &amp; positioning</span>
+          <span className="tag">Mental availability</span>
+        </div>
+
+        <div className="tldr">
+          <div className="tldr-label">TL;DR</div>
+          <div className="tldr-grid">
+            <div>
+              <div className="tldr-item-label">Sector</div>
+              <div className="tldr-item-value">QSR category, UAE</div>
+            </div>
+            <div>
+              <div className="tldr-item-label">Scope</div>
+              <div className="tldr-item-value">
+                Brand positioning across group, comfort, and celebration contexts
+              </div>
+            </div>
+            <div>
+              <div className="tldr-item-label">Method</div>
+              <div className="tldr-item-value">
+                Focus groups with digital pre-tasks, association mapping, 500+ survey responses
+              </div>
+            </div>
+            <div>
+              <div className="tldr-item-label">Sample</div>
+              <div className="tldr-item-value">
+                Loyalists, competitor-primary users, Dubai and Sharjah, local + expat
+              </div>
+            </div>
           </div>
+          <div className="tldr-shift">
+            <div className="tldr-shift-label">Strategic shift</div>
+            <div className="tldr-shift-value">Perception repair → mental availability investment</div>
+          </div>
+        </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
-            Decoding Brand Preference in a Habit-Driven Category
-          </h1>
-
-          <p className="text-lg md:text-xl text-muted-foreground mt-6 leading-relaxed">
-            Identified why consumers default to competitors—and what positioning levers could shift habitual preference toward the client brand.
+        <div className="project-section prose-text">
+          <div className="section-label">The problem</div>
+          <p>
+            The brand had strong awareness but weak habitual preference. In a category driven by
+            emotional defaults, comfort, nostalgia, group safety, awareness alone wasn't converting
+            to first-choice status.
+          </p>
+          <p>
+            Leadership assumed the gap was about product perception. The real issue was
+            behavioural. Competitors had become the automatic choice for gatherings, celebrations,
+            and comfort moments. The client wasn't being rejected. They were being forgotten before
+            the decision was made.
+          </p>
+          <p>
+            This wasn't a positioning problem. It was a mental availability problem in high-stakes
+            social contexts.
           </p>
         </div>
-      </section>
 
-      {/* Case Study Visual */}
-      <section className="py-6 md:py-8">
-        <div className="container mx-auto max-w-3xl">
-          <div className="rounded-xl overflow-hidden shadow-medium">
-            <img
-              src="/portfolio-presence/case-study-images/brand-perception.png"
-              alt="Abstract representation of brand perception layers and consumer psychology"
-              loading="lazy"
-              className="w-full h-auto object-cover aspect-[16/9]"
-            />
-          </div>
-        </div>
-      </section>
-
-
-
-      {/* The Problem */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            The Problem
-          </h2>
-
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p className="text-lg">
-              The client had strong awareness but weak habitual preference. In a category driven by emotional defaults—comfort, nostalgia, group safety—awareness alone wasn't converting to first-choice status.
-            </p>
-
-            <p>
-              Leadership assumed the gap was about product perception. The real issue was behavioural: competitors had become the automatic choice for gatherings, celebrations, and comfort moments. The client wasn't being rejected—they were being forgotten before the decision was even made.
-            </p>
-
-            <p className="text-foreground font-medium">
-              This wasn't a positioning problem. It was a mental availability problem in high-stakes social contexts.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* My Role */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            My Role
-          </h2>
-
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>
-              I shaped the research focus toward decision contexts rather than generic brand attributes—prioritising the moments where preference actually forms.
-            </p>
-
-            <p>
-              Led synthesis across qualitative and quantitative inputs, translating fragmented consumer language into actionable positioning territory. Helped the team move from "what do people think of us" to "why aren't we the default."
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Decision Focus */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            Decision Focus
-          </h2>
-
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>
-              This research was commissioned to inform brand positioning and marketing investment priorities. The client needed clarity on:
-            </p>
-
-            <ul className="space-y-3 pl-6">
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span>Which emotional territories to own vs. cede to competitors</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span>Whether to compete on nostalgia and familiarity, or differentiate on modernity and value</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span>How to increase salience in group decision contexts where defaults win</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Research Snapshot */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <div className="bg-card border border-border rounded-xl p-8 md:p-10">
-            <h2 className="text-xl md:text-2xl text-foreground mb-6">
-              Research Snapshot
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <div>
-                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                  Focus Areas
-                </h3>
-                <ul className="space-y-2 text-muted-foreground text-sm">
-                  <li>Emotional triggers of category choice</li>
-                  <li>Default habits vs. active preference</li>
-                  <li>Cultural identity and brand fit</li>
-                  <li>Barriers to trial and switching</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                  Methods
-                </h3>
-                <ul className="space-y-2 text-muted-foreground text-sm">
-                  <li>Focus groups with digital pre-tasks</li>
-                  <li>Competitor association mapping</li>
-                  <li>Quantitative validation (500+ responses)</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                  Sample
-                </h3>
-                <ul className="space-y-2 text-muted-foreground text-sm">
-                  <li>Loyalists + competitor-primary users</li>
-                  <li>Dubai + Sharjah</li>
-                  <li>Local + expat segments</li>
-                </ul>
-              </div>
-            </div>
-
-            <p className="text-sm text-muted-foreground mt-8 pt-6 border-t border-border">
-              Designed to surface behavioural drivers of preference, not just stated attitudes.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Approach */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            Approach
-          </h2>
-
-          <div className="space-y-6">
-            <p className="text-muted-foreground leading-relaxed">
-              The research was designed to surface behavioural drivers of preference, not just stated attitudes.
-            </p>
-
-            <div className="space-y-3 mt-6">
-              <div className="flex gap-4">
-                <span className="text-accent font-medium whitespace-nowrap">Phase 1</span>
-                <p className="text-muted-foreground">Competitor association mapping to establish which emotional territories competitors already owned—nostalgia, reliability, family safety</p>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-accent font-medium whitespace-nowrap">Phase 2</span>
-                <p className="text-muted-foreground">Context-specific preference exploration across group gatherings, solo comfort, and celebration decision moments</p>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-accent font-medium whitespace-nowrap">Phase 3</span>
-                <p className="text-muted-foreground">Cultural identity and local relevance testing to explore regional origin as a differentiation lever</p>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-accent font-medium whitespace-nowrap">Phase 4</span>
-                <p className="text-muted-foreground">Quantitative prioritisation to validate qualitative themes at scale and prioritise positioning investments</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Brand Risk Grid */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <RiskGrid
-            title="Preference Risk Map"
-            subtitle="Mapped by barrier type to habitual preference, not stated attitude."
-            items={[
-              { severity: "critical", title: "Mental availability gap", description: "Brand absent from consideration at key decision moments" },
-              { severity: "high", title: "Social risk aversion", description: "Consumers default to 'safe' brands in group contexts" },
-              { severity: "high", title: "Emotional territory deficit", description: "Competitors own nostalgia and reliability associations" },
-              { severity: "medium", title: "Cultural origin invisibility", description: "Local roots unknown to most consumers" },
-            ]}
-            footnote="Prioritised by impact on habitual purchase, not brand perception scores."
-          />
-        </div>
-      </section>
-
-      {/* Key Insights */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            Key Insights
-          </h2>
-
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-2">
-                Category choice is driven by social risk, not taste preference.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                In group contexts, people default to "safe" brands that require no explanation. The client was seen as a personal choice, not a group-safe choice.
-              </p>
-              <p className="text-accent text-sm font-medium">
-                → Positioning needed to build group legitimacy, not just individual appeal.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-2">
-                Competitors owned nostalgia and reliability. The client owned lightness and value.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Association mapping revealed clear territory separation. Competing on nostalgia would require years of investment; leading on modernity and affordability was immediately credible.
-              </p>
-              <p className="text-accent text-sm font-medium">
-                → Strategy shifted to doubling down on existing strengths rather than chasing competitor territory.
-              </p>
-            </div>
-
-            {/* Pull Quote */}
-            <blockquote className="border-l-4 border-accent pl-6 py-4 my-12">
-              <p className="text-xl md:text-2xl text-foreground italic">
-                "The barrier wasn't rejection—it was absence from consideration."
-              </p>
-            </blockquote>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-2">
-                Regional origin increased affinity—but only when made explicit.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Participants who knew the brand's local roots showed higher warmth and trust. Most didn't know.
-              </p>
-              <p className="text-accent text-sm font-medium">
-                → Recommended surfacing cultural origin in brand communications as an underutilised differentiation lever.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-2">
-                The barrier wasn't rejection—it was absence from consideration.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Most competitor-primary users had neutral or positive perceptions of the client. They simply didn't think of them at the decision moment.
-              </p>
-              <p className="text-accent text-sm font-medium">
-                → Salience-building and context-specific triggers prioritised over perception repair.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Output and Impact */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            Output and Impact
-          </h2>
-
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span>Delivered a positioning framework clarifying which emotional territories to own vs. cede to competitors</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span>Identified salience-building priorities for group decision contexts</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span>Recommended cultural origin as an underutilised brand asset</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                <span>Shifted strategy from perception repair to mental availability investment</span>
-              </li>
-            </ul>
-
-            <p className="text-foreground font-medium pt-4">
-              The research reframed the brief from "improve brand perception" to "become the obvious choice in moments that matter."
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Reflection */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            Reflection
-          </h2>
-
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>
-              Brand research often defaults to measuring attributes and awareness. This project reinforced that preference is behavioural—shaped by context, social risk, and mental shortcuts, not just perception scores.
-            </p>
-
-            <p className="text-foreground font-medium">
-              If I ran this again, I'd integrate purchase occasion data earlier to quantify which decision moments offer the highest leverage for salience investment.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16 md:py-24 border-t border-border">
-        <div className="container mx-auto max-w-3xl text-center">
-          <p className="text-lg text-muted-foreground mb-6">
-            Want to discuss brand strategy research or consumer decision-making?
+        <div className="project-section prose-text">
+          <div className="section-label">The reframe</div>
+          <p style={{ marginBottom: "1.5rem" }}>
+            We mapped preference as three different decision contexts, each with its own default
+            logic, rather than a single brand preference score.
           </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-colors"
-          >
-            Let's talk →
+
+          <div className="framework-grid">
+            <div className="framework-card purple">
+              <div className="framework-card-label">Context 01</div>
+              <div className="framework-card-title">Group decisions</div>
+              <div className="framework-card-desc">
+                Where social safety wins, and "safe" brands require no explanation
+              </div>
+            </div>
+            <div className="framework-card teal">
+              <div className="framework-card-label">Context 02</div>
+              <div className="framework-card-title">Comfort moments</div>
+              <div className="framework-card-desc">
+                Where nostalgia and reliability quietly carry the choice
+              </div>
+            </div>
+            <div className="framework-card coral">
+              <div className="framework-card-label">Context 03</div>
+              <div className="framework-card-title">Celebrations</div>
+              <div className="framework-card-desc">
+                Where cultural fit and shared meaning shape who gets ordered
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="project-section">
+          <div className="section-label">What we found</div>
+
+          <div className="insight">
+            <div className="insight-lead">Category choice is driven by social risk, not taste preference</div>
+            <p className="insight-expand">
+              In group contexts, people default to brands that require no explanation. The client
+              was seen as a personal choice, not a group-safe choice.
+            </p>
+          </div>
+
+          <div className="insight">
+            <div className="insight-lead">Competitors owned nostalgia. The client owned lightness and value</div>
+            <p className="insight-expand">
+              Association mapping showed clean territory separation. Competing on nostalgia would
+              take years; leading on modernity and affordability was immediately credible.
+            </p>
+          </div>
+
+          <div className="insight">
+            <div className="insight-lead">Regional origin increased affinity, but only when made explicit</div>
+            <p className="insight-expand">
+              Participants who knew the brand's local roots showed higher warmth and trust. Most
+              didn't know. The asset was sitting unused.
+            </p>
+          </div>
+
+          <div className="insight">
+            <div className="insight-lead">The barrier wasn't rejection. It was absence from consideration</div>
+            <p className="insight-expand">
+              Competitor-primary users mostly had neutral or positive perceptions. They simply
+              didn't think of the brand at the decision moment.
+            </p>
+          </div>
+        </div>
+
+        <div className="project-section">
+          <div className="section-label">What changed</div>
+          <ul className="checklist">
+            <li>
+              <i className="ti ti-check" aria-hidden="true"></i>
+              <span>Positioning clarified which emotional territories to own vs cede to competitors</span>
+            </li>
+            <li>
+              <i className="ti ti-check" aria-hidden="true"></i>
+              <span>Salience-building prioritised for group decision moments</span>
+            </li>
+            <li>
+              <i className="ti ti-check" aria-hidden="true"></i>
+              <span>Cultural origin surfaced as a brand asset in communications</span>
+            </li>
+            <li>
+              <i className="ti ti-check" aria-hidden="true"></i>
+              <span>Brief reframed from "improve perception" to "become the obvious choice in moments that matter"</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="takeaway">
+          <div className="takeaway-label">The takeaway</div>
+          <p className="takeaway-quote">
+            Preference is behavioural, shaped by context, social risk, and mental shortcuts, not
+            just perception scores. The brand was liked. It just wasn't the default.
+          </p>
+        </div>
+
+        <div className="cta-row">
+          <Link to="/projects/sensory-preference" className="btn-editorial">
+            Next project
+            <i className="ti ti-arrow-right" aria-hidden="true"></i>
+          </Link>
+          <Link to="/contact" className="btn-editorial">
+            Get in touch
+            <i className="ti ti-mail" aria-hidden="true"></i>
           </Link>
         </div>
-      </section>
+      </article>
     </Layout>
   );
 };

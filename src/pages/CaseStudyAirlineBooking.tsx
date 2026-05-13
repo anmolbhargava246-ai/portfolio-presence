@@ -1,357 +1,186 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
-import { FrictionMap } from "@/components/case-study/FrictionMap";
 
 const CaseStudyAirlineBooking = () => {
   return (
     <Layout>
-      {/* Back Navigation */}
-      <div className="container mx-auto pt-8">
-        <Link
-          to="/projects"
-          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Back to Projects
+      <article className="container-page">
+        <Link to="/projects" className="back-link">
+          <i className="ti ti-arrow-left" aria-hidden="true"></i>
+          Selected work
         </Link>
-      </div>
 
-      {/* Hero Section */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto max-w-3xl">
-          <div className="flex flex-wrap gap-2 mb-8">
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Airlines
-            </span>
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Conversion UX
-            </span>
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Behavioural Insight
-            </span>
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Saudi Arabia
-            </span>
+        <div className="project-meta">Project 03 · Aviation · Behavioural UX</div>
+
+        <h1 className="h1">Trust, dressed up as a usability problem</h1>
+
+        <p className="subtitle">
+          How a behavioural reframe shifted an airline from speed-first optimisation to
+          confidence-first experience strategy.
+        </p>
+
+        <div className="tag-row">
+          <span className="tag">Trust &amp; adoption</span>
+          <span className="tag">Conversion friction</span>
+          <span className="tag">Retention behaviour</span>
+        </div>
+
+        <div className="tldr">
+          <div className="tldr-label">TL;DR</div>
+          <div className="tldr-grid">
+            <div>
+              <div className="tldr-item-label">Sector</div>
+              <div className="tldr-item-value">Aviation, high-stakes e-commerce</div>
+            </div>
+            <div>
+              <div className="tldr-item-label">Scope</div>
+              <div className="tldr-item-value">
+                End-to-end booking, checkout, loyalty, post-booking
+              </div>
+            </div>
+            <div>
+              <div className="tldr-item-label">Method</div>
+              <div className="tldr-item-value">
+                Behavioural usability, friction mapping, loyalty analysis
+              </div>
+            </div>
+            <div>
+              <div className="tldr-item-label">Cohorts</div>
+              <div className="tldr-item-value">
+                4 user types across travel frequency and price sensitivity
+              </div>
+            </div>
           </div>
+          <div className="tldr-shift">
+            <div className="tldr-shift-label">Strategic shift</div>
+            <div className="tldr-shift-value">
+              Speed-first optimisation → confidence-first experience strategy
+            </div>
+          </div>
+        </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
-            Reducing Booking Friction and Building Trust in a High-Stakes Digital Journey
-          </h1>
-
-          <p className="text-lg md:text-xl text-muted-foreground mt-6 leading-relaxed">
-            A behavioural usability study of an airline booking platform, focused on the moments where clarity, confidence, and loyalty break down.
+        <div className="project-section prose-text">
+          <div className="section-label">The problem</div>
+          <p>
+            An airline came to us with a familiar problem wearing an unfamiliar mask. Bookings were
+            dropping off mid-flow. Loyalty sign-ups were flat. Repeat travellers kept coming back,
+            then kept choosing not to commit.
+          </p>
+          <p>
+            The instinct in most rooms is to call this a UX problem. Tighten the funnel. Reduce the
+            clicks. Make the buttons bigger.
+          </p>
+          <p>
+            We pushed back. What we were actually looking at was a <em>trust</em> problem dressed as
+            a usability one.
           </p>
         </div>
-      </section>
 
-      {/* Case Study Visual */}
-      <section className="py-6 md:py-8">
-        <div className="container mx-auto max-w-3xl">
-          <div className="rounded-xl overflow-hidden shadow-medium">
-            <img
-              src="/portfolio-presence/case-study-images/airline-booking.png"
-              alt="Traveller navigating a digital airline booking interface with data flows"
-              loading="lazy"
-              className="w-full h-auto object-cover aspect-[16/9]"
-            />
-          </div>
-        </div>
-      </section>
-
-
-
-      {/* The Problem */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            The Problem
-          </h2>
-
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p className="text-lg">
-              Airline booking is a high-pressure, high-revenue moment. Users are often comparing options, managing time constraints, and making irreversible financial decisions under stress.
-            </p>
-
-            <p>
-              The platform wasn't lacking features. But small moments of friction—unclear pricing, ambiguous policies, inconsistent progress cues—were quietly eroding trust. In this environment, hesitation doesn't just slow users down. It triggers abandonment.
-            </p>
-
-            <p className="text-foreground font-medium">
-              This wasn't a usability issue.<br />
-              It was a confidence collapse at the point of purchase.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* My Role */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            My Role
-          </h2>
-
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>
-              I led the behavioural evaluation across booking, pricing transparency, checkout, and loyalty engagement. My focus was identifying where user confidence broke down and why—then translating those findings into a prioritised roadmap for experience improvements.
-            </p>
-
-            <p>
-              I mapped the moments where trust failures created drop-off risk, and worked with the team to prioritise fixes based on conversion impact and implementation effort.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Research Snapshot */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <div className="bg-card border border-border rounded-xl p-8 md:p-10">
-            <h2 className="text-xl md:text-2xl text-foreground mb-6">
-              Research Snapshot
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                  Lens
-                </h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>Behaviour under time pressure</li>
-                  <li>Trust and pricing clarity</li>
-                  <li>Drop-off risk moments</li>
-                  <li>Loyalty discovery gaps</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                  Methods
-                </h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>Moderated usability testing</li>
-                  <li>Journey-based friction mapping</li>
-                  <li>Persona-level behavioural synthesis</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-8 pt-6 border-t border-border">
-              <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                Sample
-              </h3>
-              <p className="text-muted-foreground">10 frequent travellers · Mobile + desktop mix</p>
-              <p className="text-muted-foreground mt-2 text-sm">
-                Focused on conversion-critical journeys where hesitation becomes abandonment.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Approach */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            Approach
-          </h2>
-
-          <div className="space-y-6">
-            <p className="text-muted-foreground leading-relaxed">
-              Rather than running a broad usability sweep, we focused on decision-critical moments where users hesitate, abandon, or lose confidence.
-            </p>
-
-            <div className="space-y-3 mt-6">
-              <div className="flex gap-4">
-                <span className="text-accent font-medium whitespace-nowrap">Phase 1</span>
-                <p className="text-muted-foreground">Moderated usability testing across booking and checkout flows</p>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-accent font-medium whitespace-nowrap">Phase 2</span>
-                <p className="text-muted-foreground">Friction mapping of hesitation and drop-off moments</p>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-accent font-medium whitespace-nowrap">Phase 3</span>
-                <p className="text-muted-foreground">Behavioural synthesis by traveller mindset and urgency level</p>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-accent font-medium whitespace-nowrap">Phase 4</span>
-                <p className="text-muted-foreground">Prioritisation of fixes based on trust impact and implementation effort</p>
-              </div>
-            </div>
-
-            <div className="mt-8 pt-6 border-t border-border">
-              <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                Priority Journeys
-              </h3>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>Search initiation and flight selection</li>
-                <li>Pricing transparency and add-on clarity</li>
-                <li>Checkout momentum and payment confidence</li>
-                <li>Post-booking control and modification</li>
-                <li>Loyalty value perception and engagement</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Journey Friction Map */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <FrictionMap
-            title="Journey Friction Map"
-            subtitle="Where confidence collapsed across the booking journey."
-            items={[
-              { label: "Search", severity: "low", description: "Flight discovery and comparison" },
-              { label: "Pricing", severity: "high", description: "Total cost visibility and add-on transparency" },
-              { label: "Checkout", severity: "high", description: "Progress confidence and payment completion" },
-              { label: "Post-booking", severity: "medium", description: "Modification and management certainty" },
-              { label: "Loyalty", severity: "medium", description: "Reward visibility at comparison moments" },
-            ]}
-            footnote="Friction mapped by trust impact, not interaction count."
-          />
-        </div>
-      </section>
-
-      {/* Key Insights */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            Key Insights
-          </h2>
-
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-2">
-                Users weren't stuck—they were unsure.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Booking friction was less interaction-level and more confidence-level. Ambiguity created hesitation, not complexity.
-              </p>
-              <p className="text-accent text-sm font-medium">
-                → Added clearer progress cues and reassurance at key decision points.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-2">
-                Pricing wasn't a detail problem—it was a trust problem.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Hidden or inconsistent breakdowns triggered hesitation late in the journey, when commitment was highest.
-              </p>
-              <p className="text-accent text-sm font-medium">
-                → Surfaced total cost earlier and reduced hidden fee ambiguity.
-              </p>
-            </div>
-
-            {/* Pull Quote */}
-            <blockquote className="border-l-4 border-accent pl-6 py-4 my-12">
-              <p className="text-xl md:text-2xl text-foreground italic">
-                "Time pressure changed behaviour. Session timers and unclear progress cues turned anticipation into anxiety."
-              </p>
-            </blockquote>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-2">
-                Time pressure turned anticipation into anxiety.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Session timers and countdown elements increased urgency but also amplified stress and second-guessing.
-              </p>
-              <p className="text-accent text-sm font-medium">
-                → Improved countdown framing and removed unnecessary urgency signals.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-2">
-                Loyalty stayed invisible.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Rewards and benefits weren't surfaced at the moments users were actively comparing value.
-              </p>
-              <p className="text-accent text-sm font-medium">
-                → Made loyalty value legible at key comparison and checkout moments.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-2">
-                The journey felt like disconnected tools.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Booking, manage, and check-in flows lacked continuity—weakening brand reliability and overall trust.
-              </p>
-              <p className="text-accent text-sm font-medium">
-                → Created continuity across booking, post-booking, and check-in journeys.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Output */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            Output
-          </h2>
-
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p className="text-foreground font-medium">
-              The work resulted in a prioritised set of experience interventions:
-            </p>
-
-            <ul className="space-y-3 list-disc list-inside">
-              <li>Introduced reassurance and progress cues to reduce checkout anxiety</li>
-              <li>Made pricing, baggage rules, and policies legible upfront</li>
-              <li>Integrated loyalty value into key decision and comparison moments</li>
-              <li>Improved continuity across booking, post-booking, and check-in journeys</li>
-            </ul>
-
-            <p className="mt-6">
-              Recommendations were prioritised by trust impact and implementation effort, giving the team a clear roadmap for phased improvements.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Reflection */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            Reflection
-          </h2>
-
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>
-              The most valuable research here wasn't finding every issue. It was identifying what users interpret as risk—and focusing on the moments that shape trust and follow-through.
-            </p>
-
-            <p className="text-foreground font-medium">
-              If I did this again, I'd pair behavioural usability findings with funnel analytics earlier to quantify trust drop-off moments and track improvement over time.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16 md:py-24 border-t border-border">
-        <div className="container mx-auto max-w-3xl text-center">
-          <p className="text-lg text-muted-foreground mb-6">
-            If you care about designing for clarity, confidence, and behaviour, let's talk.
+        <div className="project-section prose-text">
+          <div className="section-label">The reframe</div>
+          <p style={{ marginBottom: "1.5rem" }}>
+            We reframed the entire booking journey as three sequential behavioural systems instead
+            of one linear flow. Each layer had to hold before the next one could be earned.
           </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-colors"
-          >
-            Let's talk →
+
+          <div className="framework-grid">
+            <div className="framework-card purple">
+              <div className="framework-card-label">Layer 01</div>
+              <div className="framework-card-title">Decision trust</div>
+              <div className="framework-card-desc">Can users confidently commit to a purchase?</div>
+            </div>
+            <div className="framework-card teal">
+              <div className="framework-card-label">Layer 02</div>
+              <div className="framework-card-title">Transaction trust</div>
+              <div className="framework-card-desc">Can users pay without uncertainty escalating?</div>
+            </div>
+            <div className="framework-card coral">
+              <div className="framework-card-label">Layer 03</div>
+              <div className="framework-card-title">Retention trust</div>
+              <div className="framework-card-desc">
+                Does the ecosystem feel worth committing to long term?
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="project-section">
+          <div className="section-label">What we found</div>
+
+          <div className="insight">
+            <div className="insight-lead">Pricing ambiguity did more damage than high prices</div>
+            <p className="insight-expand">
+              Users read hidden fees as dishonesty, even when fares were genuinely competitive.
+            </p>
+          </div>
+
+          <div className="insight">
+            <div className="insight-lead">Urgency cues amplified anxiety, not conversion</div>
+            <p className="insight-expand">
+              Countdown timers designed to drive purchase were quietly increasing cognitive stress
+              during an already high-stakes decision.
+            </p>
+          </div>
+
+          <div className="insight">
+            <div className="insight-lead">Loyalty wasn't rejected, it was invisible</div>
+            <p className="insight-expand">
+              Users didn't dismiss the program. They couldn't see its value at the moments it could
+              have mattered most.
+            </p>
+          </div>
+
+          <div className="insight">
+            <div className="insight-lead">
+              Hesitation looked like friction, but it was missing reassurance
+            </div>
+            <p className="insight-expand">
+              Users weren't stuck in the flow. They were unsure within it.
+            </p>
+          </div>
+        </div>
+
+        <div className="project-section">
+          <div className="section-label">What changed</div>
+          <ul className="checklist">
+            <li>
+              <i className="ti ti-check" aria-hidden="true"></i>
+              <span>Total cost surfaced earlier in the journey, with fee structures made legible upfront</span>
+            </li>
+            <li>
+              <i className="ti ti-check" aria-hidden="true"></i>
+              <span>Artificial urgency stripped out, time-sensitive messaging reframed honestly</span>
+            </li>
+            <li>
+              <i className="ti ti-check" aria-hidden="true"></i>
+              <span>Loyalty value integrated into comparison and checkout moments</span>
+            </li>
+            <li>
+              <i className="ti ti-check" aria-hidden="true"></i>
+              <span>Continuity rebuilt across booking, manage-booking, and check-in</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="takeaway">
+          <div className="takeaway-label">The takeaway</div>
+          <p className="takeaway-quote">
+            Loyalty is rarely a feature users opt into independently. It is a byproduct of trust,
+            earned consistently across the ecosystem.
+          </p>
+        </div>
+
+        <div className="cta-row">
+          <Link to="/projects/urban-planning" className="btn-editorial">
+            Next project
+            <i className="ti ti-arrow-right" aria-hidden="true"></i>
+          </Link>
+          <Link to="/contact" className="btn-editorial">
+            Get in touch
+            <i className="ti ti-mail" aria-hidden="true"></i>
           </Link>
         </div>
-      </section>
+      </article>
     </Layout>
   );
 };

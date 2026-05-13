@@ -1,324 +1,189 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
-import { FrictionMap } from "@/components/case-study/FrictionMap";
 
 const CaseStudyPersonalLoans = () => {
   return (
     <Layout>
-      {/* Back Navigation */}
-      <div className="container mx-auto pt-8">
-        <Link
-          to="/projects"
-          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back to Projects
+      <article className="container-page">
+        <Link to="/projects" className="back-link">
+          <i className="ti ti-arrow-left" aria-hidden="true"></i>
+          Selected work
         </Link>
-      </div>
 
-      {/* Hero Section */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto max-w-3xl">
-          <div className="flex flex-wrap gap-2 mb-8">
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              FinTech
-            </span>
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Personal Loans
-            </span>
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Foundational + Evaluative Research
-            </span>
-            <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
-              Contract Role
-            </span>
+        <div className="project-meta">Project 02 · FinTech · Behavioural research</div>
+
+        <h1 className="h1">When ambiguity costs more than interest rates</h1>
+
+        <p className="subtitle">
+          Why a technically seamless digital loan product still wasn't getting taken, and what
+          changed when the team shifted from speed-first messaging to clarity-first trust-building.
+        </p>
+
+        <div className="tag-row">
+          <span className="tag">Trust &amp; adoption</span>
+          <span className="tag">Activation &amp; onboarding</span>
+          <span className="tag">Behavioural friction</span>
+        </div>
+
+        <div className="tldr">
+          <div className="tldr-label">TL;DR</div>
+          <div className="tldr-grid">
+            <div>
+              <div className="tldr-item-label">Sector</div>
+              <div className="tldr-item-value">FinTech, personal loans, India</div>
+            </div>
+            <div>
+              <div className="tldr-item-label">Method</div>
+              <div className="tldr-item-value">
+                In-depth interviews, usability testing, JTBD, journey mapping, cognitive load
+                analysis
+              </div>
+            </div>
+            <div>
+              <div className="tldr-item-label">Sample</div>
+              <div className="tldr-item-value">
+                Loan users, drop-offs, and credit users who avoided loans across Tier 1–3 cities
+              </div>
+            </div>
+            <div>
+              <div className="tldr-item-label">Partnered with</div>
+              <div className="tldr-item-value">Product, design, marketing, risk</div>
+            </div>
           </div>
+          <div className="tldr-shift">
+            <div className="tldr-shift-label">Strategic shift</div>
+            <div className="tldr-shift-value">
+              Speed-first messaging → clarity-first trust-building
+            </div>
+          </div>
+        </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
-            Understanding Why Users Hesitate to Take Personal Loans Digitally
-          </h1>
-
-          <p className="text-lg md:text-xl text-muted-foreground mt-6 leading-relaxed">
-            A foundational and evaluative study exploring trust, decision making, and UX friction in a large Indian FinTech product.
+        <div className="project-section prose-text">
+          <div className="section-label">The problem</div>
+          <p>
+            The product was, technically, seamless. The KYC worked. The disbursal worked. The
+            approval times were genuinely fast. And yet adoption sat well below where the team had
+            expected it to be.
+          </p>
+          <p>
+            The instinct inside the room was that the product needed to be faster. The behavioural
+            read suggested something else. Users weren't put off by speed. They were put off by not
+            knowing what they were committing to.
+          </p>
+          <p>
+            This wasn't a usability problem. It was an ambiguity problem dressed as one.
           </p>
         </div>
-      </section>
 
-      {/* Case Study Visual */}
-      <section className="py-6 md:py-8">
-        <div className="container mx-auto max-w-3xl">
-          <div className="rounded-xl overflow-hidden shadow-medium">
-            <img
-              src="/portfolio-presence/case-study-images/personal-loans.png"
-              alt="Abstract visualisation of trust and risk in digital financial transactions"
-              loading="lazy"
-              className="w-full h-auto object-cover aspect-[16/9]"
-            />
-          </div>
-        </div>
-      </section>
+        <div className="project-section prose-text">
+          <div className="section-label">The reframe</div>
+          <p style={{ marginBottom: "1.5rem" }}>
+            We reframed the loan journey as three behavioural questions users were asking
+            themselves at each step, not three flows.
+          </p>
 
-
-
-      {/* The Problem */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            The Problem
-          </h2>
-
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p className="text-lg">
-              Despite a technically seamless product, adoption of digital personal loans was low.
-            </p>
-
-            <p>
-              The team believed speed and convenience were the main drivers. What they lacked was a clear understanding of how users think about borrowing money, where trust breaks down, and how product language and flow amplify hesitation.
-            </p>
-
-            <p className="text-foreground font-medium">
-              This wasn't just a usability issue.<br />
-              It was a behavioural one.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* My Role */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            My Role
-          </h2>
-
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>
-              I was the primary researcher responsible for leading all interviews, usability sessions, and analysis. I owned the execution end-to-end—from participant recruitment through synthesis.
-            </p>
-
-            <p>
-              For research strategy and final reporting, I worked as part of a small team, contributing actively to how we framed insights and aligned recommendations with product and marketing stakeholders.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Research Snapshot */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <div className="bg-card border border-border rounded-xl p-8 md:p-10">
-            <h2 className="text-xl md:text-2xl text-foreground mb-6">
-              Research Snapshot
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                  Methods
-                </h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>In-depth interviews</li>
-                  <li>Usability testing</li>
-                  <li>Jobs to be Done analysis</li>
-                  <li>Journey mapping</li>
-                  <li>Cognitive load analysis</li>
-                </ul>
+          <div className="framework-grid">
+            <div className="framework-card purple">
+              <div className="framework-card-label">Layer 01</div>
+              <div className="framework-card-title">Eligibility trust</div>
+              <div className="framework-card-desc">
+                Will I be judged or rejected before I even understand the terms?
               </div>
-
-              <div>
-                <h3 className="text-sm font-medium text-accent uppercase tracking-wider mb-4">
-                  Participants
-                </h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>Loan users</li>
-                  <li>Applied but dropped off</li>
-                  <li>Credit users who avoided loans</li>
-                  <li>Tier 1, Tier 2, Tier 3 cities</li>
-                </ul>
+            </div>
+            <div className="framework-card teal">
+              <div className="framework-card-label">Layer 02</div>
+              <div className="framework-card-title">Cost trust</div>
+              <div className="framework-card-desc">
+                Do I actually know what I'll pay back, and when?
+              </div>
+            </div>
+            <div className="framework-card coral">
+              <div className="framework-card-label">Layer 03</div>
+              <div className="framework-card-title">Commitment trust</div>
+              <div className="framework-card-desc">
+                Can I back out if something changes, without consequence?
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Approach */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            Approach
-          </h2>
+        <div className="project-section">
+          <div className="section-label">What we found</div>
 
-          <div className="space-y-6">
-            <p className="text-muted-foreground leading-relaxed">
-              The study combined behavioural exploration with hands-on usability evaluation to uncover both why people hesitate and where the product unintentionally increased that hesitation.
+          <div className="insight">
+            <div className="insight-lead">Users didn't distrust loans, they distrusted ambiguity</div>
+            <p className="insight-expand">
+              Hidden charges, unclear repayment terms, and vague language triggered more hesitation
+              than the interest rate itself.
             </p>
-
-            <div className="space-y-3 mt-6">
-              <div className="flex gap-4">
-                <span className="text-accent font-medium whitespace-nowrap">Week 1–2</span>
-                <p className="text-muted-foreground">Foundational interviews to understand borrowing beliefs, fears, and trust breakdowns</p>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-accent font-medium whitespace-nowrap">Week 3</span>
-                <p className="text-muted-foreground">Journey mapping + Jobs to Be Done analysis to identify decision moments</p>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-accent font-medium whitespace-nowrap">Week 4</span>
-                <p className="text-muted-foreground">Usability evaluation of the digital loan and KYC flow</p>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-accent font-medium whitespace-nowrap">Week 5</span>
-                <p className="text-muted-foreground">Stakeholder workshop to align product + marketing teams on trust-first improvements</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Trust Friction Map */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <FrictionMap
-            title="Trust Friction Map"
-            subtitle="Where hesitation intensified across the loan journey."
-            items={[
-              { label: "Discovery", severity: "medium", description: "Loan product awareness and initial interest" },
-              { label: "Eligibility", severity: "high", description: "Ambiguity around terms, fees, and hidden charges" },
-              { label: "KYC", severity: "critical", description: "Cognitive overload and anxiety during verification" },
-              { label: "Approval", severity: "medium", description: "Speed vs clarity trade-off in decision confidence" },
-              { label: "Disbursal", severity: "low", description: "Post-approval confirmation and repayment clarity" },
-            ]}
-            footnote="Friction mapped by behavioural hesitation, not task completion rate."
-          />
-        </div>
-      </section>
-
-      {/* Key Insights */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            Key Insights
-          </h2>
-
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-2">
-                Users didn't distrust loans. They distrusted ambiguity.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Hidden charges, unclear repayment terms, and vague language triggered hesitation more than interest rates.
-              </p>
-              <p className="text-accent text-sm font-medium">
-                → We rewrote repayment language, surfaced total cost earlier, and removed vague fee terminology.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-2">
-                Speed mattered, but only after trust was established.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                Fast approval was attractive, but not at the cost of clarity or perceived risk.
-              </p>
-              <p className="text-accent text-sm font-medium">
-                → We added reassurance cues, clearer lender context, and reduced cognitive overload during KYC.
-              </p>
-            </div>
-
-            {/* Pull Quote */}
-            <blockquote className="border-l-4 border-accent pl-6 py-4 my-12">
-              <p className="text-xl md:text-2xl text-foreground italic">
-                "High cognitive load amplified anxiety. Complex forms and dense information during KYC made users second-guess their decision mid-flow."
-              </p>
-            </blockquote>
-
-            <div>
-              <h3 className="text-lg font-medium text-foreground mb-2">
-                Borrowing was emotional, not transactional.
-              </h3>
-              <p className="text-muted-foreground mb-3">
-                First-time borrowers relied heavily on family and peer validation before committing.
-              </p>
-              <p className="text-accent text-sm font-medium">
-                → We introduced social proof elements and simplified language to reduce the feeling of being "locked in."
-              </p>
-            </div>
           </div>
 
-          {/* Strategic Shift */}
-          <p className="text-foreground font-medium mt-12 text-lg border-l-4 border-accent pl-6">
-            Insights shifted the team from speed-first messaging to clarity-first trust-building.
+          <div className="insight">
+            <div className="insight-lead">Speed mattered, but only after trust was established</div>
+            <p className="insight-expand">
+              Fast approval was attractive, but not at the cost of clarity or perceived risk. Speed
+              read as pressure when trust hadn't been earned.
+            </p>
+          </div>
+
+          <div className="insight">
+            <div className="insight-lead">High cognitive load amplified anxiety</div>
+            <p className="insight-expand">
+              Complex forms and dense information during KYC made users second-guess their decision
+              mid-flow, even when they had originally intended to complete it.
+            </p>
+          </div>
+
+          <div className="insight">
+            <div className="insight-lead">Borrowing was emotional, not transactional</div>
+            <p className="insight-expand">
+              First-time borrowers relied heavily on family and peer validation before committing.
+              The journey wasn't an individual decision; it was a social one.
+            </p>
+          </div>
+        </div>
+
+        <div className="project-section">
+          <div className="section-label">What changed</div>
+          <ul className="checklist">
+            <li>
+              <i className="ti ti-check" aria-hidden="true"></i>
+              <span>Repayment language and fee terminology rewritten across key screens</span>
+            </li>
+            <li>
+              <i className="ti ti-check" aria-hidden="true"></i>
+              <span>Total cost surfaced earlier so users could commit knowingly</span>
+            </li>
+            <li>
+              <i className="ti ti-check" aria-hidden="true"></i>
+              <span>Reassurance cues and lender context added during high-anxiety steps</span>
+            </li>
+            <li>
+              <i className="ti ti-check" aria-hidden="true"></i>
+              <span>Stakeholder narrative shifted from speed-first to clarity-first</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="takeaway">
+          <div className="takeaway-label">The takeaway</div>
+          <p className="takeaway-quote">
+            Trust is not a UX problem. It is a product, brand, and organisational one, and
+            behavioural trust issues require cross-functional solutions.
           </p>
         </div>
-      </section>
 
-      {/* Impact */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            Impact
-          </h2>
-
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p className="text-foreground font-medium">
-              Research informed concrete product changes across the loan journey:
-            </p>
-
-            <ul className="space-y-3 list-disc list-inside">
-              <li>Simplified jargon and repayment terminology across key screens</li>
-              <li>Surfaced total cost and terms earlier to reduce ambiguity</li>
-              <li>Added reassurance cues and social proof during high-anxiety steps like KYC</li>
-            </ul>
-
-            <p>
-              Stakeholders reported stronger completion rates and improved digital disbursals over the following year.
-            </p>
-
-            <p className="text-sm text-muted-foreground/80 italic border-l-2 border-border pl-4">
-              This work contributed to the broader foundation supporting the client's publicly reported milestone of 1 lakh+ personal loan disbursals worth ₹1,000 crore (Oct 2024), reflecting overall platform performance rather than direct experimental attribution.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Reflection */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl text-foreground mb-6">
-            Reflection
-          </h2>
-
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>
-              This project reinforced that trust is not just a UX problem—it's a product, brand, and organisational one. Behavioural trust issues require cross-functional solutions.
-            </p>
-
-            <p>
-              With more experience now, I would push for earlier triangulation with behavioural data and stronger longitudinal follow-ups to understand how trust evolves over time.
-            </p>
-
-            <p className="text-foreground font-medium">
-              If I did this again, I'd push earlier alignment with risk, compliance, and behavioural analytics to track trust over time.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16 md:py-24 border-t border-border">
-        <div className="container mx-auto max-w-3xl text-center">
-          <p className="text-lg text-muted-foreground mb-6">
-            Want to talk about behavioural research, trust, or decision making in products?
-          </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-colors"
-          >
-            Let's talk →
+        <div className="cta-row">
+          <Link to="/projects/airline-booking" className="btn-editorial">
+            Next project
+            <i className="ti ti-arrow-right" aria-hidden="true"></i>
+          </Link>
+          <Link to="/contact" className="btn-editorial">
+            Get in touch
+            <i className="ti ti-mail" aria-hidden="true"></i>
           </Link>
         </div>
-      </section>
+      </article>
     </Layout>
   );
 };
