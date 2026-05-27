@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 
+// [REPLACE] Point this at the deployed full-time (Astro) portfolio URL.
+// Until the Astro site is live, this stays "#" (link does nothing).
+const FULLTIME_URL = "#";
+
 export function Footer() {
   return (
     <footer style={{ borderTop: "0.5px solid var(--color-border-tertiary)", marginTop: "4rem" }}>
@@ -37,6 +41,14 @@ export function Footer() {
           >
             Get in touch
           </Link>
+          <a
+            href={FULLTIME_URL}
+            target={FULLTIME_URL === "#" ? undefined : "_blank"}
+            rel="noopener noreferrer"
+            style={{ color: "var(--color-text-secondary)", textDecoration: "none" }}
+          >
+            Looking to hire full-time? →
+          </a>
         </div>
       </div>
     </footer>

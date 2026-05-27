@@ -3,7 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 const navLinks = [
   { href: "/projects", label: "Work" },
   { href: "/services", label: "Services" },
-  { href: "/blog", label: "Thinking" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -20,6 +19,7 @@ export function Header() {
             <NavLink
               key={link.href}
               to={link.href}
+              end
               className={({ isActive }) => (isActive ? "is-active" : undefined)}
             >
               {link.label}
