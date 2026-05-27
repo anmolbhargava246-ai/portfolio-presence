@@ -1066,10 +1066,10 @@
   }
 
   .studio-about-right {
-    flex: 0 0 auto;
+    flex: 0 0 320px;
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: flex-start;
   }
 
   .studio-about-title {
@@ -1110,8 +1110,8 @@
   }
 
   .studio-about-photo {
-    height: 100%;
-    width: auto;
+    width: 100%;
+    height: auto;
     border-radius: 4px;
     display: block;
     margin: 0;

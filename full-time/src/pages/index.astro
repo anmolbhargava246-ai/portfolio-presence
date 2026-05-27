@@ -1,0 +1,138 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { projects } from "../data/projects";
+const base = import.meta.env.BASE_URL; // "/portfolio-presence/full-time/"
+---
+<Layout>
+  <!-- HERO -->
+  <section class="section section--cream">
+    <div class="container">
+      <p class="eyebrow">UX Researcher · Bengaluru, IN · Available for new roles</p>
+      <h1 class="display display--xl" style="color: var(--brick); max-width: 18ch;">
+        Behavioural research for product teams shaping the next era of trust, adoption, and AI.
+      </h1>
+      <p class="lede">
+        Four years of research experience across product development and consumer
+        research, spanning Atlassian, FinTech, and high-stakes consumer products.
+        I work on the behavioural questions sitting underneath retention, activation,
+        and growth. Increasingly focused on how trust forms when the product on the
+        other side can think back.
+      </p>
+      <div style="margin-top: 2rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+        <a href={`${base}projects`} class="btn btn--filled-brick">See selected work</a>
+        <a href={`${base}about`} class="btn">Read about me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS STRIP -->
+  <section class="strip">
+    <div class="container">
+      <p class="strip__text">
+        <span class="strip__label">Previously</span>
+        <span class="strip__sep">·</span>
+        <span>Atlassian</span>
+        <span class="strip__sep">·</span>
+        <span>getCurious</span>
+        <span class="strip__sep">·</span>
+        <span>4SiGHT</span>
+        <span class="strip__sep">·</span>
+        <span>Thinking Spree</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section--brick" id="about">
+    <div class="container">
+      <div class="split split--narrow-left">
+        <div class="portrait-frame">
+          <img
+            src={`${base}portrait.jpg`}
+            alt="Portrait of Anmol Bhargava"
+            class="portrait-frame__img"
+            width="1200"
+            height="1600"
+            loading="lazy"
+          />
+        </div>
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 class="display display--lg">Hi, I'm Anmol.</h2>
+          <p style="max-width: 52ch;">
+            Curiosity about why people do what they do is what pulled me into research.
+            A Master's in Applied Psychology turned that curiosity into a craft, and the
+            psychology lens still shapes how I think about every product I work on.
+          </p>
+          <p style="max-width: 52ch;">
+            My work has spanned enterprise B2B SaaS at Atlassian, FinTech research on
+            contract at getCurious, and consumer research across industries at 4SiGHT.
+            The products vary. The question I'm trying to answer rarely does: what's
+            really driving this behaviour, and what does the product need to do about it?
+          </p>
+          <p style="max-width: 52ch;">
+            Right now, I'm drawn to how people interact with AI products, and what
+            changes when the product on the other side can think back. The behavioural
+            questions feel sharper here than anywhere else. How does trust form when
+            the system isn't fully predictable? What does loyalty look like when the
+            product keeps learning? Those questions are quietly shaping the next era
+            of product growth, and I want to be in the room as they get answered.
+          </p>
+          <div style="margin-top: 1.75rem;">
+            <a href={`${base}about`} class="btn btn--outline-cream">Read more about me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section section--cream" id="work">
+    <div class="container">
+      <p class="eyebrow">Selected work</p>
+      <h2 class="display display--lg" style="color: var(--brick);">Four projects.</h2>
+      <p class="lede" style="color: var(--ink-soft);">
+        Each one made the product team rethink something they thought they already understood.
+        Atlassian, FinTech, and aviation work across behavioural research, pre-launch
+        validation, and conversion behaviour.
+      </p>
+
+      <div class="work-grid">
+        {projects.map((p) => (
+          <a class="work-card" href={`${base}projects/${p.slug}`}>
+            <span class="work-card__num">{p.num}</span>
+            <div class="work-card__meta">
+              Project {p.num} — {p.meta}{p.company ? `, ${p.company}` : ""}
+            </div>
+            <h3 class="work-card__title">{p.title}</h3>
+            <p class="work-card__desc">{p.cardSummary}</p>
+            <div class="work-card__tags">
+              {p.tags.map((t) => <span class="tag">{t}</span>)}
+            </div>
+            <div class="work-card__cta">Read full case study →</div>
+          </a>
+        ))}
+      </div>
+
+      <p class="work-grid__footnote">
+        Four selected projects. Each one made the product team rethink something they
+        thought they already understood.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT TEASE -->
+  <section class="section section--deep" id="contact-tease">
+    <div class="container">
+      <p class="eyebrow" style="opacity: 0.8;">Hiring?</p>
+      <h2 class="display display--lg">Let's talk.</h2>
+      <p style="max-width: 52ch; margin-bottom: 2rem;">
+        Looking for a senior UX research role at a product company. Happy to chat about
+        open positions, AI product research, behavioural work, or anything in between.
+      </p>
+      <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+        <a href={`${base}contact`} class="btn btn--outline-cream">Get in touch</a>
+      </div>
+    </div>
+  </section>
+</Layout>

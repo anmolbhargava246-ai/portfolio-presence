@@ -1,0 +1,59 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CaseStudy from "../../components/CaseStudy.astro";
+---
+<Layout
+  title="Airline booking, conversion and retention research — Anmol Bhargava"
+  description="Behavioural research on an airline's end-to-end booking, checkout, loyalty, and post-booking experience. Reframed the team from speed-first optimisation to confidence-first strategy."
+>
+  <CaseStudy
+    slug="airline-booking"
+    tldr={[
+      { k: "Sector", v: "Aviation, high-stakes e-commerce" },
+      { k: "Scope", v: "End-to-end booking, checkout, loyalty, post-booking" },
+      { k: "Method", v: "Behavioural usability, friction mapping, loyalty analysis" },
+      { k: "Cohorts", v: "4 user types across travel frequency and price sensitivity" },
+    ]}
+    strategicShift="Speed-first optimisation → confidence-first experience strategy"
+    problem={[
+      "An airline came to us with a familiar problem wearing an unfamiliar mask. Bookings were dropping off mid-flow. Loyalty sign-ups were flat. Repeat travellers kept coming back, then kept choosing not to commit.",
+      "The instinct in most rooms is to call this a UX problem. Tighten the funnel. Reduce the clicks. Make the buttons bigger.",
+      "We pushed back. The funnel was holding up technically. What was eroding underneath it was trust.",
+    ]}
+    reframe={{
+      label: "The reframe",
+      intro:
+        "We reframed the entire booking journey as three sequential behavioural systems instead of one linear flow. Each layer had to hold before the next one could be earned.",
+      layers: [
+        { label: "Layer 01, Decision trust", body: "Can users confidently commit to a purchase?" },
+        { label: "Layer 02, Transaction trust", body: "Can users pay without uncertainty escalating?" },
+        { label: "Layer 03, Retention trust", body: "Does the ecosystem feel worth committing to long term?" },
+      ],
+    }}
+    findings={[
+      {
+        lead: "Pricing ambiguity did more damage than high prices",
+        body: "Users read hidden fees as dishonesty, even when fares were genuinely competitive.",
+      },
+      {
+        lead: "Urgency cues raised anxiety while conversion stayed flat",
+        body: "Countdown timers designed to drive purchase were quietly increasing cognitive stress during an already high-stakes decision. The lift the team had expected wasn't materialising.",
+      },
+      {
+        lead: "Loyalty was invisible at the moments that mattered",
+        body: "The program existed and users had nothing against it. Its value just wasn't visible at the moments it could have shaped a comparison or a checkout decision.",
+      },
+      {
+        lead: "What read as friction in the funnel was missing reassurance",
+        body: "Users weren't getting stuck in the flow, they were quietly losing confidence inside it.",
+      },
+    ]}
+    changed={[
+      "Total cost surfaced earlier in the journey, with fee structures made legible upfront",
+      "Artificial urgency stripped out, time-sensitive messaging reframed honestly",
+      "Loyalty value integrated into comparison and checkout moments",
+      "Continuity rebuilt across booking, manage-booking, and check-in",
+    ]}
+    takeaway="Loyalty rarely arrives as something users actively opt into. It accumulates as trust holds up consistently across the ecosystem."
+  />
+</Layout>

@@ -1,0 +1,60 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CaseStudy from "../../components/CaseStudy.astro";
+---
+<Layout
+  title="Personal loans, activation and onboarding research — Anmol Bhargava"
+  description="Mixed-methods behavioural research on a digital personal loan product in India. Reframed messaging from speed-first to clarity-first trust-building."
+>
+  <CaseStudy
+    slug="personal-loans"
+    tldr={[
+      { k: "Sector", v: "FinTech, personal loans, India" },
+      { k: "Method", v: "In-depth interviews, usability testing, JTBD, journey mapping, cognitive load analysis" },
+      { k: "Sample", v: "Loan users, drop-offs, and credit users who avoided loans across Tier 1–3 cities" },
+      { k: "Partnered with", v: "Product, design, marketing, risk" },
+    ]}
+    strategicShift="Speed-first messaging → clarity-first trust-building"
+    problem={[
+      "The product was, technically, seamless. The KYC worked. The disbursal worked. The approval times were genuinely fast. And yet adoption sat well below where the team had expected it to be.",
+      "The instinct inside the room was that the product needed to be faster. The behavioural read suggested something else.",
+      "Speed wasn't the friction point. Users were stalling earlier, on uncertainty about what they were actually signing up for.",
+      "Underneath what looked like a usability problem sat an ambiguity problem. The funnel worked. The decision didn't feel safe enough to complete.",
+    ]}
+    reframe={{
+      label: "The reframe",
+      intro:
+        "We reframed the loan journey as three behavioural questions users were asking themselves at each step, replacing the team's flow-based view of the funnel.",
+      layers: [
+        { label: "Layer 01, Eligibility trust", body: "Will I be judged or rejected before I even understand the terms?" },
+        { label: "Layer 02, Cost trust", body: "Do I actually know what I'll pay back, and when?" },
+        { label: "Layer 03, Commitment trust", body: "Can I back out if something changes, without consequence?" },
+      ],
+    }}
+    findings={[
+      {
+        lead: "Ambiguity drove more hesitation than the interest rate did",
+        body: "What users were rejecting wasn't the loan itself. It was the ambiguity around what they were committing to. Hidden charges, unclear repayment terms, and vague language triggered more hesitation than the interest rate ever did.",
+      },
+      {
+        lead: "Speed only mattered after trust was established",
+        body: "Fast approval was attractive, though never enough to override the need for clarity. Speed read as pressure when trust hadn't been earned yet.",
+      },
+      {
+        lead: "High cognitive load amplified anxiety",
+        body: "Complex forms and dense information during KYC made users second-guess their decision mid-flow, even when they had originally intended to complete it.",
+      },
+      {
+        lead: "Borrowing carried emotional weight beyond the transactional surface",
+        body: "First-time borrowers relied heavily on family and peer validation before committing. The journey was a social decision much more than an individual one.",
+      },
+    ]}
+    changed={[
+      "Repayment language and fee terminology rewritten across key screens",
+      "Total cost surfaced earlier so users could commit knowingly",
+      "Reassurance cues and lender context added during high-anxiety steps",
+      "Stakeholder narrative shifted from speed-first to clarity-first",
+    ]}
+    takeaway="Trust runs deeper than UX. It sits across product, brand, and organisation at once, and behavioural trust issues require cross-functional solutions."
+  />
+</Layout>

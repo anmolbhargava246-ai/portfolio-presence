@@ -1,0 +1,62 @@
+---
+import "../styles/global.css";
+export interface Props {
+  title?: string;
+  description?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+}
+const {
+  title = "Anmol Bhargava — UX Researcher (Atlassian, behavioural & AI product research)",
+  description = "UX researcher with four years across Atlassian, FinTech, and consumer products. Focused on behavioural research, trust and adoption, and AI product behaviour. Looking for senior product research roles.",
+  ogTitle,
+  ogDescription,
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://anmolbhargava.com").toString();
+const base = import.meta.env.BASE_URL; // "/portfolio-presence/full-time/"
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Anmol Bhargava" />
+    <meta property="og:title" content={ogTitle ?? title} />
+    <meta property="og:description" content={ogDescription ?? description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ogTitle ?? title} />
+    <meta name="twitter:description" content={ogDescription ?? description} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500;1,9..144,700;1,9..144,800&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container nav__inner">
+        <a href={base} class="nav__brand">Anmol Bhargava</a>
+        <div class="nav__links">
+          <a href={`${base}projects`}>Work</a>
+          <a href={`${base}about`}>About</a>
+          <a href={`${base}contact`}>Contact</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

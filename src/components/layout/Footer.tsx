@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
-// [REPLACE] Point this at the deployed full-time (Astro) portfolio URL.
-// Until the Astro site is live, this stays "#" (link does nothing).
-const FULLTIME_URL = "#";
+// Full-time (Astro) portfolio — served from the same GitHub Pages site
+// at the /full-time/ sub-path. Plain <a> so it does a full page load
+// into the static Astro site rather than client-side React routing.
+const FULLTIME_URL = "/portfolio-presence/full-time/";
 
 export function Footer() {
   return (

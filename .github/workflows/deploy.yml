@@ -21,11 +21,24 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Dependencies
+      - name: Install Dependencies (freelance / React)
         run: npm install
 
-      - name: Build Project
+      - name: Build freelance site (React) → dist/
         run: npm run build
+
+      - name: Install Dependencies (full-time / Astro)
+        run: npm install
+        working-directory: full-time
+
+      - name: Build full-time site (Astro) → full-time/dist/
+        run: npm run build
+        working-directory: full-time
+
+      - name: Merge full-time build into dist/full-time/
+        run: |
+          mkdir -p dist/full-time
+          cp -r full-time/dist/. dist/full-time/
 
       - name: Copy index.html to 404.html for SPA routing
         run: cp dist/index.html dist/404.html

@@ -1,0 +1,53 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CaseStudy from "../../components/CaseStudy.astro";
+---
+<Layout
+  title="Atlassian, on-call scheduling research — Anmol Bhargava"
+  description="Evaluative usability research on Atlassian's mobile on-call scheduling feature. Reprioritised the team's pre-launch backlog and lifted satisfaction by 15% and adoption by 10%."
+>
+  <CaseStudy
+    slug="atlassian"
+    tldr={[
+      { k: "Company", v: "Atlassian (enterprise ITSM, mobile)" },
+      { k: "Product", v: "On-call scheduling for engineering managers and on-call engineers" },
+      { k: "Method", v: "Remote moderated usability, journey mapping, cognitive walkthroughs, SEQ analysis" },
+      { k: "Sample", v: "20 users globally (10 on-call engineers, 10 engineering managers)" },
+      { k: "Partnered with", v: "Design, product, engineering teams" },
+      { k: "Outcome", v: "15% satisfaction lift, ~10% adoption lift, 4 design changes shipped, 2 roadmap features added" },
+    ]}
+    strategicShift="Feature validation → workflow risk reduction under real on-call conditions"
+    problem={[
+      "An engineering manager pages an on-call engineer at 2am because of a critical incident. The engineer needs to know, without confusion, whether they're actually on shift, what their override looks like, and what handover they're walking into. In an ITSM tool, an ambiguous interface translates straight into operational risk. A confused on-call engineer can miss a page entirely.",
+      "That's the context this study sat inside.",
+      "Atlassian's design team had released new on-call scheduling features in the mobile app. Functionally, the features worked. The question was whether the workflow held up under the real conditions on-call users operate in: distributed teams, varying terminology across regions, time-pressure scenarios, and high-stakes decisions made on a small screen.",
+      "We ran the study with 20 participants globally using remote moderated usability testing. The analysis combined task success rates, SEQ ratings, cognitive walkthroughs, and pain point mapping, so we could separate cosmetic friction from workflow risk.",
+    ]}
+    findings={[
+      {
+        lead: "Terminology varied more across regions than expected",
+        body: "On-call scheduling, on-call shift, and roster meant the same thing to different users depending on geography. For a globally distributed engineering audience, this was a comprehension risk.",
+      },
+      {
+        lead: "Customisation expectations surfaced strongly",
+        body: "Users wanted to associate visual cues like colour with specific people or shifts, mapping onto cognitive shortcuts they'd already built.",
+      },
+      {
+        lead: "Some workflow steps were redundant in practice",
+        body: "Comfort changes during shifts didn't add enough value to justify the cognitive load they introduced.",
+      },
+      {
+        lead: "Cultural variation showed up in SEQ data",
+        body: "Users from certain regions rated tasks consistently stricter, a methodological note for future global studies.",
+      },
+    ]}
+    changed={[
+      "4 major design changes shipped, simplifying navigation and interaction patterns",
+      "2 new features added to the product roadmap based on behavioural interviews",
+      "Cultural and terminology variation built into scoping for future global usability work",
+      "15% lift in user satisfaction, ~10% lift in feature adoption post-launch",
+    ]}
+    stakeholders="I leaned on amplifying user voice through verbatims, Loom clips, and quote-led synthesis. Insights were structured as problems and How-Might-We prompts so they were directly usable in design and roadmap conversations. Stakeholder dialogue was continuous throughout the project, not just at the readout."
+    takeaway="In enterprise tools, ambiguity has operational consequences that don't always register on satisfaction scores. Its cost shows up in the moments the workflow has to hold under pressure."
+  />
+</Layout>

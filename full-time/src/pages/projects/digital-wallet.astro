@@ -1,0 +1,59 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CaseStudy from "../../components/CaseStudy.astro";
+---
+<Layout
+  title="Digital wallet, pre-launch behavioural research — Anmol Bhargava"
+  description="Pre-launch research on a Saudi Arabia digital wallet. Re-prioritised launch readiness by adoption risk, not interface severity, and surfaced trust gaps the product team's assumptions had missed."
+>
+  <CaseStudy
+    slug="digital-wallet"
+    tldr={[
+      { k: "Sector", v: "FinTech, digital wallet, Saudi Arabia" },
+      { k: "Scope", v: "Activation, transfers, payments, post-transaction confirmation" },
+      { k: "Method", v: "Moderated usability, journey-based friction mapping, behavioural prioritisation" },
+      { k: "Lenses", v: "Entry trust, transaction trust, feedback trust" },
+    ]}
+    strategicShift='"Does it work?" → "Where does certainty collapse?"'
+    problem={[
+      "The product was feature-complete and approaching launch. One risk remained unresolved: whether users would feel confident enough to activate, transact, and return.",
+      "In fintech, usability does more than capture preference. The interface has to earn enough trust for someone to move real money through it. Hesitation at sign-up, first transaction, or post-transfer confirmation compounds into abandonment quickly.",
+      "The product team had strong assumptions about feature value. What was missing was a behavioural read on where certainty collapses under financial stakes.",
+    ]}
+    reframe={{
+      label: "The reframe",
+      intro:
+        "Rather than treat the wallet as a single experience to evaluate, we decomposed it into three behavioural systems, each a distinct layer of trust users build sequentially.",
+      layers: [
+        { label: "Layer 01, Entry trust", body: "Do I feel safe signing up?" },
+        { label: "Layer 02, Transaction trust", body: "Do I feel in control sending money?" },
+        { label: "Layer 03, Feedback trust", body: "Do I know what happened?" },
+      ],
+    }}
+    findings={[
+      {
+        lead: "KYC felt intrusive",
+        body: "Multi-layer authentication came across as redundant friction. The protective intent behind it never quite registered for users. Effort was high while reassurance stayed thin.",
+      },
+      {
+        lead: "Key actions were visually buried",
+        body: "Under cognitive load, users scanned for action affordances and missed them. Time to first transaction stretched without a structural reason.",
+      },
+      {
+        lead: "Feedback gaps eroded transaction trust silently",
+        body: "Users often couldn't confirm whether money had arrived. The uncertainty surfaced later as repeat balance checks, well after the moment had passed.",
+      },
+      {
+        lead: "Mental model failures concentrated at the start",
+        body: "Users couldn't form a clean model of multi-layer auth on first encounter. The product had explained itself, but in the wrong order for how users were taking it in.",
+      },
+    ]}
+    changed={[
+      "Trust signalling brought forward into the first activation screens",
+      "Security steps reframed from redundant friction to visible protection",
+      "Homepage hierarchy restructured to match scanning behaviour under cognitive load",
+      "Feedback loops scaffolded across transaction completion and confirmation",
+    ]}
+    takeaway="Research on high-trust products has to do more than validate the interface. The work is to find where certainty collapses, and make that actionable before the cost of discovery shifts from a research session to lost users at scale."
+  />
+</Layout>

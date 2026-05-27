@@ -1,0 +1,128 @@
+---
+import Layout from "../layouts/Layout.astro";
+const base = import.meta.env.BASE_URL; // "/portfolio-presence/full-time/"
+---
+<Layout
+  title="About — Anmol Bhargava"
+  description="About Anmol Bhargava, UX researcher with a Master's in Applied Psychology and four years of product research experience."
+>
+  <section class="section section--cream">
+    <div class="container" style="max-width: 760px;">
+      <p class="eyebrow">UX Researcher · Bengaluru, IN</p>
+      <h1 class="display display--xl" style="color: var(--brick);">About Anmol.</h1>
+
+      <div class="prose" style="margin-top: 2rem;">
+        <p>
+          Curiosity about why people do what they do is what pulled me into research.
+          A Master's in Applied Psychology turned that curiosity into a craft, and the
+          psychology lens still shapes how I think about every project.
+        </p>
+        <p>
+          My work spans enterprise B2B SaaS at Atlassian, FinTech research on contract
+          at getCurious, and consumer research across industries at 4SiGHT. The products
+          and users vary, but the question I'm trying to answer rarely does: what's
+          really driving this decision, and what does the product need to do about it?
+        </p>
+        <p>
+          Behaviour is rarely what people say it is. The most useful research often
+          sits a layer below the stated answer. I'm at my best when qualitative depth
+          is paired with quantitative validation, and when findings live inside product
+          decisions rather than next to them.
+        </p>
+        <p>
+          Right now, I'm drawn to how people interact with AI products, and what
+          changes when the product on the other side can think back. The behavioural
+          questions feel sharper here than anywhere else. How does trust form when
+          the system isn't fully predictable? What does loyalty look like when the
+          product keeps learning? Those questions are quietly shaping the next era of
+          product growth, and I want to be in the room as they get answered.
+        </p>
+        <p>
+          Looking for a senior research role at a product company where these questions
+          sit at the centre of the work.
+        </p>
+      </div>
+
+      <!-- Currently exploring -->
+      <div class="section-label">Currently exploring</div>
+      <div class="prose">
+        <p>
+          I'm spending most of my reading and thinking time right now on AI product
+          research. Specifically, on the behavioural side of how users build (and
+          break) trust with AI features, how reliance forms in the first 7 to 14 days
+          of use, and where the friction sits when an AI feature behaves unpredictably
+          inside an otherwise predictable product.
+        </p>
+        <p>
+          I'm running a small self-initiated study on this. Happy to talk about it.
+        </p>
+      </div>
+
+      <!-- Experience -->
+      <div class="section-label">Experience</div>
+      <ul class="work-list">
+        <li>
+          <span class="work-role">UX Researcher, Atlassian.</span>
+          <span class="work-desc">Enterprise B2B SaaS, cross-functional product research.</span>
+        </li>
+        <li>
+          <span class="work-role">UX Researcher (contract), getCurious.</span>
+          <span class="work-desc">FinTech app usability.</span>
+        </li>
+        <li>
+          <span class="work-role">Research Executive, 4SiGHT.</span>
+          <span class="work-desc">Consumer research across industries.</span>
+        </li>
+        <li>
+          <span class="work-role">Research Intern, Thinking Spree.</span>
+          <span class="work-desc">Mixed-methods social enterprise research.</span>
+        </li>
+      </ul>
+
+      <!-- How I work with teams -->
+      <div class="section-label">How I work with teams</div>
+
+      <div class="capability-block">
+        <div class="capability-title">With product</div>
+        <div class="capability-desc">
+          I focus on impact, translating user voice into business context that product
+          teams can act on.
+        </div>
+      </div>
+
+      <div class="capability-block">
+        <div class="capability-title">With design</div>
+        <div class="capability-desc">
+          I involve design teams from the start, immersing them in user POV so they
+          don't just see user experiences, they internalise them.
+        </div>
+      </div>
+
+      <div class="capability-block">
+        <div class="capability-title">With marketing</div>
+        <div class="capability-desc">
+          I tell the story rather than handing over a deck. Personas, delights, and
+          pain points framed as a narrative that influences decisions.
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="section-label">Education</div>
+      <ul class="work-list">
+        <li>
+          <span class="work-role">Master's in Applied Psychology.</span>
+          <span class="work-desc">TISS Mumbai.</span>
+        </li>
+        <li>
+          <span class="work-role">Bachelor's in Psychology.</span>
+          <span class="work-desc">Mumbai University.</span>
+        </li>
+      </ul>
+
+      <div class="cta-row">
+        <a href={`${base}projects`} class="btn btn--filled-brick">See selected work</a>
+        <a href={`${base}contact`} class="btn">Get in touch</a>
+      </div>
+    </div>
+  </section>
+</Layout>
