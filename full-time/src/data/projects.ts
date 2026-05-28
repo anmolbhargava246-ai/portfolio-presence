@@ -13,8 +13,7 @@ export const projects: ProjectSummary[] = [
   {
     num: "01",
     slug: "atlassian",
-    meta: "Product research · B2B SaaS",
-    company: "Atlassian",
+    meta: "Product research · Enterprise B2B SaaS (ITSM, mobile)",
     title: "When ambiguous workflows put on-call engineers at risk",
     cardSummary:
       "Evaluative research on a new mobile scheduling feature reprioritised the team's pre-launch backlog. Shipped design changes lifted satisfaction by 15% and adoption by 10%.",
