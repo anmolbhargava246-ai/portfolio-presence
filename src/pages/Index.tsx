@@ -88,8 +88,8 @@ const Index = () => {
                     strokeLinecap="round"
                   />
                 </svg>
-                <Link to="/projects" className="studio-hero-cta">
-                  See my projects
+                <Link to="/services" className="studio-hero-cta">
+                  Know more
                 </Link>
               </span>
               <Link to="/contact" className="studio-hero-cta">
