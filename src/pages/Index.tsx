@@ -43,7 +43,7 @@ const Index = () => {
               UX RESEARCHER · BENGALURU, IN · AVAILABLE FOR PROJECTS
             </div>
             <h1 className="studio-hero-title">
-              Behavioural research that helps founders, teams, and agencies
+              Behavioural research that helps product owners and teams
               figure out what users{" "}
               <span className="studio-italic">
                 won't say
@@ -89,7 +89,7 @@ const Index = () => {
                   />
                 </svg>
                 <Link to="/projects" className="studio-hero-cta">
-                  See selected work
+                  See my projects
                 </Link>
               </span>
               <Link to="/contact" className="studio-hero-cta">
@@ -99,39 +99,33 @@ const Index = () => {
           </div>
         </section>
 
-        {/* SELECTED WORK heading */}
+        {/* MY PROJECTS heading */}
         <section>
-          <h2 className="studio-section-heading">
-            <span>Selected work</span>
-            <span className="studio-section-heading-arrow" aria-hidden="true">
+          <h2 className="my-projects-heading">
+            <span>My projects</span>
+            <span className="my-projects-heading-arrow" aria-hidden="true">
               ↓
             </span>
           </h2>
         </section>
 
-        {/* 3 FEATURED CASES */}
-        {cases.map((c) => (
-          <section key={c.href} className="studio-case">
-            <h3 className="studio-case-name">
-              <Link
-                to={c.href}
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                {c.title}
-              </Link>
-            </h3>
-            <div className="studio-case-chip">{c.chip}</div>
-            <div className="studio-case-body">
-              <p className="studio-case-impact">{c.impact}</p>
-              <div style={{ marginTop: "1.75rem" }}>
-                <Link to={c.href} className="btn-editorial">
-                  Read full case study
-                  <i className="ti ti-arrow-right" aria-hidden="true" />
-                </Link>
+        {/* 3 FEATURED CASES — compact card grid */}
+        <section className="cases-grid">
+          {cases.map((c, i) => (
+            <Link key={c.href} to={c.href} className="case-card">
+              <div className="case-card-num">
+                {String(i + 1).padStart(2, "0")}
               </div>
-            </div>
-          </section>
-        ))}
+              <div className="case-card-chip">{c.chip}</div>
+              <h3 className="case-card-title">{c.title}</h3>
+              <p className="case-card-impact">{c.impact}</p>
+              <span className="case-card-link">
+                Read full case study
+                <i className="ti ti-arrow-right" aria-hidden="true" />
+              </span>
+            </Link>
+          ))}
+        </section>
 
         {/* SEE ALL LINK */}
         <section style={{ textAlign: "center", padding: "1rem 0 4rem" }}>
