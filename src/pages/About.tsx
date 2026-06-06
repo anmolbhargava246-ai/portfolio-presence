@@ -6,7 +6,14 @@ const About = () => {
     <Layout>
       <section className="container-page">
         <div className="project-meta">ABOUT · AVAILABLE FOR PROJECTS</div>
-        <h1 className="h1">About Anmol</h1>
+        <div className="with-circle" style={{ display: "inline-block" }}>
+          <span
+            className="soft-circle"
+            style={{ width: 140, height: 140, top: "-2rem", left: "-2rem" }}
+            aria-hidden="true"
+          />
+          <h1 className="h1">About Anmol</h1>
+        </div>
 
         <div className="prose-text">
           <p>

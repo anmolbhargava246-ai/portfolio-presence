@@ -38,7 +38,33 @@ const Index = () => {
       <div className="home-wrap">
         {/* HERO — freelance positioning */}
         <section className="studio-hero">
-          <div className="studio-hero-grid">
+          {/* Hand-drawn squiggle ornament, top-left of hero only */}
+          <svg
+            className="hero-squiggle"
+            style={{ top: "1.25rem", left: "1.25rem" }}
+            viewBox="0 0 140 36"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M3 22 C 18 4, 36 32, 52 16 S 86 6, 104 20 S 130 8, 138 24"
+              stroke="currentColor"
+              strokeWidth="1.2"
+              strokeLinecap="round"
+            />
+          </svg>
+
+          <div className="studio-hero-grid with-circle">
+            <span
+              className="soft-circle"
+              style={{
+                width: 200,
+                height: 200,
+                top: "1rem",
+                left: "calc(50% - 220px)",
+              }}
+              aria-hidden="true"
+            />
             <div className="project-meta" style={{ marginBottom: "0.5rem" }}>
               UX RESEARCHER · BENGALURU, IN · AVAILABLE FOR PROJECTS
             </div>
@@ -137,7 +163,12 @@ const Index = () => {
 
         {/* ABOUT */}
         <section className="studio-about">
-          <div className="studio-about-left">
+          <div className="studio-about-left with-circle">
+            <span
+              className="soft-circle"
+              style={{ width: 130, height: 130, top: "-1.5rem", left: "-1.5rem" }}
+              aria-hidden="true"
+            />
             <h2 className="studio-about-title">About Anmol</h2>
             <div className="studio-about-mark" aria-hidden="true" />
             <p className="studio-about-bio">

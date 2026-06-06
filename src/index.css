@@ -1833,6 +1833,37 @@
     }
   }
 
+  /* ============================================
+     Rate-card decorative motifs
+     ============================================ */
+
+  /* Soft sand-warm disc sits behind a headline, offset (not centered).
+     Place inside a .with-circle wrapper. */
+  .with-circle {
+    position: relative;
+  }
+  .with-circle > *:not(.soft-circle) {
+    position: relative;
+    z-index: 1;
+  }
+  .soft-circle {
+    position: absolute;
+    background: #E8D4B4;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Hand-drawn squiggle ornament — used sparingly,
+     top-left of the home hero only. */
+  .hero-squiggle {
+    position: absolute;
+    width: 130px;
+    height: 36px;
+    color: #B8826A;
+    pointer-events: none;
+  }
+
   /* About column — tighter typography so text height
      approximates photo height (320×427 natural aspect) */
   .home-wrap .studio-about {

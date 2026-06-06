@@ -83,7 +83,14 @@ const Contact = () => {
     <Layout>
       <section className="container-page">
         <div className="project-meta">CONTACT · AVAILABLE FOR PROJECTS</div>
-        <h1 className="h1">Have a problem worth digging into?</h1>
+        <div className="with-circle" style={{ display: "inline-block" }}>
+          <span
+            className="soft-circle"
+            style={{ width: 160, height: 160, top: "-1.5rem", left: "-2rem" }}
+            aria-hidden="true"
+          />
+          <h1 className="h1">Have a problem worth digging into?</h1>
+        </div>
 
         <p className="subtitle">
           Send a note through the form below and I'll get back to you as soon
