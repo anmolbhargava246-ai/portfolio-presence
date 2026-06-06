@@ -9,7 +9,12 @@ const About = () => {
         <div className="with-circle" style={{ display: "inline-block" }}>
           <span
             className="soft-circle"
-            style={{ width: 140, height: 140, top: "-2rem", left: "-2rem" }}
+            style={{
+              width: 130,
+              height: 130,
+              top: "-1.5rem",
+              left: "-110px",
+            }}
             aria-hidden="true"
           />
           <h1 className="h1">About Anmol</h1>

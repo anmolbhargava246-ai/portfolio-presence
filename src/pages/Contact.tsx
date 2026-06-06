@@ -86,7 +86,12 @@ const Contact = () => {
         <div className="with-circle" style={{ display: "inline-block" }}>
           <span
             className="soft-circle"
-            style={{ width: 160, height: 160, top: "-1.5rem", left: "-2rem" }}
+            style={{
+              width: 150,
+              height: 150,
+              top: "-1.25rem",
+              left: "-130px",
+            }}
             aria-hidden="true"
           />
           <h1 className="h1">Have a problem worth digging into?</h1>
