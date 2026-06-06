@@ -55,8 +55,8 @@ const workOn = [
 ];
 
 const engagementIncludes = [
-  "A research brief I send you before kickoff so you know exactly what to expect and what you're paying for",
-  "Real research, not surveys dressed up as insight: interviews, observation, usability testing, mixed-methods where it adds value",
+  "A clear discussion to understand the scope of the study, and for you to know exactly what to expect and what you're paying for",
+  "Real research tailored to business goals, with careful consideration and collaboratively agreed upon with the client",
   "A readout you can use directly in your team's decisions, not a 60-slide deck nobody opens",
   "Verbatim clips and quotes that bring user voice into your team's conversations after the engagement ends",
   "One round of follow-up after delivery if implementation questions come up",

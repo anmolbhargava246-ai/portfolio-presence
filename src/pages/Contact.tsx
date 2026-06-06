@@ -60,7 +60,7 @@ const Contact = () => {
       toast({
         title: "Message sent",
         description:
-          "Thanks for reaching out. I'll get back to you within a few working days.",
+          "Thanks for reaching out. I'll get back to you as soon as possible.",
       });
       setData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
@@ -86,9 +86,8 @@ const Contact = () => {
         <h1 className="h1">Have a problem worth digging into?</h1>
 
         <p className="subtitle">
-          Send a note through the form below, and I'll get back to you within a
-          few working days. If you'd rather skip the form, my email and LinkedIn
-          are below too.
+          Send a note through the form below and I'll get back to you as soon
+          as possible.
         </p>
 
         {/* FORM */}
