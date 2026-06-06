@@ -7,19 +7,27 @@
    ============================================ */
 @layer base {
   :root {
-    /* Backgrounds */
-    --color-bg-primary: #FFFFFF;
-    --color-bg-secondary: #F5F4EF;
-    --color-bg-tertiary: #FAFAF8;
+    /* Backgrounds — sand/cream from rate card */
+    --color-bg-primary: #F9F1E1;
+    --color-bg-secondary: #EBDEC8;
+    --color-bg-tertiary: #F4E9D8;
 
-    /* Text */
-    --color-text-primary: #1A1A1A;
-    --color-text-secondary: #5F5E5A;
-    --color-text-tertiary: #888780;
+    /* Text — warm ink */
+    --color-text-primary: #5C3A2A;
+    --color-text-secondary: #7A5444;
+    --color-text-tertiary: #A07A64;
 
-    /* Borders */
-    --color-border-tertiary: rgba(0, 0, 0, 0.08);
-    --color-border-secondary: rgba(0, 0, 0, 0.15);
+    /* Borders — warm dividers */
+    --color-border-tertiary: rgba(140, 90, 68, 0.14);
+    --color-border-secondary: rgba(140, 90, 68, 0.28);
+
+    /* Rate-card brand colours */
+    --color-terracotta: #8A5A44;
+    --color-terracotta-soft: #B8826A;
+    --color-sand: #F4E9D8;
+    --color-sand-warm: #E8D4B4;
+    --color-cream: #F9F1E1;
+    --color-line: #D4B89A;
 
     /* Accent ramps — used only inside framework cards */
     --color-purple-bg: #EEEDFE;
@@ -39,7 +47,7 @@
 
     /* Typography */
     --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-    --font-serif: 'Source Serif 4', Georgia, serif;
+    --font-serif: 'Playfair Display', 'Source Serif 4', Georgia, serif;
 
     /* Radius */
     --radius-md: 8px;
@@ -83,7 +91,7 @@
     font-weight: 400;
     line-height: 1.7;
     color: var(--color-text-primary);
-    background: #F8F9F0;
+    background: #F4E9D8;
     -webkit-font-smoothing: antialiased;
   }
 }
@@ -109,10 +117,12 @@
   }
 
   .nav-name {
-    font-size: 15px;
+    font-family: var(--font-serif);
+    font-size: 18px;
     font-weight: 500;
     color: var(--color-text-primary);
     text-decoration: none;
+    letter-spacing: -0.01em;
   }
 
   .nav-links {
@@ -134,25 +144,27 @@
 
   /* Typography */
   .h1 {
-    font-size: 40px;
+    font-family: var(--font-serif);
+    font-size: 44px;
     font-weight: 500;
     line-height: 1.1;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
     margin-bottom: 1.25rem;
     color: var(--color-text-primary);
   }
 
   @media (max-width: 600px) {
     .h1 {
-      font-size: 32px;
+      font-size: 34px;
     }
   }
 
   .h2 {
-    font-size: 24px;
+    font-family: var(--font-serif);
+    font-size: 26px;
     font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
+    line-height: 1.25;
+    letter-spacing: -0.005em;
     margin-bottom: 1rem;
     color: var(--color-text-primary);
   }
@@ -219,7 +231,7 @@
 
   /* TL;DR card */
   .tldr {
-    background: #DDEED0;
+    background: #F9F1E1;
     border: 1px solid var(--color-text-primary);
     border-radius: var(--radius-lg);
     padding: 1.5rem;
@@ -328,7 +340,7 @@
 
   /* Research coverage cards */
   .coverage-card {
-    background: #DDEED0;
+    background: #F9F1E1;
     border: 0.5px solid var(--color-border-tertiary);
     border-radius: var(--radius-lg);
     padding: 1.25rem 1.5rem;
@@ -412,7 +424,7 @@
 
   /* Takeaway */
   .takeaway {
-    background: #C9DBA8;
+    background: #EBDEC8;
     border: 1px solid var(--color-text-primary);
     border-radius: var(--radius-lg);
     padding: 1.5rem 1.75rem;
@@ -759,7 +771,7 @@
   }
 
   .fact-card {
-    background: #DDEED0;
+    background: #F9F1E1;
     border: 0.5px solid var(--color-border-tertiary);
     border-radius: 12px;
     padding: 1.25rem;
@@ -796,7 +808,7 @@
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    background: #DDEED0;
+    background: #F9F1E1;
     border: 0.5px solid var(--color-border-tertiary);
     border-radius: 12px;
     padding: 1.25rem;
@@ -1261,7 +1273,7 @@
     font-weight: 500;
     line-height: 1;
     letter-spacing: -0.01em;
-    color: #5BA84C;
+    color: #8A5A44;
     padding-top: 2px;
   }
 
@@ -1494,7 +1506,7 @@
 
   /* Palette: cream, mint, deep mint, hand-drawn accent green */
   .home-wrap .studio-hero {
-    background: #F8F9F0;
+    background: #F4E9D8;
     padding: 6rem 2rem 5rem;
     margin: 1rem -2rem 0;
     border-radius: 12px;
@@ -1537,7 +1549,7 @@
     width: 108%;
     height: 0.4em;
     pointer-events: none;
-    color: #5BA84C;
+    color: #8A5A44;
   }
 
   /* CTA wrapper with hand-drawn green circle */
@@ -1553,7 +1565,7 @@
     width: calc(100% + 28px);
     height: calc(100% + 16px);
     pointer-events: none;
-    color: #5BA84C;
+    color: #8A5A44;
   }
 
   .home-wrap .studio-hero-cta {
@@ -1571,7 +1583,7 @@
 
   .home-wrap .studio-hero-cta:hover {
     background: var(--color-text-primary);
-    color: #F8F9F0;
+    color: #F4E9D8;
   }
 
   /* Hide the case studies heading background since hero now has its own */
@@ -1579,7 +1591,7 @@
 
   /* Services pill grid section — deeper mint backdrop */
   .home-wrap .studio-services {
-    background: #C9DBA8;
+    background: #EBDEC8;
     padding: 5rem 2rem;
     margin: 3rem -2rem 0;
     border-radius: 12px;
@@ -1603,7 +1615,7 @@
 
   /* Switch dark About inversion → mint green block with dark text */
   .home-wrap .studio-about {
-    background: #DDEED0;
+    background: #F9F1E1;
     color: var(--color-text-primary);
     padding: 4rem 3rem;
     margin: 2rem -2rem 4rem;
@@ -1660,7 +1672,7 @@
   }
 
   .my-projects-heading-arrow {
-    color: #5BA84C;
+    color: #8A5A44;
     font-size: 18px;
     flex-shrink: 0;
   }
@@ -1694,7 +1706,7 @@
     font-family: var(--font-mono, ui-monospace, monospace);
     font-size: 11px;
     font-weight: 500;
-    color: #5BA84C;
+    color: #8A5A44;
     letter-spacing: 0.08em;
     margin-bottom: 10px;
   }
@@ -1735,7 +1747,7 @@
   }
 
   .case-card:hover .case-card-link {
-    color: #5BA84C;
+    color: #8A5A44;
   }
 
   @media (max-width: 900px) {
@@ -1801,7 +1813,7 @@
 
   .contact-form-input:focus {
     outline: none;
-    border-color: #5BA84C;
+    border-color: #8A5A44;
     box-shadow: 0 0 0 3px rgba(91, 168, 76, 0.12);
   }
 
