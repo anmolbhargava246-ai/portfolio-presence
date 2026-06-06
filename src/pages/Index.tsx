@@ -141,15 +141,26 @@ const Index = () => {
             <h2 className="studio-about-title">About Anmol</h2>
             <div className="studio-about-mark" aria-hidden="true" />
             <p className="studio-about-bio">
-              Four years of research across product and consumer work,
-              including time at Atlassian and across research agencies. I
-              partner with founders, small product and brand teams, and
-              research agencies on freelance projects.
+              Curiosity about why people do what they do is what pulled me
+              into research. A Master's in Applied Psychology turned that
+              curiosity into a craft, and the psychology lens still shapes
+              how I think about every product I work on.
             </p>
             <p className="studio-about-bio">
-              The shape of the work changes from one engagement to the next.
-              The underlying question doesn't: what is actually driving the
-              behaviour, and what does the product need to do about it?
+              My work has spanned enterprise and consumer research across
+              industries. The products vary but the question I'm trying to
+              answer rarely does: what's really driving this behaviour, and
+              what does the product need to do about it?
+            </p>
+            <p className="studio-about-bio">
+              Right now, I'm drawn to how people interact with AI products,
+              and what changes when the product on the other side can think
+              back. The behavioural questions feel sharper here than anywhere
+              else. How does trust form when the system isn't fully
+              predictable? What does loyalty look like when the product keeps
+              learning? Those questions are quietly shaping the next era of
+              product growth, and I want to be in the room as they get
+              answered.
             </p>
             <div style={{ marginTop: "1.5rem" }}>
               <Link to="/about" className="btn-editorial">
