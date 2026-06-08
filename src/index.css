@@ -7,8 +7,9 @@
    ============================================ */
 @layer base {
   :root {
-    /* Backgrounds — sand/cream from rate card */
-    --color-bg-primary: #F9F1E1;
+    /* Backgrounds — three-tier neutral hierarchy
+       Body = sand · Sections = cream / sand-soft · Cards = white */
+    --color-bg-primary: #FFFFFF;
     --color-bg-secondary: #EBDEC8;
     --color-bg-tertiary: #F4E9D8;
 
@@ -231,7 +232,7 @@
 
   /* TL;DR card */
   .tldr {
-    background: #F9F1E1;
+    background: #FFFFFF;
     border: 1px solid var(--color-text-primary);
     border-radius: var(--radius-lg);
     padding: 1.5rem;
@@ -340,7 +341,7 @@
 
   /* Research coverage cards */
   .coverage-card {
-    background: #F9F1E1;
+    background: #FFFFFF;
     border: 0.5px solid var(--color-border-tertiary);
     border-radius: var(--radius-lg);
     padding: 1.25rem 1.5rem;
@@ -424,7 +425,7 @@
 
   /* Takeaway */
   .takeaway {
-    background: #EBDEC8;
+    background: #FFFFFF;
     border: 1px solid var(--color-text-primary);
     border-radius: var(--radius-lg);
     padding: 1.5rem 1.75rem;
@@ -771,7 +772,7 @@
   }
 
   .fact-card {
-    background: #F9F1E1;
+    background: #FFFFFF;
     border: 0.5px solid var(--color-border-tertiary);
     border-radius: 12px;
     padding: 1.25rem;
@@ -808,7 +809,7 @@
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    background: #F9F1E1;
+    background: #FFFFFF;
     border: 0.5px solid var(--color-border-tertiary);
     border-radius: 12px;
     padding: 1.25rem;
