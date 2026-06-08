@@ -9,7 +9,7 @@
   :root {
     /* Backgrounds — three-tier neutral hierarchy
        Body = sand · Sections = cream / sand-soft · Cards = white */
-    --color-bg-primary: #FFFFFF;
+    --color-bg-primary: #FAF8F4;
     --color-bg-secondary: #EBDEC8;
     --color-bg-tertiary: #F4E9D8;
 
@@ -232,7 +232,7 @@
 
   /* TL;DR card */
   .tldr {
-    background: #FFFFFF;
+    background: #FAF8F4;
     border: 1px solid var(--color-text-primary);
     border-radius: var(--radius-lg);
     padding: 1.5rem;
@@ -341,7 +341,7 @@
 
   /* Research coverage cards */
   .coverage-card {
-    background: #FFFFFF;
+    background: #FAF8F4;
     border: 0.5px solid var(--color-border-tertiary);
     border-radius: var(--radius-lg);
     padding: 1.25rem 1.5rem;
@@ -425,7 +425,7 @@
 
   /* Takeaway */
   .takeaway {
-    background: #FFFFFF;
+    background: #FAF8F4;
     border: 1px solid var(--color-text-primary);
     border-radius: var(--radius-lg);
     padding: 1.5rem 1.75rem;
@@ -772,7 +772,7 @@
   }
 
   .fact-card {
-    background: #FFFFFF;
+    background: #FAF8F4;
     border: 0.5px solid var(--color-border-tertiary);
     border-radius: 12px;
     padding: 1.25rem;
@@ -809,7 +809,7 @@
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    background: #FFFFFF;
+    background: #FAF8F4;
     border: 0.5px solid var(--color-border-tertiary);
     border-radius: 12px;
     padding: 1.25rem;
