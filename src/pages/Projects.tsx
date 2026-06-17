@@ -38,7 +38,7 @@ const projects: Project[] = [
     title: "When ambiguous workflows put on-call engineers at risk",
     desc: "How evaluative research on a new mobile scheduling feature shipped design changes that lifted satisfaction by 15% and adoption by 10%.",
     tags: ["Enterprise B2B SaaS", "Feature adoption", "Cross-functional partnership"],
-    href: "/projects/atlassian",
+    href: "/projects/on-call-scheduling",
   },
   {
     num: "02",

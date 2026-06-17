@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 
-const CaseStudyAtlassian = () => {
+const CaseStudyOnCallScheduling = () => {
   return (
     <Layout>
       <article className="container-page">
@@ -185,4 +185,4 @@ const CaseStudyAtlassian = () => {
   );
 };
 
-export default CaseStudyAtlassian;
+export default CaseStudyOnCallScheduling;

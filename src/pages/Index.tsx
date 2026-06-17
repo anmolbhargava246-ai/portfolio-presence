@@ -14,7 +14,7 @@ const cases: CaseStudy[] = [
     chip: "B2B SaaS · Enterprise",
     impact:
       "Diary studies and JTBD work surfaced a trust gap that usability findings had missed. Design changes shipped — satisfaction up 15%, adoption up 10%.",
-    href: "/projects/atlassian",
+    href: "/projects/on-call-scheduling",
   },
   {
     title: "Why a seamless loan product wasn't being taken",

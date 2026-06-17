@@ -180,7 +180,7 @@ const CaseStudySensoryPreference = () => {
         </div>
 
         <div className="cta-row">
-          <Link to="/projects/atlassian" className="btn-editorial">
+          <Link to="/projects/on-call-scheduling" className="btn-editorial">
             Back to start
             <i className="ti ti-arrow-right" aria-hidden="true"></i>
           </Link>
