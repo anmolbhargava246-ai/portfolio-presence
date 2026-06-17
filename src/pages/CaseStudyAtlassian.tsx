@@ -29,8 +29,8 @@ const CaseStudyAtlassian = () => {
           <div className="tldr-label">TL;DR</div>
           <div className="tldr-grid">
             <div>
-              <div className="tldr-item-label">Company</div>
-              <div className="tldr-item-value">Atlassian (enterprise ITSM, mobile)</div>
+              <div className="tldr-item-label">Sector</div>
+              <div className="tldr-item-value">Enterprise B2B SaaS · ITSM (mobile)</div>
             </div>
             <div>
               <div className="tldr-item-label">Product</div>
@@ -80,7 +80,7 @@ const CaseStudyAtlassian = () => {
           </p>
           <p>That's the context this study sat inside.</p>
           <p>
-            Atlassian's design team had released new on-call scheduling features in the mobile app.
+            The design team had released new on-call scheduling features in the mobile app.
             Functionally, the features worked. The question was whether the workflow held up under
             the real conditions on-call users operate in: distributed teams, varying terminology
             across regions, time-pressure scenarios, and high-stakes decisions made on a small
