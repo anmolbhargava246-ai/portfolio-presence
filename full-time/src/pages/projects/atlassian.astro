@@ -9,23 +9,11 @@ const base = import.meta.env.BASE_URL; // "/portfolio-presence/full-time/"
 
 const tldr = [
   { k: "Space", v: "Enterprise ITSM, mobile" },
-  {
-    k: "Product",
-    v: "Mobile on-call scheduling — schedule views, card customisation, overrides — inside a company-level platform consolidation",
-  },
-  {
-    k: "Method",
-    v: "Task-based remote moderated usability (90 min) with SEQ ratings, on a prototype, grounded in a synthesis of prior on-call research",
-  },
-  {
-    k: "Sample",
-    v: "11 analysed of 12 recruited — 6 on-call engineers, 5 engineering & ops managers, all handling on-call tooling day to day",
-  },
+  { k: "Product", v: "Mobile on-call scheduling, inside a company-level platform consolidation" },
+  { k: "Method", v: "Task-based remote moderated usability (90 min) with SEQ, on a prototype" },
+  { k: "Sample", v: "11 analysed of 12 recruited — 6 on-call engineers, 5 engineering & ops managers" },
   { k: "Partnered with", v: "Product, design, and engineering (triad)" },
-  {
-    k: "Outcome",
-    v: "Reframed mobile on-call priorities; 4 design changes shipped, 2 features added to the roadmap; +15% satisfaction and ~+10% adoption post-launch",
-  },
+  { k: "Outcome", v: "Mobile on-call priorities reframed; 4 design changes shipped, 2 roadmap additions" },
 ];
 ---
 <Layout
@@ -62,172 +50,101 @@ const tldr = [
         </div>
       </div>
 
-      <!-- 1. The product problem -->
-      <div class="section-label">The product problem</div>
+      <!-- Problem -->
+      <div class="section-label">The problem</div>
       <div class="prose">
         <p>
-          An engineering manager pages an on-call engineer at 2am because a critical incident just
-          landed. Whether that moment goes well depends on unglamorous things: the engineer knowing
-          they're actually on shift, an override that took effect the way both parties expected, a
-          schedule that looks the same today as it did yesterday. In enterprise incident
-          management, ambiguity isn't a cosmetic flaw — it's operational risk.
+          An on-call engineer gets paged at 2am. Whether that moment goes well depends on
+          unglamorous things: knowing you're actually on shift, an override that took effect, a
+          schedule that hasn't quietly changed. In enterprise incident management, ambiguity is
+          operational risk.
         </p>
         <p>
-          This study sat inside a company-level bet: consolidating a standalone incident-management
-          product into the flagship ITSM platform, with a top-line OKR attached. Mobile was part of
-          that bet. The design team had built new on-call scheduling features for the mobile app —
-          daily and monthly schedule views, card-view customisation, overrides — reasoning that
-          easier, faster access to schedules on the go would strengthen the case for the
-          consolidated app.
+          The company was consolidating a standalone incident-management product into its flagship
+          ITSM platform — an OKR-level bet, with mobile as part of it. New on-call scheduling
+          features were headed for the mobile app, on the logic that faster, easier scheduling
+          would help drive adoption.
         </p>
         <p>
-          Inside that reasoning lived an assumption worth naming: that scheduling was what mobile
-          on-call users needed most, and that making it quicker would translate into adoption.
+          Inside that logic sat an assumption worth naming: that scheduling was what mobile
+          on-call users needed most.
         </p>
       </div>
 
-      <!-- 2. The research question -->
-      <div class="section-label">The research question</div>
+      <!-- The question underneath -->
+      <div class="section-label">The question underneath</div>
       <div class="prose">
         <p>
-          The tactical question was real and urgent: can on-call engineers and managers find,
-          understand, and operate the new scheduling components? Designs were in flight, and the
-          team needed that answer at the speed of their decisions.
+          Designs were in flight, so the evaluative question was urgent. But prior research argued
+          against stopping there: earlier studies showed most users opened the mobile app to
+          acknowledge and close alerts — not to browse schedules. So the study carried two
+          questions at once.
         </p>
-        <p>
-          But prior research argued for a second question underneath it. Earlier studies of on-call
-          tooling had found that most users opened the mobile app to acknowledge and close alerts —
-          only some used it to check who was on call. If that still held, polishing scheduling
-          might improve a screen without moving the outcome the team actually cared about.
+      </div>
+      <div class="insight">
+        <div class="insight__lead">The evaluative question</div>
+        <p class="insight__body">
+          Can engineers and managers find, understand, and operate the new scheduling components?
         </p>
-        <p>
-          So the study carried two questions at once. The evaluative one: <em>do these components
-          work?</em> And the strategic one: <em>where in the on-call workflow does mobile actually
-          earn its place — and is scheduling that place?</em>
+      </div>
+      <div class="insight">
+        <div class="insight__lead">The strategic question</div>
+        <p class="insight__body">
+          Is scheduling actually where mobile earns its place in the on-call workflow?
         </p>
       </div>
 
-      <!-- 3. The research strategy -->
-      <div class="section-label">The research strategy</div>
+      <!-- How it was run -->
+      <div class="section-label">How it was run</div>
       <div class="prose">
         <p>
-          The method was deliberately tactical: 90-minute remote moderated usability sessions,
-          task-based, with a Single Ease Question rating after each task. A leaner method matched
-          to decision speed, with the rigour invested in how it was run — and in refusing to look
-          at the feature in isolation. Every task was read against the workflow around it: what
-          participants reached for first, what they ignored, what they said their day actually
-          looks like.
-        </p>
-        <p>
-          The sample mirrored the workflow rather than a single persona: on-call engineers, who
-          live their own schedule and add overrides, and engineering managers and team leads, who
-          plan the team's coverage and change it. In enterprise scheduling these are structurally
-          different jobs — one is subject to the schedule, the other is accountable for it — and
-          collapsing them into one “user” would have blurred exactly the differences that mattered.
-          All participants handled on-call tooling in their day-to-day work, across dedicated
-          incident-management platforms, internal tools, and manual schedules.
-        </p>
-        <p>
-          Before fieldwork: stakeholder interviews with the designer and PM to absorb the intent
-          behind the flows, and a pilot of both screener and prototype with internal on-call
-          engineers. During fieldwork: sessions observed live by the triad and note-takers, and
-          tagged in Dovetail as they happened, so synthesis built continuously instead of arriving
-          as a cliff at the end. One recruited participant cleared the screener but contradicted it
-          in session; their data was excluded, leaving 11 of 12. Small samples only hold up if
-          you're strict about what counts.
-        </p>
-        <p>
-          Scope was explicit too. Journey mapping was declared out of scope up front — this study
-          tested scheduling designs, and its claims stay inside that boundary.
+          A deliberately tactical method, run strictly, matched to decision speed. Two cohorts
+          mirrored the workflow's two actors — engineers, who live their own schedule, and
+          managers, who are accountable for the team's — because in enterprise scheduling those
+          are different jobs, not different demographics.
         </p>
       </div>
+      <ul class="checklist">
+        <li><span>Stakeholder interviews with design and PM before writing the discussion guide</span></li>
+        <li><span>Screener and prototype piloted with internal on-call engineers</span></li>
+        <li><span>Sessions observed live by the triad, tagged in Dovetail as they happened</span></li>
+        <li><span>One participant excluded when their session contradicted their screener — 11 of 12 analysed</span></li>
+        <li><span>Journey mapping declared out of scope up front; claims stayed inside the tested boundary</span></li>
+      </ul>
 
-      <!-- 4. What we learned -->
-      <div class="section-label">What we learned</div>
-      <div class="prose">
-        <p>
-          On the surface, the evaluation passed. Every participant completed the daily-schedule,
-          monthly-schedule, and override tasks. Overrides rated easiest (SEQ 5.3 of 7) and drew the
-          most unprompted enthusiasm. The one clear usability failure was card-view customisation:
-          7 of 11 completed it, 4 never found the settings, and 3 said the feature added no value
-          regardless.
-        </p>
-        <p>
-          If the question had stayed “is this usable?”, the study would have ended there. The more
-          consequential evidence was in what participants did and said around the tasks.
-        </p>
-      </div>
+      <!-- Findings -->
+      <div class="section-label">What we found</div>
 
       <div class="insight">
         <div class="insight__lead">Engineers kept drifting toward alerts</div>
         <p class="insight__body">
-          <span class="mini-label">Observed</span> Asked to check “what their day looks like”,
-          four of six engineers went to the alerts tab, and described alerts as the most useful
-          part of the app in daily work. One asked whether they could start responding to an alert —
-          preliminary investigation — from the phone itself.
-        </p>
-        <blockquote class="verbatim">
-          <p>
-            “Having the alerts at the very top and the very home screen — that's probably the
-            primary usefulness.”
-          </p>
-          <div class="verbatim__attr">— P9, on-call engineer</div>
-        </blockquote>
-        <p class="insight__body">
-          <span class="mini-label mini-label--read">The read</span> For engineers, mobile's job in
-          on-call work is awareness and response. Schedule administration is occasional; alerts are
-          daily. A scheduling-first mobile strategy had that emphasis inverted.
+          Asked to check their day, four of six engineers went to the alerts tab and called it the
+          most useful part of the app. Schedule admin is occasional; alerts are daily.
         </p>
       </div>
 
       <div class="insight">
         <div class="insight__lead">The workflow runs on predictability, not speed</div>
         <p class="insight__body">
-          <span class="mini-label">Observed</span> The feature built for speed — taking a shift
-          “for an hour” in one tap — got the most ambivalent reception in the study. Participants
-          pointed out that schedules are set well in advance; those who liked the option mostly
-          asked to customise its duration. Prior research had the same shape: users wanted to see
-          their coming weeks so they could plan ahead. Nobody was asking for scheduling to be
-          quicker.
-        </p>
-        <p class="insight__body">
-          <span class="mini-label mini-label--read">The read</span> On-call scheduling is a system
-          for eliminating surprises. Participants optimised for knowing what's coming, not for
-          shaving seconds off actions they take occasionally.
+          The one feature built for speed — taking a shift “for an hour” in one tap — met shrugs:
+          schedules are set well in advance. Users wanted to see weeks ahead, not save seconds.
         </p>
       </div>
 
       <div class="insight">
         <div class="insight__lead">Learned patterns beat novel ones</div>
         <p class="insight__body">
-          <span class="mini-label">Observed</span> Participants leaned on visual memory, wanting to
-          keep the associations they'd already built between colours and people. Where the
-          interface matched expectations — two of the three paths for adding an override — everyone
-          succeeded. The third path, which behaved unlike what its control suggested, mostly
-          confused the few who tried it.
-        </p>
-        <blockquote class="verbatim">
-          <p>
-            “I usually tend to get comfortable with seeing a certain colour, associating that with
-            a certain user.”
-          </p>
-          <div class="verbatim__attr">— P9, on-call engineer</div>
-        </blockquote>
-        <p class="insight__body">
-          <span class="mini-label mini-label--read">The read</span> These teams already juggle six
-          or seven tools — one manager listed them from memory. In an ecosystem that taxes
-          attention this heavily, consistency and learnability are worth more than cleverness;
-          every unfamiliar pattern spends memory that's already spoken for.
+          Participants wanted to keep colour associations they'd already built, and succeeded on
+          the override paths that matched expectations while the novel one confused. In a
+          six-or-seven-tool ecosystem, consistency outperforms cleverness.
         </p>
       </div>
 
       <div class="insight">
-        <div class="insight__lead">One screen was quietly serving two different jobs</div>
+        <div class="insight__lead">One screen, two different jobs</div>
         <p class="insight__body">
-          <span class="mini-label">Observed</span> Managers were blunt that the app's framing
-          didn't fit them: a “my schedules” tab is noise for someone who never takes call. What
-          they reached for, repeatedly, was whole-team visibility — everyone's coverage in one
-          place, who could fill an empty slot, ideally with project context attached.
+          Managers called the “my schedules” framing noise — they never take call. What they
+          reached for was whole-team visibility: coverage, gaps, who can fill a slot.
         </p>
         <blockquote class="verbatim">
           <p>
@@ -236,14 +153,9 @@ const tldr = [
           </p>
           <div class="verbatim__attr">— P7, engineering manager</div>
         </blockquote>
-        <p class="insight__body">
-          <span class="mini-label mini-label--read">The read</span> Engineers are subject to the
-          schedule; managers are accountable for it. One view designed for both actors meant the
-          manager half of the workflow had no real home.
-        </p>
       </div>
 
-      <!-- 5. The key insight -->
+      <!-- The key insight -->
       <div class="kx">
         <div class="kx__kicker">The key insight</div>
         <div class="kx__eq">
@@ -252,133 +164,48 @@ const tldr = [
           <span class="kx__term kx__term--dim">simply reducing task time</span>
         </div>
         <p class="kx__body">
-          What made the mobile experience valuable wasn't completing scheduling tasks faster. It
-          was knowing what's coming, and trusting patterns already learned. That's a read across
-          converging qualitative signals — task behaviour, verbatims, and prior studies — not a
-          measured effect. But every signal pointed the same direction, and none of them pointed
-          toward speed.
+          Mobile's value wasn't finishing scheduling tasks faster — it was knowing what's coming
+          and trusting patterns already learned. A read across converging signals, not a measured
+          effect; but every signal pointed this way, and none pointed toward speed.
         </p>
         <ul class="kx__ev">
-          <li>Schedules are set well in advance — the one-tap speed feature met shrugs</li>
-          <li>Users asked to see weeks ahead so they could plan, in this study and prior ones</li>
-          <li>Colour was used as memory: participants wanted learned associations preserved</li>
-          <li>Override paths that matched expectations succeeded; the novel one confused</li>
+          <li>Schedules set well in advance — the one-tap speed feature met shrugs</li>
+          <li>Users asked to see weeks ahead, here and in prior studies</li>
+          <li>Colour used as memory for people and shifts</li>
+          <li>Familiar override paths succeeded; the novel one confused</li>
         </ul>
       </div>
 
-      <!-- 6. How the research changed the product conversation -->
-      <div class="section-label">How the research changed the product conversation</div>
-      <div class="prose">
-        <p>
-          The readout didn't argue the designs were bad — mostly, they worked. It argued the
-          question was too narrow. Instead of “how do we make scheduling faster on mobile?”, the
-          evidence supported asking “which parts of on-call work does mobile actually carry?” — and
-          the answer clustered around overrides, alert awareness, and team-level visibility rather
-          than schedule browsing and cosmetic customisation.
-        </p>
-        <p>
-          Concretely, the recommendations: rebuild the manager view around team information rather
-          than a personal-schedule frame; fold card detail into tap-to-expand instead of a separate
-          settings toggle; add on-demand detail to the monthly view; make the one-tap shift
-          takeover duration-customisable. And one deprioritisation: card-view customisation — the
-          weakest task in the study — was flagged as low priority, which participants had said
-          themselves in nearly as many words.
-        </p>
-      </div>
-
-      <!-- 7. Cross-functional collaboration -->
-      <div class="section-label">Cross-functional collaboration</div>
-      <div class="prose">
-        <p>
-          The project ran on a triad — researcher, designer, PM — with the engineering manager
-          close. I interviewed the designer and PM before writing the discussion guide, so the
-          study tested their actual intent rather than my reading of it. They watched sessions from
-          the observer panel, and insights were soft-shared and sparred on before the report was
-          final — partly for accuracy, partly because conclusions people help shape travel further
-          than conclusions they're handed.
-        </p>
-        <p>
-          The evidence was packaged to be used, not admired: verbatims and Loom clips so users'
-          own voices did the persuading, findings framed as problems and how-might-we prompts so
-          design could pick them up directly, and a recorded shareback so the insights reached
-          people who weren't in the room.
-        </p>
-        <p>
-          The decisions stayed where they belonged — with product and design. Research's job was to
-          make sure those decisions were made looking at the workflow users actually have, not the
-          one the roadmap assumed.
-        </p>
-      </div>
-
-      <!-- 8. Outcome -->
-      <div class="section-label">Outcome</div>
-      <div class="prose">
-        <p>Being precise about what happened next:</p>
-      </div>
+      <!-- What changed -->
+      <div class="section-label">What changed</div>
       <ul class="checklist">
-        <li>
-          <span>
-            <strong>Directly observed:</strong> all core scheduling tasks were operable; overrides
-            was the standout (easiest, most valued); card-view customisation failed on findability
-            and perceived value.
-          </span>
-        </li>
-        <li>
-          <span>
-            <strong>Recommended:</strong> a manager view rebuilt around team visibility,
-            progressive detail in schedule views, and a duration-customisable shift takeover.
-          </span>
-        </li>
-        <li>
-          <span>
-            <strong>Deprioritised:</strong> further investment in card-view customisation.
-          </span>
-        </li>
-        <li>
-          <span>
-            <strong>Shipped by the team:</strong> 4 design changes simplifying navigation and
-            interaction patterns, and 2 features added to the product roadmap.
-          </span>
-        </li>
-        <li>
-          <span>
-            <strong>Post-launch:</strong> +15% user satisfaction and ~+10% feature adoption.
-          </span>
-        </li>
-        <li>
-          <span>
-            <strong>Ongoing:</strong> research partnered with design to track how the insights
-            played into adoption after the consolidation.
-          </span>
-        </li>
+        <li><span>The team's question reframed: from “make scheduling faster” to “invest where mobile carries the workflow” — overrides, alert awareness, team visibility</span></li>
+        <li><span>Manager view recommended to be rebuilt around team visibility, not personal schedules</span></li>
+        <li><span>Card-view customisation deprioritised — the weakest task, and participants said so themselves</span></li>
+        <li><span>4 design changes shipped, simplifying navigation and interaction patterns; 2 features added to the roadmap</span></li>
+        <li><span>+15% satisfaction and ~+10% adoption post-launch — the team's post-launch measures, not this study's claim</span></li>
       </ul>
-      <div class="prose" style="margin-top: 1.25rem;">
+
+      <!-- Stakeholders -->
+      <div class="section-label">How I worked with the team</div>
+      <div class="prose">
         <p>
-          Two caveats on that ledger, deliberately kept: the satisfaction and adoption figures are
-          post-launch measures, not outputs of this study — and the study's claim is to the
-          reprioritisation, not the numbers.
+          A triad throughout — researcher, designer, PM, with engineering close. Insights were
+          soft-shared and sparred on before the readout, then packaged as verbatims, Loom clips,
+          and how-might-we prompts so design could act on them directly. Decisions stayed with
+          product; research's job was making sure they were made against the workflow users
+          actually have, not the one the roadmap assumed.
         </p>
       </div>
 
-      <!-- 9. Why this matters -->
-      <div class="section-label">Why this matters for enterprise UX research</div>
+      <!-- Why it matters -->
+      <div class="section-label">Why this matters in enterprise</div>
       <div class="prose">
         <p>
-          Enterprise products are workflows before they are screens. The useful contributions here
-          came from treating the study that way: two actors with structurally different jobs, an
-          ecosystem of six or seven tools, schedules that encode a team's agreements about risk.
-          Feature-level usability was the entry point, not the destination.
-        </p>
-        <p>
-          A feature request is rarely the underlying problem. Participants asked for colour
-          customisation; the need underneath was continuity of learned patterns. The team asked
-          for faster scheduling; the workflow ran on predictability.
-        </p>
-        <p>
-          The highest-leverage thing research did here wasn't finding usability issues. It was
-          helping the team check whether they were solving the right problem while there was still
-          time to redirect — and in enterprise B2B, where roadmaps carry OKR-level commitments,
-          that check is worth more than polish.
+          Enterprise products are workflows before they are screens: multiple actors, tool
+          ecosystems, competing priorities. A feature request is rarely the underlying problem —
+          and research earns its keep by checking the team is solving the right one while there's
+          still time to redirect.
         </p>
       </div>
 
@@ -388,7 +215,7 @@ const tldr = [
         <p class="pullquote__text">
           Speed is easy to measure, which makes it easy to over-value. This workflow ran on
           predictability and learned patterns — and research's job was to notice which problem
-          actually deserved the screen.
+          deserved the screen.
         </p>
       </div>
 
@@ -404,20 +231,8 @@ const tldr = [
 </Layout>
 
 <style>
-  .mini-label {
-    display: inline-block;
-    font-size: 0.68rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: var(--ink-soft);
-    margin-right: 0.45rem;
-  }
-  .mini-label--read {
-    color: var(--brick);
-  }
   .verbatim {
-    margin: 1rem 0 1.25rem;
+    margin: 1rem 0 0.25rem;
     padding: 1rem 1.25rem;
     background: var(--cream-soft);
     border-left: 3px solid var(--brick);

@@ -18,7 +18,7 @@ export const projects: ProjectSummary[] = [
     cardSummary:
       "Evaluative research on mobile on-call scheduling surfaced that users valued predictability and learnability over speed — and reframed which parts of the workflow deserved mobile investment.",
     subtitle:
-      "An evaluative study of mobile on-call scheduling that changed the team's question — from “how do we make scheduling faster?” to “is scheduling the right thing to optimise for mobile at all?”",
+      "An evaluative study that moved the team from “how do we make scheduling faster?” to “is scheduling the right problem for mobile?”",
     tags: ["Enterprise B2B SaaS", "Research strategy", "Cross-functional partnership"],
   },
   {
