@@ -14,12 +14,12 @@ export const projects: ProjectSummary[] = [
     num: "01",
     slug: "atlassian",
     meta: "Product research · Enterprise B2B SaaS (ITSM, mobile)",
-    title: "When ambiguous workflows put on-call engineers at risk",
+    title: "The brief said faster. The evidence said predictable.",
     cardSummary:
-      "Evaluative research on a new mobile scheduling feature reprioritised the team's pre-launch backlog. Shipped design changes lifted satisfaction by 15% and adoption by 10%.",
+      "Evaluative research on mobile on-call scheduling surfaced that users valued predictability and learnability over speed — and reframed which parts of the workflow deserved mobile investment.",
     subtitle:
-      "How evaluative research on a new mobile scheduling feature shipped design changes that lifted satisfaction by 15% and adoption by 10%.",
-    tags: ["Enterprise B2B SaaS", "Feature adoption", "Cross-functional partnership"],
+      "An evaluative study of mobile on-call scheduling that changed the team's question — from “how do we make scheduling faster?” to “is scheduling the right thing to optimise for mobile at all?”",
+    tags: ["Enterprise B2B SaaS", "Research strategy", "Cross-functional partnership"],
   },
   {
     num: "02",
