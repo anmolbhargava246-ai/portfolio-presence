@@ -9,16 +9,16 @@ const base = import.meta.env.BASE_URL; // "/portfolio-presence/full-time/"
 
 const tldr = [
   { k: "Space", v: "Enterprise ITSM, mobile" },
-  { k: "Product", v: "Mobile on-call scheduling, inside a company-level platform consolidation" },
-  { k: "Method", v: "Task-based remote moderated usability (90 min) with SEQ, on a prototype" },
-  { k: "Sample", v: "11 analysed of 12 recruited — 6 on-call engineers, 5 engineering & ops managers" },
-  { k: "Partnered with", v: "Product, design, and engineering (triad)" },
-  { k: "Outcome", v: "Mobile on-call priorities reframed; 4 design changes shipped, 2 roadmap additions" },
+  { k: "Product", v: "Four new on-call scheduling capabilities in Jira Mobile, during the Opsgenie → Jira consolidation" },
+  { k: "Method", v: "Moderated task-based usability with role-based scenarios (SEQ and time taken, directional) + workflow interviews" },
+  { k: "Sample", v: "12 participants across 5 countries — 6 Engineering Managers, 6 Engineers; Opsgenie users and people on competitor tools; internal pilot first" },
+  { k: "Partnered with", v: "Product, Design and Research leadership" },
+  { k: "Outcome", v: "Evidence to prioritise Overrides for the mobile roadmap; workflow and role inputs for Design and Research" },
 ];
 ---
 <Layout
   title="On-call scheduling research — Anmol Bhargava"
-  description="Evaluative research on mobile on-call scheduling in enterprise ITSM that shifted the team's question from making scheduling faster to investing in the parts of the on-call workflow mobile actually serves."
+  description="Evaluative research on four on-call scheduling capabilities in Jira Mobile, during Atlassian's consolidation of Opsgenie into Jira. The brief asked whether the features worked; the study showed which capabilities mattered on mobile, for whom, and why."
 >
   <article class="section section--cream">
     <div class="container" style="max-width: 820px;">
@@ -44,8 +44,8 @@ const tldr = [
         <div class="tldr__shift">
           <div class="tldr__k">Strategic shift</div>
           <div class="tldr__v">
-            “How do we make scheduling faster on mobile?” → “Which parts of the on-call workflow
-            does mobile actually carry?”
+            “Do these four features work?” → “Which capabilities matter on mobile, for whom, and in
+            what context?”
           </div>
         </div>
       </div>
@@ -53,142 +53,150 @@ const tldr = [
       <!-- Problem -->
       <div class="section-label">The problem</div>
       <ul class="checklist">
-        <li><span>A 2am page has to land cleanly: right person, right shift, no ambiguity. In ITSM, ambiguity is operational risk</span></li>
-        <li><span>The company was consolidating its incident-management product into the flagship platform — an OKR-level bet, mobile included</span></li>
-        <li><span>Team's logic: faster, easier scheduling on mobile → adoption</span></li>
-        <li><span>The assumption underneath: scheduling is what mobile on-call users need most</span></li>
+        <li><span>Atlassian was consolidating Opsgenie capabilities into Jira; on-call scheduling was coming to Jira Mobile</span></li>
+        <li><span>On-call scheduling decides who responds to incidents, and when; Overrides let a manager replace an assignment when circumstances change</span></li>
+        <li><span>Four newly designed capabilities to evaluate before rollout: daily schedule, monthly schedule, card view, overrides</span></li>
+        <li><span>The brief: do these features work, and are they appropriate for mobile?</span></li>
       </ul>
 
       <!-- The question underneath -->
       <div class="section-label">The question underneath</div>
       <div class="insight">
-        <div class="insight__lead">Why not just validate?</div>
+        <div class="insight__lead">The brief</div>
         <p class="insight__body">
-          Prior research: users open the mobile app to acknowledge and close alerts — not to
-          browse schedules.
+          Do these four features work, and are they appropriate for mobile?
         </p>
       </div>
       <div class="insight">
-        <div class="insight__lead">The evaluative question</div>
+        <div class="insight__lead">What emerged during the sessions</div>
         <p class="insight__body">
-          Can engineers and managers operate the new scheduling components?
+          Feature usability alone wasn’t enough. Which scheduling capabilities actually matter on
+          mobile, for whom, and in what context?
         </p>
       </div>
       <div class="insight">
-        <div class="insight__lead">The strategic question</div>
+        <div class="insight__lead">The lens that followed</div>
         <p class="insight__body">
-          Is scheduling actually where mobile earns its place in the on-call workflow?
+          Feature evaluation → workflow understanding → mobile criticality → product prioritisation
         </p>
       </div>
 
       <!-- How it was run -->
       <div class="section-label">How it was run</div>
       <ul class="checklist">
-        <li><span>Tactical method for decisions in flight: 90-min moderated sessions, task-based, SEQ after each task</span></li>
-        <li><span>Two cohorts = the workflow's two actors: engineers live the schedule, managers are accountable for it</span></li>
-        <li><span>Stakeholder interviews with design and PM before writing the discussion guide</span></li>
-        <li><span>Screener and prototype piloted with internal on-call engineers</span></li>
-        <li><span>Sessions observed live by the triad, tagged in Dovetail as they happened</span></li>
-        <li><span>1 of 12 excluded on a screener mismatch — 11 analysed</span></li>
-        <li><span>Journey mapping declared out of scope up front</span></li>
+        <li><span>Three stakeholder needs in one study: Product (migration and mobile prioritisation), Design (do the four features work?), Research (roles, workflows, journey maps, personas)</span></li>
+        <li><span>Moderated, task-based usability: role-based scenarios across the four capabilities — completion, interaction problems, hesitation, ease and time taken</span></li>
+        <li><span>Workflow interviews in every session: when would this capability actually be valuable in someone’s work?</span></li>
+        <li><span>Two roles by design — managers and engineers share the workflow, not the responsibilities</span></li>
+        <li><span>12 participants across 5 countries; Opsgenie users and people on competitor tools; internal pilot before the main sessions</span></li>
+        <li><span>SEQ and time taken treated as directional — depth and role coverage, not statistical representation</span></li>
       </ul>
 
       <!-- Findings -->
       <div class="section-label">What we found</div>
 
       <div class="insight">
-        <div class="insight__lead">Engineers kept drifting toward alerts</div>
+        <div class="insight__lead">Role shaped what mattered in the same workflow</div>
         <p class="insight__body">
-          4 of 6 engineers checked their day via the alerts tab and called it the app's most
-          useful part. Schedule admin is occasional; alerts are daily.
+          Engineers focused on their own schedule, their own responsibilities and alerts. Managers
+          needed team-level visibility, team schedules, roster information and the ability to
+          manage assignments.
         </p>
       </div>
 
       <div class="insight">
-        <div class="insight__lead">The workflow runs on predictability, not speed</div>
+        <div class="insight__lead">Engineers went to Alerts first</div>
         <p class="insight__body">
-          The one-tap “take a shift for an hour” met shrugs — schedules are set well in advance.
-          Users wanted weeks visible, not seconds saved.
+          4 of 6 opened Alerts before anything else. The schedule gets checked; alerts are the day.
         </p>
       </div>
 
       <div class="insight">
-        <div class="insight__lead">Learned patterns beat novel ones</div>
+        <div class="insight__lead">Overrides solved a time-sensitive mobile job</div>
         <p class="insight__body">
-          Colour worked as memory for people and shifts. Familiar override paths succeeded; the
-          novel one confused.
-        </p>
-      </div>
-
-      <div class="insight">
-        <div class="insight__lead">One screen, two different jobs</div>
-        <p class="insight__body">
-          Managers never take call — they wanted whole-team visibility: coverage, gaps, who can
-          fill a slot.
+          All six Engineering Managers named Overrides the most important scheduling capability on
+          the go: someone becomes unavailable, a shift changes, a different person needs assigning —
+          often away from a laptop.
         </p>
         <blockquote class="verbatim">
           <p>
-            “As a manager, I am never gonna fill in for anybody's absence. I am not gonna sit and
-            take incident calls.”
+            “I can handle schedule changes without having to get on my laptop. That’s huge when
+            something comes up.”
           </p>
-          <div class="verbatim__attr">— P7, engineering manager</div>
+          <div class="verbatim__attr">— Engineering Manager</div>
         </blockquote>
+      </div>
+
+      <div class="insight">
+        <div class="insight__lead">Usability said how; workflow said where and for whom</div>
+        <p class="insight__body">
+          The task data showed how well each interaction worked. The workflow context showed where
+          that interaction actually mattered, and to whom.
+        </p>
       </div>
 
       <!-- The key insight -->
       <div class="kx">
         <div class="kx__kicker">The key insight</div>
         <div class="kx__eq">
-          <span class="kx__term">Predictability + learnability</span>
+          <span class="kx__term">Role + mobile context</span>
           <span class="kx__gt">&gt;</span>
-          <span class="kx__term kx__term--dim">simply reducing task time</span>
+          <span class="kx__term kx__term--dim">feature usability alone</span>
         </div>
         <p class="kx__body">
-          Mobile's value: knowing what's coming and trusting learned patterns — not finishing
-          tasks faster. A converging qualitative read, not a measured effect.
+          Usability testing showed how well each interaction worked. Workflow context showed where,
+          and for whom, it actually mattered — which is what Product needed in order to prioritise.
         </p>
         <ul class="kx__ev">
-          <li>Schedules set well in advance — the one-tap speed feature met shrugs</li>
-          <li>Users asked to see weeks ahead, here and in prior studies</li>
-          <li>Colour used as memory for people and shifts</li>
-          <li>Familiar override paths succeeded; the novel one confused</li>
+          <li>All six managers: Overrides the most important capability on the go</li>
+          <li>4 of 6 engineers opened Alerts first</li>
+          <li>Managers wanted the team’s roster; engineers their own schedule</li>
+          <li>Schedule changes are time-sensitive and happen away from the laptop</li>
         </ul>
       </div>
 
       <!-- What changed -->
       <div class="section-label">What changed</div>
       <ul class="checklist">
-        <li><span>Team question reframed: invest where mobile carries the workflow — overrides, alert awareness, team visibility</span></li>
-        <li><span>Manager view: recommended rebuild around team visibility, not personal schedules</span></li>
-        <li><span>Card-view customisation deprioritised — weakest task, and participants said so themselves</span></li>
-        <li><span>4 design changes shipped; 2 features added to the roadmap</span></li>
-        <li><span>+15% satisfaction, ~+10% adoption post-launch (the team's measures, not this study's claim)</span></li>
+        <li><span>Product: evidence to prioritise Overrides for the mobile roadmap, and around mobile-critical capabilities more broadly</span></li>
+        <li><span>Product: supported thinking on Integrations and Alerts; unlocked follow-up research</span></li>
+        <li><span>Design: interaction friction exposed and the scheduling experience refined before broader launch — lower rollout risk</span></li>
+        <li><span>Research: real workflow differences added to personas, richer inputs for journey mapping, a stronger research panel</span></li>
+        <li><span>The question the team took forward: which capabilities matter on mobile, for whom, and why</span></li>
       </ul>
 
       <!-- Stakeholders -->
       <div class="section-label">How I worked with the team</div>
       <ul class="checklist">
-        <li><span>Triad throughout — researcher, designer, PM, with engineering close</span></li>
+        <li><span>Three stakeholder needs — Product, Design, Research — balanced in one study rather than three research efforts</span></li>
         <li><span>Insights soft-shared and sparred on before the readout — no big reveal</span></li>
         <li><span>Delivered as verbatims, Loom clips, and how-might-we prompts design could act on</span></li>
-        <li><span>Decisions stayed with product; research kept them anchored to the real workflow</span></li>
+        <li><span>Product owned prioritisation; my part was the evidence and the wider lens</span></li>
+      </ul>
+
+      <!-- What I'd do differently -->
+      <div class="section-label">What I’d do differently today</div>
+      <ul class="checklist">
+        <li><span>Frame the decision earlier: what are we actually deciding — what matters on mobile, for whom, why, and what evidence would change the prioritisation</span></li>
+        <li><span>Use existing evidence first: desktop usage, product analytics, support signals, previous research — find the biggest uncertainty, then research that</span></li>
+        <li><span>Run recruitment, pilot, secondary research, guide refinement and stakeholder observation in parallel — reach the decision faster without reducing rigour</span></li>
       </ul>
 
       <!-- Why it matters -->
       <div class="section-label">Why this matters in enterprise</div>
       <ul class="checklist">
-        <li><span>The unit of analysis is the workflow, not the screen — value is decided across actors, hand-offs, and tool ecosystems</span></li>
-        <li><span>Feature requests are signals, not specs: users asked for colour customisation; the need was continuity of learned patterns</span></li>
-        <li><span>The costliest failure mode isn't a missed usability issue — it's a roadmap confidently optimising the wrong problem</span></li>
-        <li><span>Research pays off at the decision layer: what gets built, what gets deprioritised, which assumption the roadmap drops</span></li>
+        <li><span>The unit of analysis is the workflow, not the screen — two roles shared one scheduling system and needed different things from it</span></li>
+        <li><span>A tactical brief can carry a bigger decision — the job is to notice it during the research and widen the lens without overstepping</span></li>
+        <li><span>I don’t need to research everything; I need to find where more evidence would change the decision</span></li>
+        <li><span>Research pays off at the decision layer: which capabilities get mobile priority, for whom, and why</span></li>
       </ul>
 
       <!-- Takeaway -->
       <div class="pullquote">
         <div class="pullquote__label">Takeaway</div>
         <p class="pullquote__text">
-          Speed is easy to measure, which makes it easy to over-value. This workflow ran on
-          predictability — and research's job was noticing which problem deserved the screen.
+          The brief asked whether four features worked. The useful answer was which ones mattered on
+          mobile, for whom, and why — and that is the question I’d ask first today.
         </p>
       </div>
 

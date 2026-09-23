@@ -14,11 +14,11 @@ export const projects: ProjectSummary[] = [
     num: "01",
     slug: "atlassian",
     meta: "Product research · Enterprise B2B SaaS (ITSM, mobile)",
-    title: "The brief said faster. The evidence said predictable.",
+    title: "The brief said validate. The evidence said prioritise.",
     cardSummary:
-      "Evaluative research on mobile on-call scheduling surfaced that users valued predictability and learnability over speed — and reframed which parts of the workflow deserved mobile investment.",
+      "A pre-launch evaluative study of four on-call scheduling capabilities in Jira Mobile that grew from “do these work?” into “which matter on mobile, for whom, and why” — and gave Product evidence to prioritise Overrides.",
     subtitle:
-      "An evaluative study that moved the team from “how do we make scheduling faster?” to “is scheduling the right problem for mobile?”",
+      "An evaluative study that moved the team from “do these four features work?” to “which capabilities matter on mobile, for whom, and why?”",
     tags: ["Enterprise B2B SaaS", "Research strategy", "Cross-functional partnership"],
   },
   {
